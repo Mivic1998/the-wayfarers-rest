@@ -1,0 +1,464 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    /* =========================
+     Brand Colours
+     ========================= */
+
+    /* Primary structural colour */
+    --color-primary: #2F4F3E;
+    /* forest green */
+
+    /* Secondary accent (use sparingly) */
+    --color-accent: #B08D57;
+    /* muted gold */
+
+    /* Brand highlight (logos, emphasis text) */
+    --color-brand: #E2D3B3;
+    /* parchment */
+
+    /* =========================
+     Backgrounds
+     ========================= */
+
+    --bg-page: #F6F3EA;
+    /* light parchment background */
+    --bg-section: #EFE9DC;
+    /* subtle section contrast */
+    --bg-dark: #1F2F27;
+    /* footer / deep header variant */
+
+    /* =========================
+     Text Colours
+     ========================= */
+
+    --text-primary: #2A2A2A;
+    --text-secondary: #5F5F5F;
+    --text-inverse: #F6F3EA;
+    /* text on dark backgrounds */
+
+    /* =========================
+     Typography
+     ========================= */
+
+    --font-heading: "Cormorant Garamond", serif;
+    --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* =========================
+     Layout & Spacing
+     ========================= */
+
+    --container-max-width: 1200px;
+    --section-padding-y: 3rem;
+    --section-padding-y-sm: 2.5rem;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+
+    /* =========================
+     UI Elements
+     ========================= */
+
+    --border-color: #D6D2C7;
+
+    --button-primary-bg: var(--color-primary);
+    --button-primary-text: var(--text-inverse);
+
+    --button-secondary-bg: transparent;
+    --button-secondary-text: var(--color-primary);
+    --button-secondary-border: var(--color-primary);
+
+    /* =========================
+     Image & Overlay Helpers
+     ========================= */
+
+    --overlay-dark: rgba(0, 0, 0, 0.08);
+    /* hero text support */
+    --overlay-darker: rgba(0, 0, 0, 0.15);
+    /* busy images */
+}
+
+/* =========================
+   Base Reset & Defaults
+   ========================= */
+
+
+body {
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-page);
+}
+
+/* =========================
+   Typography
+   ========================= */
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    margin-bottom: 0.75em;
+    color: var(--text-primary);
+}
+
+h1 {
+    font-size: clamp(2.2rem, 3vw, 3rem);
+}
+
+h2 {
+    font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    max-width: 65ch;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   Sections
+   ========================= */
+
+section {
+    padding-top: var(--section-padding-y);
+}
+
+@media (max-width: 768px) {
+    section {
+        padding-top: var(--section-padding-y-sm);
+    }
+}
+
+/* =========================
+   Images
+   ========================= */
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Aspect‑ratio helpers */
+.hero-image {
+    aspect-ratio: 16 / 9;
+}
+
+.card-image {
+    aspect-ratio: 1 / 1;
+}
+
+.location-image {
+    aspect-ratio: 4 / 5;
+}
+
+/* =========================
+   Cards (Features & Locations)
+   ========================= */
+
+.card,
+.feature-card,
+.location-card {
+    background-color: #fff;
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card p,
+.feature-card p,
+.location-card p {
+    font-size: 0.9rem;
+    flex-grow: 1;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    border: none;
+    border-radius: 999px;
+    padding: 0.6rem 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: filter 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    filter: brightness(1.05);
+}
+
+/* =========================
+   Utility Helpers
+   ========================= */
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--color-primary);
+    /* forest green */
+}
+
+/* Hover effect for the brand/logo to provide subtle feedback and interactivity without being too distracting, maintaining the elegant and understated aesthetic of the site. The opacity change is a simple way to achieve this while keeping the logo clear and recognizable.*/
+.site-navbar .navbar-brand:hover {
+    opacity: 0.9
+}
+
+.site-navbar .navbar-brand img {
+    height: 100px;
+    width: 65px;
+}
+
+@media (min-width: 576px) {
+    .site-navbar .navbar-brand img {
+        width: 175px;
+        /* Adjust as needed for the full logo */
+    }
+}
+
+.site-navbar .nav-link {
+    color: var(--text-inverse);
+    font-family: var(--font-body);
+    /* Inter */
+    font-weight: var(--font-weight-medium);
+    font-size: 0.95rem;
+}
+
+/* 
+  Hover vs Focus states:
+
+  :hover applies when a user points at a link with a mouse or trackpad.
+  :focus applies when a link is selected via keyboard navigation (Tab key)
+  or other non-mouse interactions (including some touch and assistive tech).
+
+  Styling both ensures:
+  - Mouse users get visual feedback (:hover)
+  - Keyboard and accessibility users get the same feedback (:focus)
+
+  This is important for usability and accessibility, not just aesthetics.
+*/
+
+/* Align mobile nav with brand, not screen edge */
+
+@media (max-width: 992px) {
+
+    /* Adds a subtle border to separate the mobile nav from the brand/logo */
+    .site-navbar .navbar-collapse {
+        margin-top: 0.5rem;
+        border-top: 1px solid rgba(242, 236, 221, 0.15);
+    }
+
+    /* Aligns list of navigation links with the left edge of the logo on mobile and provides breathing room away from the logo */
+    .site-navbar .navbar-nav {
+        padding-left: 0.6rem;
+        padding-top: 0.5rem;
+    }
+
+    /* Adjusts padding and font size for mobile nav links to better fit the smaller screen while darkening text slightly to avoid clashing with logo */
+    .site-navbar .nav-link {
+        padding: 0.5rem 0;
+        font-size: 0.95rem;
+        color: rgba(242, 236, 221, 0.9);
+    }
+}
+
+nav.site-navbar .nav-link:hover,
+nav.site-navbar .nav-link:focus {
+    color: var(--color-accent);
+    /* muted gold */
+}
+
+/* To indicate active state for the current page's nav link, affects elements which are children of the site navbar and have both the active class and the nav-link class */
+.site-navbar .nav-link.active {
+    color: var(--color-accent);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Navbar hamburger styling */
+
+/*Removing default border and adjusting padding for better click area on mobile*/
+.site-navbar .navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.5rem;
+}
+
+/*Removing default focus outline and shadow for a cleaner look*/
+.site-navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Use filter as color cannot be applied to the default Bootstrap hamburger icon, this inverts the icon to white and adds a subtle gold tint (sepia) to match the brand palette, saturate then increases colour intensity*/
+.site-navbar .navbar-toggler-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: invert(1) sepia(20%) saturate(80%);
+    /* Scale resizes element after its drawn*/
+    transform: scale(1.1);
+}
+
+/* Main Content */
+
+/*Overriding default padding for the hero section so that image meets navbar while ensuring that bottom padding is maintained for all screen sizres */
+.home-hero {
+  padding-top: 0;
+}
+
+@media (max-width: 768px) {
+  .home-hero {
+    padding-top: 0;;
+  }
+}
+
+/* Footer */
+
+/*Applying the primary brand colour as the background for the footer, with inverse text for contrast, and padding to create space around the content. The font size is slightly smaller to differentiate it from main content and suit typical footer information.*/
+.site-footer {
+    background-color: var(--color-primary);
+    /* forest green */
+    color: var(--text-inverse);
+    /* parchment */
+    padding: 3rem 0 0;
+    font-size: 0.9rem;
+}
+
+.footer-logo img {
+    margin-inline: auto;
+}
+
+/* Footer logo sizing */
+.site-footer .footer-logo img {
+    height: 200px;
+    width: auto;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .site-footer .footer-logo img {
+        height: 100px;
+    }
+}
+
+.site-footer .footer-logo {
+    padding-bottom: 1rem;
+}
+
+.site-footer h2 {
+    font-family: var(--font-heading);
+    /* Cormorant */
+    font-weight: 600;
+    color: var(--text-inverse);
+    margin-bottom: 0.75rem;
+    color: var(--text-inverse);
+}
+
+/*Removing default padding to center the list items and removing default list styling for a cleaner look*/
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Removing default link styling for footer links to allow for custom styles that fit the brand palette.*/
+.site-footer a {
+    text-decoration: none;
+}
+
+/*Applying body font to footer links and hours for consistency, with a slightly reduced font size and a lighter color to differentiate it from main content while maintaining readability against the dark background.*/
+.site-footer a,
+.site-footer .footer-hours {
+    font-family: var(--font-body);
+    /* Inter */
+    font-size: 0.9rem;
+    color: rgba(246, 243, 234, 0.85);
+}
+
+.footer-hours {
+    opacity: 0.7;
+}
+
+/* Adding spacing between list items in the footer to improve readability */
+.site-footer li {
+    margin-bottom: 0.4rem;
+}
+
+/* Adding a hover effect to footer links to provide visual feedback */
+.site-footer a:hover {
+    color: var(--color-accent);
+}
+
+/* When footer is stacked on mobile and tablet, add spacing between the columns to prevent cramping and improve readability except for under logo. This adds a bottom margin to the full-width columns, which will stack vertically, while on desktop the columns are side by side and do not require this spacing.*/
+@media (max-width: 992px) {
+    .site-footer .col-12 {
+        margin-bottom: 1.25rem;
+    }
+
+    .site-footer .footer-logo {
+        margin-bottom: 0
+    }
+}
+
+/* Using flexbox to arrange social media icons in a row with consistent spacing between them, and centering them within the footer for a balanced and visually appealing layout. The gap property provides a simple way to maintain equal spacing between the icons without needing to add individual margins to each one.*/
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    /* Adds space between icons */
+    justify-content: center;
+}
+
+/*Adds spacing above the social media icons and the opening hours section */
+.footer-social,
+.footer-hours {
+    margin-top: 1rem;
+}
+
+/* Gives the social media icons a subtle parchment tint to match the brand palette */
+.footer-social a img {
+    filter: invert(0.9) sepia(20%) saturate(80%);
+}
+
+/* Creates a golden highlight effect on hover and focus for the social media icons */
+.footer-social a img:hover,
+.footer-social a img:focus {
+    filter: invert(0.5) sepia(100%) saturate(100%);
+}
+
+.footer-copy {
+    background-color: rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+    font-size: 0.75rem;
+    color: rgba(246, 243, 234, 0.55);
+    text-align: center;
+}
