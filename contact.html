@@ -9,10 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 contact-page">
     <nav class="site-navbar navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -52,7 +52,67 @@
         </div>
     </nav>
     <main>
-       
+        <div class="contact-section-icon">
+            <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
+        </div>
+        <section class="contact py-2">
+            <div class="container">
+
+                <div class="row g-5">
+
+                    <!-- LEFT: FORM -->
+                    <div class="col-12 col-lg-7">
+
+                        <h2 class="mb-4">Leave A Message</h2>
+
+                        <form>
+
+                            <div class="mb-4">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" class="form-control" rows="6" required></textarea>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="reason" class="form-label">Reason For Enquiry</label>
+                                <select id="reason" class="form-select">
+                                    <option>General Enquiry</option>
+                                    <option>Book A Table</option>
+                                    <option>Tavern Locations</option>
+                                    <option>Tavern Code &amp; Conduct</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn-primary">
+                                Send Message
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                    <!-- RIGHT: INFO -->
+                    <div class="col-12 col-lg-5">
+
+                        <h2 class="mb-4">Other Ways To Reach Us</h2>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
     </main>
     <footer class="site-footer mt-auto">
         <div class="row text-center">

@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <!--Classes on body set to create a flex column layout that expands to fill the viewport height by pushing the footer to the bottom-->
 
@@ -124,10 +124,122 @@
                 </section>
             </div>
         </section>
-        <section class="home-features"></section>
+        <!-- Locations Across the Realm -->
+        <section class="home-locations text-center">
+            <div class="container">
+                <h2>Locations Across the Realm</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                </p>
+                <div id="locationsCarousel" class="carousel slide d-md-none" data-bs-touch="true">
+
+                    <!-- Indicators / dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#locationsCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1">
+                        </button>
+
+                        <button type="button" data-bs-target="#locationsCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2">
+                        </button>
+
+                        <button type="button" data-bs-target="#locationsCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3">
+                        </button>
+                    </div>
+
+                    <!-- Slides -->
+                    <div class="carousel-inner mt-4">
+
+                        <div class="carousel-item active">
+                            <article class="location-card">
+                                <img src="assets/images/placeholder/placeholder.png" class="location-image"
+                                    alt="Placeholder image representing a tavern location">
+                                <h3>Name</h3>
+                                <p>Description</p>
+                            </article>
+                        </div>
+
+                        <div class="carousel-item">
+                            <article class="location-card">
+                                <img src="assets/images/placeholder/placeholder.png" class="location-image"
+                                    alt="Placeholder image representing a tavern location">
+                                <h3>Name</h3>
+                                <p>Description</p>
+                            </article>
+                        </div>
+
+                        <div class="carousel-item">
+                            <article class="location-card">
+                                <img src="assets/images/placeholder/placeholder.png" class="location-image"
+                                    alt="Placeholder image representing a tavern location">
+                                <h3>Name</h3>
+                                <p>Description</p>
+                            </article>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#locationsCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#locationsCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+                <!-- Tablet & Desktop grid -->
+                <div class="d-none d-md-block mt-4">
+                    <div class="row g-4 justify-content-center">
+
+                        <div class="col-md-6 col-lg-4">
+                            <article class="location-card">
+                                <img src="assets/images/placeholder/placeholder.png" class="location-image"
+                                    alt="Placeholder image representing a tavern location">
+                                <h3>Name</h3>
+                                <p>Description</p>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <article class="location-card">
+                                <img src="assets/images/placeholder/placeholder.png" class="location-image"
+                                    alt="Placeholder image representing a tavern location">
+                                <h3>Name</h3>
+                                <p>Description</p>
+                            </article>
+                        </div>
+
+                        <!-- Third card centred on tablet -->
+                        <div class="col-md-6 col-lg-4 d-md-flex justify-content-md-center">
+                            <article class="location-card w-100">
+                                <img src="assets/images/placeholder/placeholder.png" class="location-image"
+                                    alt="Placeholder image representing a tavern location">
+                                <h3>Name</h3>
+                                <p>Description</p>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <a href="locations.html" class="btn-primary">
+                        View All Locations
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
     <!--Class to push footer to the bottom of the viewport-->
-    <footer class="site-footer mt-auto">
+    <footer class="site-footer mt-5">
         <div class="row text-center">
             <div class="footer-logo col-12 col-lg-3">
                 <a href="index.html">
@@ -206,6 +318,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
+    <script src="assets/js/locations-swipe.js>
 </body>
 
 </html>
