@@ -1249,27 +1249,27 @@ nav.site-navbar .nav-link:focus {
    ========================= */
 
 /* Market Taverns – slightly offset central trade region */
-.t1 { top: 45%; left: 60%; }
-.t2 { top: 41%; left: 47%; }
-.t3 { top: 50%; left: 53%; }
+.t1, #t1 { top: 45%; left: 60%; }
+.t2, #t2 { top: 41%; left: 47%; }
+.t3, #t3 { top: 50%; left: 53%; }
 
 /* Coastal Taverns – uneven, hugging coastline */
-.t4 { top: 41%; left: 77%; }   /* west coast */
-.t5 { top: 17%; left: 34%; }   /* north coast */
-.t6 { top: 77%; left: 31%; }   /* east coast */
+.t4, #t4 { top: 41%; left: 77%; }   /* west coast */
+.t5, #t5 { top: 17%; left: 34%; }   /* north coast */
+.t6, #t6 { top: 77%; left: 31%; }   /* east coast */
 
 /* Wilderness Taverns – scattered, non-linear */
-.t7 { top: 43%; left: 33%; }
-.t8 { top: 46%; left: 70%; }
-.t9 { top: 27%; left: 41%; }
+.t7, #t7 { top: 43%; left: 33%; }
+.t8, #t8 { top: 46%; left: 70%; }
+.t9, #t9 { top: 27%; left: 41%; }
 
 /* Remote Wayhouses – transitional routes */
-.t10 { top: 33%; left: 57%; }
-.t11 { top: 54%; left: 40%; }
-.t12 { top: 60%; left: 48%; }
+.t10, #t10 { top: 33%; left: 57%; }
+.t11, #t11 { top: 54%; left: 40%; }
+.t12, #t12 { top: 60%; left: 48%; }
 
 /* Edge of the World – cliffside, NOT at sea */
-.t13 {
+.t13, #t13 {
     top: 45%;
     left: 19%;
 }
