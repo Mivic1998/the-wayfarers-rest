@@ -51,9 +51,155 @@
             </div>
         </div>
     </nav>
-    <main>
+        <!-- GLOBAL RESET TARGET -->
+        <a id="map-reset" class="map-reset" aria-hidden="true"></a>
 
-    </main>
+        <main class="locations-page">
+
+            <!-- PAGE HEADER -->
+            <section class="page-header locations-header">
+                <div class="container text-center">
+                    <h1>Taverns & Locations</h1>
+                    <p>
+                        From bustling market halls to lonely taverns at the edge of the world,
+                        every Wayfarer’s Rest offers shelter along the road.
+                    </p>
+                </div>
+            </section>
+
+            <!-- TAVERN TYPES -->
+            <section class="tavern-types">
+                <div class="container text-center">
+                    <h2>Tavern Types</h2>
+                    <p>
+                        Each tavern reflects its surroundings while adhering to the Wayfarer’s Code.
+                    </p>
+
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <h3>Market Taverns</h3>
+                        </div>
+                        <div class="type-card">
+                            <h3>Coastal Taverns</h3>
+                        </div>
+                        <div class="type-card">
+                            <h3>Wilderness Taverns</h3>
+                        </div>
+                        <div class="type-card">
+                            <h3>Remote Wayhouses</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MAP SECTION -->
+            <section class="locations-map-section">
+                <div class="container">
+                    <h2 class="text-center">Map of the Realm</h2>
+
+                    <div class="map-wrapper">
+
+                        <img src="assets/images/locations-map.jpg"
+                            alt="Parchment-style fantasy map showing tavern locations">
+
+                        <!-- MAP DOTS (LINKS) -->
+
+                        <!-- Market Taverns -->
+                        <a href="#t1" class="map-dot market t1" aria-label="Market Tavern"></a>
+                        <a href="#t2" class="map-dot market t2"></a>
+                        <a href="#t3" class="map-dot market t3"></a>
+
+                        <!-- Coastal Taverns -->
+                        <a href="#t4" class="map-dot coastal t4"></a>
+                        <a href="#t5" class="map-dot coastal t5"></a>
+                        <a href="#t6" class="map-dot coastal t6"></a>
+
+                        <!-- Wilderness -->
+                        <a href="#t7" class="map-dot wilderness t7"></a>
+                        <a href="#t8" class="map-dot wilderness t8"></a>
+                        <a href="#t9" class="map-dot wilderness t9"></a>
+
+                        <!-- Wayhouses -->
+                        <a href="#t10" class="map-dot wayhouse t10"></a>
+                        <a href="#t11" class="map-dot wayhouse t11"></a>
+                        <a href="#t12" class="map-dot wayhouse t12"></a>
+
+                        <!-- Edge of the World -->
+                        <a href="#t13" class="map-dot edge t13"></a>
+
+                        <!-- TAVERN INFO PANELS -->
+
+                        <div id="t1" class="tavern-popup">
+                            <h3>The Crossroads Hall</h3>
+                            <p>Central market tavern serving traders and caravans.</p>
+                        </div>
+
+                        <div id="t2" class="tavern-popup">
+                            <h3>The Brass Lantern</h3>
+                            <p>A lively indoor market rest near inland trade routes.</p>
+                        </div>
+
+                        <div id="t3" class="tavern-popup">
+                            <h3>The Coin & Cup</h3>
+                            <p>Favoured by merchants and wardens alike.</p>
+                        </div>
+
+                        <div id="t4" class="tavern-popup">
+                            <h3>The Saltwind Inn</h3>
+                            <p>Western coastal tavern overlooking rocky bays.</p>
+                        </div>
+
+                        <div id="t5" class="tavern-popup">
+                            <h3>The Gull’s Watch</h3>
+                            <p>Northern coast refuge for sailors and dockhands.</p>
+                        </div>
+
+                        <div id="t6" class="tavern-popup">
+                            <h3>The Tidebreaker</h3>
+                            <p>Eastern harbour tavern near stormy waters.</p>
+                        </div>
+
+                        <div id="t7" class="tavern-popup">
+                            <h3>The Mossbound Rest</h3>
+                            <p>Deep woodland refuge beyond known roads.</p>
+                        </div>
+
+                        <div id="t8" class="tavern-popup">
+                            <h3>The Hollow Oak</h3>
+                            <p>Hidden wilderness lodge used by hunters.</p>
+                        </div>
+
+                        <div id="t9" class="tavern-popup">
+                            <h3>The Stonepath</h3>
+                            <p>Border tavern at the forest’s edge.</p>
+                        </div>
+
+                        <div id="t10" class="tavern-popup">
+                            <h3>The Long Mile</h3>
+                            <p>Remote wayhouse between distant settlements.</p>
+                        </div>
+
+                        <div id="t11" class="tavern-popup">
+                            <h3>The Grey Post</h3>
+                            <p>A lonely waypoint on the southern road.</p>
+                        </div>
+
+                        <div id="t12" class="tavern-popup">
+                            <h3>The Last Marker</h3>
+                            <p>Wayhouse shelter before the wild coast.</p>
+                        </div>
+
+                        <div id="t13" class="tavern-popup">
+                            <h3>The Edge of the World</h3>
+                            <p>The final tavern before the endless sea.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
     <footer class="site-footer mt-auto">
         <div class="row text-center">
             <div class="footer-logo col-12 col-lg-3">

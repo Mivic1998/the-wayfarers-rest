@@ -1087,6 +1087,228 @@ nav.site-navbar .nav-link:focus {
     margin-left: 2.5rem;
 }
 
+/* ======================================================
+   LOCATIONS PAGE – NON‑MAP STYLES
+   ====================================================== */
+
+.locations-page {
+    background-color: var(--bg-page);
+}
+
+/* Header / Hero */
+.locations-header {
+    background-color: var(--bg-section);
+    padding: 3.5rem 0 3rem;
+    text-align: center;
+}
+
+.locations-header h1 {
+    margin-bottom: 0.75rem;
+}
+
+.locations-header p {
+    max-width: 60ch;
+    margin-inline: auto;
+    opacity: 0.9;
+}
+
+/* Tavern Types Section */
+.tavern-types {
+    background-color: #d9d9d9;
+    padding: 3rem 0;
+}
+
+.tavern-types h2 {
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.tavern-types > .container > p {
+    max-width: 65ch;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+}
+
+.types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.75rem;
+}
+
+.type-card {
+    background-color: #fff;
+    padding: 1.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.type-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.type-card p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+/* Section spacing */
+.locations-map-section {
+    padding: 4rem 0;
+    background-color: var(--bg-page);
+}
+
+.locations-map-section h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.locations-map-section p {
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+/* Responsive tightening */
+@media (max-width: 768px) {
+    .locations-header {
+        padding: 2.5rem 0;
+    }
+
+    .tavern-types {
+        padding: 2.5rem 0;
+    }
+
+    .locations-map-section {
+        padding: 3rem 0;
+    }
+}
+
+
+/* ======================================================
+   LOCATIONS PAGE – MAP & INTERACTION STYLES
+   ====================================================== */
+
+/* Global reset layer */
+.map-reset {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+}
+
+/* Map frame */
+.map-wrapper {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 1.25rem;
+    background-color: var(--bg-section);
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    z-index: 2;
+}
+
+.map-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-md);
+}
+
+/* Map dots */
+.map-dot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px var(--bg-section);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Dot hover / focus */
+.map-dot:hover,
+.map-dot:focus {
+    transform: translate(-50%, -50%) scale(1.3);
+    box-shadow: 0 0 0 3px var(--bg-section);
+}
+
+/* Tavern type colouring */
+.market     { background-color: #6b4b2a; }
+.coastal    { background-color: #1f4e79; }
+.wilderness { background-color: #2f5d3a; }
+.wayhouse   { background-color: #555; }
+.edge       { background-color: #000; }
+
+/* Dot coordinates – tuned to your island map */
+
+/* =========================
+   Adjusted Dot Coordinates
+   ========================= */
+
+/* Market Taverns – slightly offset central trade region */
+.t1 { top: 45%; left: 60%; }
+.t2 { top: 41%; left: 47%; }
+.t3 { top: 50%; left: 53%; }
+
+/* Coastal Taverns – uneven, hugging coastline */
+.t4 { top: 41%; left: 77%; }   /* west coast */
+.t5 { top: 17%; left: 34%; }   /* north coast */
+.t6 { top: 77%; left: 31%; }   /* east coast */
+
+/* Wilderness Taverns – scattered, non-linear */
+.t7 { top: 43%; left: 33%; }
+.t8 { top: 46%; left: 70%; }
+.t9 { top: 27%; left: 41%; }
+
+/* Remote Wayhouses – transitional routes */
+.t10 { top: 33%; left: 57%; }
+.t11 { top: 54%; left: 40%; }
+.t12 { top: 60%; left: 48%; }
+
+/* Edge of the World – cliffside, NOT at sea */
+.t13 {
+    top: 45%;
+    left: 19%;
+}
+
+/* Tavern pop‑up panels */
+.tavern-popup {
+    position: absolute;
+    max-width: 260px;
+    padding: 1rem;
+    background: var(--bg-section);
+    border-radius: var(--radius-md);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 4;
+}
+
+.tavern-popup h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+}
+
+.tavern-popup p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* Show active tavern */
+.tavern-popup:target {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+
+
 /* Footer */
 
 /*Applying the primary brand colour as the background for the footer, with inverse text for contrast, and padding to create space around the content. The font size is slightly smaller to differentiate it from main content and suit typical footer information.*/
