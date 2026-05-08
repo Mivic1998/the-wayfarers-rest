@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -52,18 +52,19 @@
         </div>
     </nav>
     <main>
-        <section class="page-hero menu-hero text-center">
-            <div class="container">
-                <div class="menu-hero-image">
-                    <img src="assets/images/placeholder/placeholder.png" alt="Tavern menu image" class="hero-image">
-                    <div class="hero-content">
-                        <h1>Menu & Provisions</h1>
-                        <p>Explore tavern favourites, seasonal delights and beloved drinks prepared for adventurers who
-                            crave good food and welcoming company.</p>
-                    </div>
-                </div>
+        
+        <main class="locations-page">
+        <!-- PAGE HEADER -->
+        <section class="page-header locations-header pt-5 tavern-types pb-2">
+            <div class="container text-center">
+                <h1>Menu & Provisions</h1>
+                <p>
+                    Explore tavern favourites, seasonal delights and beloved drinks prepared for adventurers who
+                            crave good food and welcoming company.
+                </p>
             </div>
         </section>
+
 
         <section class="menu-anchors-bar">
             <nav class="menu-anchors">
@@ -82,31 +83,34 @@
             <div class="container">
                 <h2 class="section-title text-center">House Specials</h2>
                 <div class="menu-category__hero">
-                    <img src="assets/images/placeholder/placeholder.png" alt="House specials" class="card-image">
+                    <img src="assets/images/house-specials-menu.jpg" alt="House specials" class="card-image">
                 </div>
                 <div class="menu-items">
                     <article class="menu-item">
                         <div>
-                            <h3>Roasted Game Pie</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <h3>The Roadwarden’s Roast</h3>
+                            <p>A generous cut of slow‑roasted beef glazed with garlic and herbs, served with
+                                hearth‑roasted potatoes and root vegetables in rich pan jus.</p>
                         </div>
-                        <span class="menu-item__price">£16.00</span>
+                        <span class="menu-item__price">18 crwn.</span>
                     </article>
                     <article class="menu-item">
                         <div>
-                            <h3>Smoked Ale-Braised Brisket</h3>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                            <h3>Hearthkeeper's Feast</h3>
+                            <p>Fire‑roasted meats and seasonal vegetables arranged for sharing, cooked low and steady to
+                                sustain travellers bound for long roads.
                             </p>
                         </div>
-                        <span class="menu-item__price">£18.50</span>
+                        <span class="menu-item__price">17 crwn.</span>
                     </article>
                     <article class="menu-item">
                         <div>
-                            <h3>Harvest Root Stew</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+                            <h3>The Marchlands Platter</h3>
+                            <p>A rotating selection of tavern favourites drawn from local fare — roast cuts, hand pies,
+                                and vegetables — served as the house sees fit.
                             </p>
                         </div>
-                        <span class="menu-item__price">£14.75</span>
+                        <span class="menu-item__price">16 crwn.</span>
                     </article>
                 </div>
             </div>
@@ -118,30 +122,33 @@
             <div class="container">
                 <h2 class="section-title text-center">Starters</h2>
                 <div class="menu-category__hero">
-                    <img src="assets/images/placeholder/placeholder.png" alt="Starters" class="card-image">
+                    <img src="assets/images/starters-menu.jpg" alt="Starters" class="card-image">
                 </div>
                 <div class="menu-items">
                     <article class="menu-item">
                         <div>
-                            <h3>Seared Mushroom Skewers</h3>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                            <h3>Traveller's Board</h3>
+                            <p>Warm bread, hand pies, pickled vegetables, and savoury bites, served for sharing or quiet
+                                arrival.</p>
                         </div>
-                        <span class="menu-item__price">£8.95</span>
+                        <span class="menu-item__price">8 crwn.</span>
                     </article>
                     <article class="menu-item">
                         <div>
-                            <h3>Fire-Roasted Bread</h3>
-                            <p>Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+                            <h3>Hearth Soup of the Day</h3>
+                            <p>A daily broth prepared from available vegetables and bones, served with coarse bread and
+                                butter.</p>
                         </div>
-                        <span class="menu-item__price">£7.50</span>
+                        <span class="menu-item__price">6 crwn.</span>
                     </article>
                     <article class="menu-item">
                         <div>
-                            <h3>Pickled Root Salad</h3>
-                            <p>Ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                            <h3>Market Hand Pies</h3>
+                            <p>Two baked pies filled with meat or spiced vegetables, eaten easily with one hand and no
+                                ceremony.
                             </p>
                         </div>
-                        <span class="menu-item__price">£7.95</span>
+                        <span class="menu-item__price">7 crwn.</span>
                     </article>
                 </div>
             </div>
@@ -153,31 +160,34 @@
             <div class="container">
                 <h2 class="section-title text-center">Mains</h2>
                 <div class="menu-category__hero">
-                    <img src="assets/images/placeholder/placeholder.png" alt="Mains" class="card-image">
+                    <img src="assets/images/main-menu.jpg" alt="Mains" class="card-image">
                 </div>
                 <div class="menu-items">
                     <article class="menu-item">
                         <div>
-                            <h3>Herb-Crusted Lamb</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <h3>Hearth-Roasted Beef</h3>
+                            <p>A thick slice of open‑flame beef, basted with herbs and served alongside potatoes cooked
+                                in rendered fat.</p>
                         </div>
-                        <span class="menu-item__price">£19.25</span>
+                        <span class="menu-item__price">14 crwn.</span>
                     </article>
                     <article class="menu-item">
                         <div>
-                            <h3>Blackened Fish Pot</h3>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                            <h3>Skillet-Seared Sausages</h3>
+                            <p>House sausages browned over the hearth, served with carrots, onions, and a ladle of
+                                savoury gravy.
                             </p>
                         </div>
-                        <span class="menu-item__price">£17.95</span>
+                        <span class="menu-item__price">17 crwn.</span>
                     </article>
                     <article class="menu-item">
                         <div>
-                            <h3>Spiced Root Vegetable Bake</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+                            <h3>Braised Root Stew</h3>
+                            <p>A slow‑simmered stew of seasonal root vegetables and herbs, thickened with barley and
+                                served steaming hot.
                             </p>
                         </div>
-                        <span class="menu-item__price">£15.50</span>
+                        <span class="menu-item__price">11 crwn. <em>(V)</em></span>
                     </article>
                 </div>
             </div>
@@ -189,30 +199,30 @@
             <div class="container">
                 <h2 class="section-title text-center">Sides</h2>
                 <div class="menu-category__hero">
-                    <img src="assets/images/placeholder/placeholder.png" alt="Sides" class="card-image">
+                    <img src="assets/images/sides-menu.jpg" alt="Sides" class="card-image">
                 </div>
                 <div class="menu-items">
                     <article class="menu-item">
                         <div>
-                            <h3>Charred Greens</h3>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                            <h3>Buttered Greens</h3>
+                            <p>Wilted greens dressed simply with butter and cracked pepper.</p>
                         </div>
-                        <span class="menu-item__price">£5.95</span>
+                        <span class="menu-item__price">3 crwn.</span>
                     </article>
                     <article class="menu-item">
                         <div>
-                            <h3>Buttery Garlic Potatoes</h3>
-                            <p>Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+                            <h3>Hearthside Potatoes</h3>
+                            <p>Roasted until crisp and finished with herbs and coarse salt.</p>
                         </div>
-                        <span class="menu-item__price">£5.50</span>
+                        <span class="menu-item__price">4 crwn.</span>
                     </article>
                     <article class="menu-item">
                         <div>
-                            <h3>Spiced Winter Slaw</h3>
-                            <p>Ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                            <h3>Glazed Carrots &amp; Roots</h3>
+                            <p>Carrots and seasonal roots cooked in honey and butter until tender.
                             </p>
                         </div>
-                        <span class="menu-item__price">£5.25</span>
+                        <span class="menu-item__price">4 crwn.</span>
                     </article>
                 </div>
             </div>
@@ -224,31 +234,33 @@
             <div class="container">
                 <h2 class="section-title text-center">Desserts</h2>
                 <div class="menu-category__hero">
-                    <img src="assets/images/placeholder/placeholder.png" alt="Desserts" class="card-image">
+                    <img src="assets/images/desserts-menu-two.jpg" alt="Desserts" class="card-image">
                 </div>
                 <div class="menu-items">
                     <article class="menu-item">
                         <div>
-                            <h3>Warm Honey Cake</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <h3>Honeyed Berry Cake</h3>
+                            <p>Golden sponge layered with soft cream, soaked in warm honey and topped with forest
+                                berries.</p>
                         </div>
-                        <span class="menu-item__price">£8.25</span>
+                        <span class="menu-item__price">6 crwn.</span>
                     </article>
                     <article class="menu-item">
                         <div>
-                            <h3>Spiced Apple Tart</h3>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                            <h3>Spiced Hearth Tart</h3>
+                            <p>A small baked tart filled with spiced fruit and nuts, served warm from the oven.
                             </p>
                         </div>
-                        <span class="menu-item__price">£8.50</span>
+                        <span class="menu-item__price">5 crwn.</span>
                     </article>
                     <article class="menu-item">
                         <div>
-                            <h3>Caramelised Pear Pudding</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+                            <h3>Sweet Bread &amp; Cream</h3>
+                            <p>Fresh‑baked bread drizzled with honey and served with lightly whipped cream.
+
                             </p>
                         </div>
-                        <span class="menu-item__price">£8.75</span>
+                        <span class="menu-item__price">4 crwn.</span>
                     </article>
                 </div>
             </div>
@@ -260,30 +272,33 @@
             <div class="container">
                 <h2 class="section-title text-center">Drinks</h2>
                 <div class="menu-category__hero">
-                    <img src="assets/images/placeholder/placeholder.png" alt="Drinks" class="card-image">
+                    <img src="assets/images/drinks-menu-four.jpg" alt="Drinks" class="card-image">
                 </div>
                 <div class="menu-items">
                     <article class="menu-item">
                         <div>
-                            <h3>House Ale</h3>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-                        </div>
-                        <span class="menu-item__price">£5.25</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>Mulled Cider</h3>
-                            <p>Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
-                        </div>
-                        <span class="menu-item__price">£5.75</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>Herbal Infusion</h3>
-                            <p>Ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                            <h3>Wayfarer's Pour</h3>
+                            <p>House‑brewed ale, mulled wine, or spiced broth, served hot or cold depending on season.
                             </p>
                         </div>
-                        <span class="menu-item__price">£4.50</span>
+                        <span class="menu-item__price">4 crwn.</span>
+                    </article>
+                    <article class="menu-item">
+                        <div>
+                            <h3>Marchlands Red</h3>
+                            <p>A deep, warming red wine carried along southern trade routes and traditionally served
+                                with a clove of raw garlic — a Marchlands custom believed to ward illness and steady
+                                travellers before the road ahead.</p>
+                        </div>
+                        <span class="menu-item__price">5 crwn.</span>
+                    </article>
+                    <article class="menu-item">
+                        <div>
+                            <h3>Hearthbrew Ale</h3>
+                            <p>Dark, malty ale brewed for steady drinking by firelight.
+                            </p>
+                        </div>
+                        <span class="menu-item__price">3 crwn.</span>
                     </article>
                 </div>
             </div>
@@ -293,12 +308,12 @@
             <div class="container">
                 <div class="menu-notice__item">
                     <strong>Allergen Info</strong>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Allergens are present in many dishes.
+                    <p>Our kitchens handle a wide range of ingredients. While care is taken in preparation, dishes may contain or come into contact with common allergens. Guests with dietary requirements or allergies are encouraged to speak with tavern staff before ordering.
                     </p>
                 </div>
                 <div class="menu-notice__item">
                     <strong>Seasonality Info</strong>
-                    <p>Our menu rotates with the seasons to feature the freshest ingredients available to our tavern.
+                    <p>Menus at the Wayfarer’s Rest reflect the land and the season. Offerings may vary by location across the Marchlands, shaped by local produce, climate, and the conditions of the road.
                     </p>
                 </div>
             </div>
