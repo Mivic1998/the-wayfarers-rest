@@ -195,6 +195,9 @@ img {
     flex-grow: 1;
 }
 
+.location-card img {
+    aspect-ratio: 3 / 2;
+}
 /* =========================
    Buttons
    ========================= */
