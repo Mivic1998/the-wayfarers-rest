@@ -12,29 +12,29 @@ Live Site: *(add GitHub Pages URL here)*
 ## Contents
 
 - User Experience (UX)
-  - Project Goals
+  - #project-goals
   - User Goals
-  - Business Goals
+  - #business-goals
   - User Stories
 - Design
-  - Colour Palette
-  - Typography
+  - #colour-palette
+  - #typography
   - Imagery
   - Wireframes
-- Features
+- #features
   - All Pages
   - Home Page
-  - About Page
+  - #about-page
   - Menu Page
   - Gallery Page
-  - Locations Page
-  - FAQ / Tavern Code Page
+  - #locations-page
+  - #faq--tavern-code-page
 - Accessibility
-- Feedback
-- Testing
-- Credits
+- #feedback
+- #testing
+- #credits
 - Technologies and Tools Used
-- Deployment
+- #deployment
 
 ---
 
@@ -50,22 +50,22 @@ The purpose of this project is to provide visitors with an immersive and easy‑
 
 The main users of the site can be grouped into the following categories:
 
-- **Travellers and visitors** seeking information about the taverns, their atmosphere, and locations
-- **Fantasy enthusiasts** interested in world‑building and narrative design
-- **Casual users** looking for a visually engaging and accessible browsing experience
+- **Travellers and visitors** seeking information about taverns, atmosphere, and locations  
+- **Fantasy enthusiasts** interested in world‑building and narrative design  
+- **Casual users** looking for a visually engaging and accessible experience  
 
-Users may only visit the site once for general exploration, or return multiple times to browse the gallery, menu, or map of locations.
+Users may visit once to explore the site, or return to browse images, locations, and menu offerings.
 
 ---
 
 ### Business Goals
 
-Although fictional, the business goals of The Wayfarer’s Rest website are to:
+Although fictional, the business goals of the Wayfarer’s Rest website are to:
 
-- Establish a recognisable and consistent identity across all pages  
-- Communicate safety, neutrality, and hospitality as core values  
+- Establish a recognisable and consistent tavern identity  
+- Communicate safety, neutrality, and hospitality  
 - Encourage exploration of tavern locations across the realm  
-- Provide an accessible, enjoyable experience across all devices  
+- Provide an accessible and enjoyable experience on all devices  
 
 ---
 
@@ -83,30 +83,30 @@ Although fictional, the business goals of The Wayfarer’s Rest website are to:
 
 ### Colour Palette
 
-The colour palette draws inspiration from heritage pubs and parchment textures. Muted earth tones and warm accents are used to convey tradition and comfort, while maintaining sufficient contrast to ensure readability and accessibility.
+The colour palette is inspired by heritage pubs and parchment textures. Muted earth tones and warm accents are used to convey tradition and comfort, while maintaining sufficient contrast for accessibility.
 
 ---
 
 ### Typography
 
-Typography was selected to balance atmosphere with clarity:
+The site uses typography to balance atmosphere and readability:
 
-- A decorative serif typeface is used for headings to convey heritage and tradition  
-- A clean sans‑serif typeface is used for body text to ensure readability across devices  
+- A decorative serif typeface for headings to convey heritage  
+- A clean sans‑serif typeface for body text to ensure clarity across devices  
 
 ---
 
 ### Imagery
 
-Imagery across the site focuses on tavern interiors, lantern‑lit spaces, shared tables, food, drink, and surrounding landscapes. Images support the fantasy setting while remaining clear and unobtrusive.
+Imagery focuses on tavern interiors, lantern‑lit spaces, shared tables, food, drink, and surrounding landscapes. Images reinforce the fantasy setting without distracting from content or accessibility.
 
-All images include descriptive `alt` text to assist screen‑reader users.
+All images include descriptive `alt` text.
 
 ---
 
 ### Wireframes
 
-Wireframes for this project were created using **Balsamiq**, covering desktop, tablet, and mobile layouts for all pages:
+Wireframes were created using **Balsamiq** for desktop, tablet, and mobile views:
 
 - Home Page  
 - About Page  
@@ -123,10 +123,10 @@ Wireframes for this project were created using **Balsamiq**, covering desktop, t
 
 ### All Pages
 
-- Responsive navigation bar with mobile menu
-- Consistent footer with navigation links and social icons
-- Mobile‑first responsive layouts
-- Unified visual and narrative identity
+- Responsive navigation bar with collapsible mobile menu  
+- Consistent footer with navigation links and social icons  
+- Mobile‑first responsive design  
+- Consistent visual and narrative theme  
 
 <!-- Screenshot: Global navigation and footer -->
 
@@ -134,9 +134,9 @@ Wireframes for this project were created using **Balsamiq**, covering desktop, t
 
 ### Home Page
 
-- Hero section introducing The Wayfarer’s Rest
-- Overview intended to welcome travellers
-- Clear pathways to other site sections
+- Hero section introducing the Wayfarer’s Rest  
+- Welcoming overview aimed at travellers  
+- Clear pathways to other site sections  
 
 <!-- Screenshot: Home page -->
 
@@ -144,9 +144,9 @@ Wireframes for this project were created using **Balsamiq**, covering desktop, t
 
 ### About Page
 
-- Fictional origin story and history
-- Core values of neutrality, safety, and shelter
-- Timeline illustrating development across the realm
+- Fictional origin story and background  
+- Core values of neutrality, safety, and shelter  
+- Timeline illustrating the tavern’s history  
 
 <!-- Screenshot: About page -->
 
@@ -154,9 +154,9 @@ Wireframes for this project were created using **Balsamiq**, covering desktop, t
 
 ### Menu Page
 
-- Fictional menu categories and specials
-- Clear layout optimised for readability
-- Supporting imagery
+- Fictional menu categories and house specials  
+- Clear, readable layouts  
+- Supporting imagery  
 
 <!-- Screenshot: Menu page -->
 
@@ -164,9 +164,9 @@ Wireframes for this project were created using **Balsamiq**, covering desktop, t
 
 ### Gallery Page
 
-- Grid‑based image layout
-- Images of interiors, food, and social scenes
-- Descriptive captions and alt text
+- Grid‑based image layout  
+- Images of interiors, food, and social scenes  
+- Accessible captions and alt text  
 
 <!-- Screenshot: Gallery page -->
 
@@ -174,10 +174,10 @@ Wireframes for this project were created using **Balsamiq**, covering desktop, t
 
 ### Locations Page
 
-- Stylised fantasy map
-- Interactive markers indicating tavern locations
-- Location key explaining tavern types
-- Pop‑up panels with location details
+- Stylised fantasy map  
+- Interactive markers indicating tavern locations  
+- Location key explaining tavern types  
+- Pop‑up panels with detailed descriptions  
 
 <!-- Screenshot: Locations page -->
 
@@ -185,9 +185,9 @@ Wireframes for this project were created using **Balsamiq**, covering desktop, t
 
 ### FAQ / Tavern Code Page
 
-- Overview of tavern customs and house rules
-- Accordion layout for frequently asked questions
-- Reinforces safety and neutrality themes
+- Explanation of tavern customs and rules  
+- Accordion layout for frequently asked questions  
+- Reinforces safety and neutrality themes  
 
 <!-- Screenshot: Tavern Code page -->
 
@@ -195,30 +195,30 @@ Wireframes for this project were created using **Balsamiq**, covering desktop, t
 
 ## Accessibility
 
-The website incorporates the following accessibility considerations:
+Accessibility considerations include:
 
-- Semantic HTML structure
-- Logical heading hierarchy
-- Adequate colour contrast
-- Descriptive `alt` text on all images
-- Clear hover and focus states on interactive elements
-- Consideration for reduced‑motion preferences
+- Semantic HTML elements  
+- Logical heading hierarchy  
+- Adequate colour contrast  
+- Descriptive `alt` text on all images  
+- Clear hover and focus states  
+- Reduced‑motion considerations  
 
 ---
 
 ## Feedback
 
-During the development of this project, feedback was received through mentor sessions. This feedback informed improvements such as:
+Feedback was received during mentor sessions throughout development. This feedback informed:
 
-- Consistency across page layouts  
-- Improved navigation clarity  
-- Clear documentation structure  
+- Improvements to layout consistency  
+- Clearer navigation structure  
+- Improved documentation clarity  
 
 ---
 
 ## Testing
 
-Manual testing was conducted across all pages to ensure functionality, responsiveness, and accessibility.
+Manual testing was carried out across all pages.
 
 | Feature | Test Performed | Expected Result | Actual Result | Pass |
 |--------|----------------|-----------------|---------------|------|
@@ -243,8 +243,8 @@ Further testing details are documented in `TESTING.md`.
 ### Code and Resources Used
 
 - Bootstrap 5 for layout and responsive components  
-- Inspiration from real‑world heritage pub websites  
-- Fantasy world‑building references for narrative support  
+- Heritage pub websites for design inspiration  
+- Fantasy world‑building references  
 
 ---
 
@@ -255,7 +255,7 @@ Further testing details are documented in `TESTING.md`.
 - Bootstrap 5  
 - Git & GitHub  
 - GitHub Pages  
-- Balsamiq (wireframes)
+- Balsamiq  
 
 ---
 
