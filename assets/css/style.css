@@ -198,6 +198,7 @@ img {
 .location-card img {
     aspect-ratio: 3 / 2;
 }
+
 /* =========================
    Buttons
    ========================= */
@@ -353,7 +354,7 @@ nav.site-navbar .nav-link:focus {
 .home-hero {
     position: relative;
     padding-top: 0;
-} 
+}
 
 
 .hero-overlay {
@@ -601,12 +602,28 @@ nav.site-navbar .nav-link:focus {
     margin-bottom: 1.2rem;
 }
 
-.menu-category__hero {
+/*.menu-category__hero {
     max-width: 840px;
     width: 100%;
     margin: 0 auto 1.75rem;
     overflow: hidden;
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}*/
+
+
+.menu-category__hero, .about-pillars img.pillar-image {
+    max-width: 840px;
+    padding: 0.1rem;
+    margin: 0 auto 1.75rem;
+    background-color: var(--bg-page);
+    /* parchment backdrop */
+    border: 3px solid rgba(168, 134, 62, 0.6);
+    /* antique gold */
+
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 236, 180, 0.4);
+
 }
 
 
@@ -937,14 +954,12 @@ nav.site-navbar .nav-link:focus {
     height: auto;
     display: block;
 
-    border: 1px solid var(--border-color);
+    border: 5px solid rgba(168, 134, 62, 0.6);
     /* soft outer frame */
-    border-radius: var(--radius-sm);
+    
 
     background-color: var(--bg-page);
     /* parchment behind image */
-    padding: 0.4rem;
-    /* creates framed look */
 
     box-shadow:
         0 1px 3px rgba(0, 0, 0, 0.06);
@@ -1092,9 +1107,10 @@ nav.site-navbar .nav-link:focus {
 }
 
 /* Image itself */
+.home-hero img,
 .about-hero-image img {
     width: 100%;
-    height: auto;
+    max-height: 80vh;
     display: block;
 }
 
@@ -1142,7 +1158,8 @@ nav.site-navbar .nav-link:focus {
     color: inherit;
 }
 
-.about-cta, .home-cta {
+.about-cta,
+.home-cta {
     padding-bottom: 3rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
@@ -1153,7 +1170,8 @@ nav.site-navbar .nav-link:focus {
 ========================= */
 
 .about-timeline {
-    background-color: var(--bg-section); /* wireframe match */
+    background-color: var(--bg-section);
+    /* wireframe match */
     padding: 3rem 0;
 }
 
@@ -1198,7 +1216,7 @@ nav.site-navbar .nav-link:focus {
 .timeline-marker {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 50.5%;
     width: 14px;
     height: 14px;
     background-color: var(--color-primary);
@@ -1241,7 +1259,8 @@ nav.site-navbar .nav-link:focus {
     content: "";
     position: absolute;
     top: 50%;
-    right: -12px;                 /* sticks out toward the centre line */
+    right: -12px;
+    /* sticks out toward the centre line */
 
 
     width: 0;
@@ -1257,7 +1276,8 @@ nav.site-navbar .nav-link:focus {
     content: "";
     position: absolute;
     top: 50%;
-    left: -12px;                  /* sticks out toward the centre line */
+    left: -12px;
+    /* sticks out toward the centre line */
 
     width: 0;
     height: 0;
@@ -1273,7 +1293,9 @@ nav.site-navbar .nav-link:focus {
     justify-content: center;
     gap: 0;
     padding-top: 0.75rem;
-};
+}
+
+;
 /* =========================
    Mobile
 ========================= */
@@ -1475,10 +1497,12 @@ nav.site-navbar .nav-link:focus {
 
 /* Dot hover / focus */
 .map-dot:hover,
-.map-dot:focus {
+.map-dot.active {
     transform: translate(-50%, -50%) scale(1.3);
     box-shadow: 0 0 0 3px var(--bg-section);
 }
+
+
 
 /* Tavern type colouring */
 .market {
@@ -1508,41 +1532,35 @@ nav.site-navbar .nav-link:focus {
    ========================= */
 
 /* Market Taverns – slightly offset central trade region */
-.t1,
-#t1 {
+.t1 {
     top: 45%;
     left: 60%;
 }
 
-.t2,
-#t2 {
+.t2 {
     top: 41%;
     left: 47%;
 }
 
-.t3,
-#t3 {
+.t3 {
     top: 50%;
     left: 53%;
 }
 
 /* Coastal Taverns – uneven, hugging coastline */
-.t4,
-#t4 {
+.t4 {
     top: 41%;
     left: 78%;
 }
 
 
-.t5,
-#t5 {
+.t5 {
     top: 15%;
     left: 34%;
 }
 
 
-.t6,
-#t6 {
+.t6 {
     top: 78%;
     left: 30%;
 }
@@ -1550,66 +1568,56 @@ nav.site-navbar .nav-link:focus {
 
 
 /* Wilderness Taverns – scattered, non-linear */
-.t7,
-#t7 {
+.t7 {
     top: 43%;
     left: 33%;
 }
 
-.t8,
-#t8 {
+.t8 {
     top: 46%;
     left: 70%;
 }
 
-.t9,
-#t9 {
+.t9 {
     top: 27%;
     left: 41%;
 }
 
 /* Remote Wayhouses – transitional routes */
-.t10,
-#t10 {
+.t10 {
     top: 33%;
     left: 57%;
 }
 
-.t11,
-#t11 {
+.t11 {
     top: 54%;
     left: 40%;
 }
 
-.t12,
-#t12 {
+.t12 {
     top: 60%;
     left: 48%;
 }
 
 /* Edge of the World – cliffside, NOT at sea */
-.t13,
-#t13 {
+.t13 {
     top: 45%;
     left: 18%;
 }
 
 @media (max-width: 992px) {
 
-    .t6,
-    #t6 {
+    .t6 {
         top: 78%;
         left: 30.5%;
     }
 
-    .t5,
-    #t5 {
+    .t5 {
         top: 16%;
         left: 34%;
     }
 
-    .t4,
-    #t4 {
+    .t4 {
         top: 41%;
         left: 77%;
     }
@@ -1618,21 +1626,31 @@ nav.site-navbar .nav-link:focus {
 /* Tavern pop‑up panels */
 .tavern-popup {
     position: absolute;
-    max-width: 280px;
+    /* viewport-relative */
+    max-width: 400px;
     padding: 1rem 1.1rem;
     background-color: #f3efe6;
-    /* warmer parchment */
     border-radius: 10px;
+
     box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.25),
         inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+
     opacity: 0;
     pointer-events: none;
-    transform: translate(18px, -50%) scale(0.96);
+
+    /* visual polish only */
+    transform: scale(0.96);
     transition: opacity 0.2s ease, transform 0.2s ease;
+
     z-index: 4;
 }
 
+.tavern-popup.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
 
 .tavern-popup h3 {
     text-align: center;
@@ -1650,12 +1668,6 @@ nav.site-navbar .nav-link:focus {
     margin: 0;
 }
 
-/* Show active tavern */
-.tavern-popup:target {
-    opacity: 1;
-    pointer-events: auto;
-    transform: scale(1);
-}
 
 /* Map Key */
 
@@ -1885,10 +1897,65 @@ nav.site-navbar .nav-link:focus {
 
 .card-image {
     width: 100%;
-    height: 200px;            /* choose a value that fits your design */
-    object-fit: cover;        /* key line */
+    height: 200px;
+    /* choose a value that fits your design */
+    object-fit: cover;
+    /* key line */
     display: block;
 }
- /*img {
+
+/*img {
     max-height: 550px !important
  }
+
+ /* Hidden state */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    will-change: transform, opacity;
+}
+
+
+
+/* Revealed state */
+
+.reveal-sub {
+    opacity: 0;
+    transform: scale(0.96);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.reveal.visible,
+.reveal-sub.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional stagger delays */
+.delay-1 {
+    transition-delay: 0.15s;
+}
+
+.delay-2 {
+    transition-delay: 0.3s;
+}
+
+.delay-3 {
+    transition-delay: 1.5s;
+}
+
+.delay-4 {
+    transition-delay: 0.3s;
+}
+
+
+
+.menu main {
+    background-color: var(--bg-section);
+}
+
+.timeline-content p {
+    width: 90%;
+    margin-bottom: 2rem
+}

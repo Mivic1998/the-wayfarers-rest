@@ -61,12 +61,15 @@
                             alt="A solitary timber-and-stone tavern standing beside a winding road at dusk, its windows glowing warmly against an open landscape under an amber evening sky">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/images/home-carousel-02.jpg" class="d-block w-100 hero-image"
+                        <img src="assets/images/home-carousel-02-two.jpg" class="d-block w-100 hero-image"
                             alt="A warmly lit stone tavern in a small town at dusk, with glowing windows, hanging lanterns, and neighboring buildings lining a narrow street under an evening sky">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/images/home-carousel-05.jpg" class="d-block w-100 hero-image"
-                            alt="Stone arches built into seaside cliffs at night, with travellers seated at candlelit tables inside a tavern overlooking the ocean under a bright full moon">
+                        <picture>
+                            <!--Desktop displays standard logo while anything smaller has title stacked below icon-->
+                            <source media="(min-width: 992px)" srcset="assets/images/home-carousel-20.png">
+                            <img src="assets/images/home-carousel-05.jpg" class="d-block w-100 hero-image" alt="The Wayfarer’s Rest logo">
+                        </picture>
                     </div>
                     <div class="carousel-item">
                         <img src="assets/images/home-carousel-04.jpg" class="d-block w-100 hero-image"
@@ -75,8 +78,8 @@
                 </div>
 
                 <div class="hero-overlay">
-                    <h1>The Wayfarer’s Rest</h1>
-                    <p>Food, Ale & Shelter Across the Realm</p>
+                    <h1 class="reveal">The Wayfarer’s Rest</h1>
+                    <p class="reveal-sub delay-3">Food, Ale & Shelter Across the Realm</p>
                 </div>
 
             </div>
@@ -98,7 +101,7 @@
                         <div class="row g-4">
 
                             <div class="col-12 col-md-6 col-lg-3">
-                                <article class="feature-card text-center">
+                                <article class="feature-card text-center reveal">
                                     <img src="assets/images/home-card-01.jpg" class="card-image"
                                         alt="A large wooden table inside a warm stone tavern, where travellers sit together sharing food and drink by firelight beneath timber beams and hanging lanterns">
                                     <h3>Food &amp; Drink</h3>
@@ -108,7 +111,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-3">
-                                <article class="feature-card text-center">
+                                <article class="feature-card text-center reveal">
                                     <img src="assets/images/home-card-02.jpg" class="card-image"
                                         alt="A simple tavern sleeping room with rows of wooden bunk beds, folded blankets, and warm light shining through a stone-framed window inside a quiet interior">
                                     <h3>Atmosphere &amp; Welcome</h3>
@@ -118,7 +121,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-3">
-                                <article class="feature-card text-center">
+                                <article class="feature-card text-center reveal">
                                     <img src="assets/images/home-card-03.jpg" class="card-image"
                                         alt="A busy tavern interior with long wooden tables and benches, where travellers sit together with mugs under heavy timber beams and warm lantern light filling the room">
                                     <h3>Rest &amp; Shelter</h3>
@@ -128,7 +131,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-3">
-                                <article class="feature-card text-center">
+                                <article class="feature-card text-center reveal">
                                     <img src="assets/images/home-card-04.jpg" class="card-image"
                                         alt="An open tavern doorway framing a winding path leading through green hills toward a distant castle beneath a bright sky, with warm lantern light illuminating the stone interior">
                                     <h3>The Road</h3>
@@ -241,7 +244,7 @@
 
 
                         <div class="col-md-6 col-lg-4">
-                            <article class="location-card">
+                            <article class="location-card reveal">
                                 <img src="assets/images/market-tavern-home.jpg" class="location-image"
                                     alt="A bustling market tavern at dusk, with lanterns glowing, banners overhead, and groups of travellers gathered at wooden tables in a town square">
                                 <h3>The Gilded Hearth</h3>
@@ -253,7 +256,7 @@
                         </div>
 
                         <div class="col-md-6 col-lg-4">
-                            <article class="location-card">
+                            <article class="location-card reveal">
                                 <img src="assets/images/coastal-tavern-home.jpg" class="location-image"
                                     alt="A bright stone coastal tavern standing at the water’s edge, with open archways, hanging lanterns, and calm blue sea stretching beyond">
                                 <h3>The Saltwind Rest</h3>
@@ -268,7 +271,7 @@
 
                         <!-- Third card centred on tablet -->
                         <div class="col-md-6 col-lg-4">
-                            <article class="location-card">
+                            <article class="location-card reveal">
                                 <img src="assets/images/edge-of-the-world-tavern-home.jpg" class="location-image"
                                     alt="A solitary stone tavern standing on high coastal cliffs above a stormy sea, warm lantern light glowing against dark skies and crashing waves">
                                 <h3>The Last Light</h3>
@@ -306,13 +309,13 @@
                 <h2 class="h5">The Tavern</h2>
                 <ul>
                     <li>
-                        <a href="">About the Tavern</a>
+                        <a href="index.html">About the Tavern</a>
                     </li>
                     <li>
-                        <a href="">The Wayfarer's Code</a>
+                        <a href="faq.html">The Wayfarer's Code</a>
                     </li>
                     <li>
-                        <a href="">Our Story</a>
+                        <a href="about.html">Our Story</a>
                     </li>
                 </ul>
             </div>
@@ -326,7 +329,7 @@
                         <a href="menu.html">Menu & Provisions</a>
                     </li>
                     <li>
-                        <a href="">Other Services</a>
+                        <a href="about.html#other-services">Other Services</a>
                     </li>
                 </ul>
             </div>
@@ -337,10 +340,10 @@
                         <a href="contact.html">Contact Us</a>
                     </li>
                     <li>
-                        <a href="">Common Questions</a>
+                        <a href="faq.html#common-questions">Common Questions</a>
                     </li>
                     <li>
-                        <a href="">Careers</a>
+                        <a href="under-construction.html">Careers</a>
                     </li>
                 </ul>
             </div>
@@ -370,7 +373,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
-    <script src="assets/js/locations-swipe.js>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

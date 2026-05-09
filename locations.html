@@ -59,8 +59,8 @@
         <div class="about-hero-image">
             <img src="assets/images/locations-map-hero.jpg" alt="">
             <div class="about-hero-content">
-                <h1>Taverns & Locations</h1>
-                <p>
+                <h1 class="reveal">Taverns & Locations</h1>
+                <p class="reveal-sub delay-3">
                     From crowded market streets to lonely frontiers at the edge of the known world, the Wayfarer’s Rest
                     stands wherever the road demands shelter. Each location is shaped by its surroundings, yet bound by
                     the same promise — rest, safety, and sanctuary for all who travel the Marchlands.
@@ -84,7 +84,7 @@
 
             <div class="row g-4 justify-content-center">
                 <div class="col-12 col-md-6 col-lg-3">
-                    <div class="type-card">
+                    <div class="type-card reveal">
                         <h3>Market Taverns</h3>
                         <img class="mb-2" src="assets/images/market-tavern-locations.jpg"
                             alt="Stone market tavern with a large fireplace and wooden tables">
@@ -95,7 +95,7 @@
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-3">
-                    <div class="type-card">
+                    <div class="type-card reveal">
                         <h3>Coastal Taverns</h3>
                         <img class="mb-2" src="assets/images/coastal-tavern-locations.jpg"
                             alt="Coastal tavern overlooking the sea with wooden beams">
@@ -106,7 +106,7 @@
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-3">
-                    <div class="type-card">
+                    <div class="type-card reveal">
                         <h3>Wilderness Taverns</h3>
                         <img class="mb-2" src="assets/images/wilderness-tavern-locations.jpg"
                             alt="Deep woodland refuge beyond known roads">
@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-3">
-                    <div class="type-card">
+                    <div class="type-card reveal">
                         <h3>Remote Wayhouses</h3>
                         <img class="mb-2" src="assets/images/remote-wayhouse-tavern-locations.jpg"
                             alt="Isolated wayhouse on a mountain pass">
@@ -174,7 +174,7 @@
 
                 <!-- MAP -->
                 <div class="col-12 col-lg-9">
-                    <div class="map-wrapper">
+                    <div class="map-wrapper reveal">
 
                         <img src="assets/images/locations-map.jpg"
                             alt="Parchment-style fantasy map showing tavern locations">
@@ -183,28 +183,40 @@
                         <!-- MAP DOTS (LINKS) -->
 
                         <!-- Market Taverns -->
-                        <a href="#t1" class="map-dot market t1" aria-label="Market Tavern"></a>
-                        <a href="#t2" class="map-dot market t2"></a>
-                        <a href="#t3" class="map-dot market t3"></a>
+                        <button class="map-dot market t1" data-popup="t1"
+                            aria-label="Market Tavern The Gilded Hearth"></button>
+                        <button class="map-dot market t2" data-popup="t2"
+                            aria-label="Market Tavern The Stonevault Exchange"></button>
+                        <button class="map-dot market t3" data-popup="t3"
+                            aria-label="Market Tavern The Ledger’s Rest"></button>
 
                         <!-- Coastal Taverns -->
-                        <a href="#t4" class="map-dot coastal t4"></a>
-                        <a href="#t5" class="map-dot coastal t5"></a>
-                        <a href="#t6" class="map-dot coastal t6"></a>
+                        <button class="map-dot coastal t4" data-popup="t4"
+                            aria-label="Coastal Tavern The Moonreach Hollow"></button>
+                        <button class="map-dot coastal t5" data-popup="t5"
+                            aria-label="Coastal Tavern The Blackwater Hold"></button>
+                        <button class="map-dot coastal t6" data-popup="t6"
+                            aria-label="Coastal Tavern The Saltwind Rest"></button>
 
-                        <!-- Wilderness -->
-                        <a href="#t7" class="map-dot wilderness t7"></a>
-                        <a href="#t8" class="map-dot wilderness t8"></a>
-                        <a href="#t9" class="map-dot wilderness t9"></a>
+                        <!-- Wilderness Taverns -->
+                        <button class="map-dot wilderness t7" data-popup="t7"
+                            aria-label="Wilderness Tavern The Deepwood Watch"></button>
+                        <button class="map-dot wilderness t8" data-popup="t8"
+                            aria-label="Wilderness Tavern The Stonewake Refuge"></button>
+                        <button class="map-dot wilderness t9" data-popup="t9"
+                            aria-label="Wilderness Tavern The Mossbound Hearth"></button>
 
-                        <!-- Wayhouses -->
-                        <a href="#t10" class="map-dot wayhouse t10"></a>
-                        <a href="#t11" class="map-dot wayhouse t11"></a>
-                        <a href="#t12" class="map-dot wayhouse t12"></a>
+                        <!-- Remote Wayhouses -->
+                        <button class="map-dot wayhouse t10" data-popup="t10"
+                            aria-label="Wayhouse The Crossbar Wayhouse"></button>
+                        <button class="map-dot wayhouse t11" data-popup="t11"
+                            aria-label="Wayhouse The Crownward Wayhouse"></button>
+                        <button class="map-dot wayhouse t12" data-popup="t12"
+                            aria-label="Wayhouse The First Lantern"></button>
 
                         <!-- Edge of the World -->
-                        <a href="#t13" class="map-dot edge t13"></a>
-
+                        <button class="map-dot edge t13" data-popup="t13"
+                            aria-label="Edge of the World Tavern The Last Light"></button>
                         <!-- TAVERN INFO PANELS -->
 
                         <div id="t1" class="tavern-popup">
@@ -507,7 +519,7 @@
 
                             <h3 class="tavern-name">The First Lantern</h3>
 
-                            <img src="assets/images/remote-wayhouse-tavern-locations.jpg"
+                            <img src="assets/images/timeline-image-two.jpg"
                                 alt="A solitary stone wayhouse beside a forked road at dusk, lantern light glowing from small windows and marking the first refuge built along the southern interior routes of the Marchlands"
                                 class="tavern-popup-image">
 
@@ -557,7 +569,7 @@
                             </p>
 
                         </div>
-                        
+
 
                     </div>
 
@@ -651,54 +663,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 
-    <script>
-
-
-        /* ========== OPEN POPUP WITHOUT SCROLL JUMP ========== */
-        document.querySelectorAll('.map-dot').forEach(dot => {
-            dot.addEventListener('click', function (event) {
-                event.preventDefault();
-
-                const scrollY = window.scrollY;
-                window.location.hash = this.getAttribute('href');
-                window.scrollTo(0, scrollY);
-            });
-        });
-
-        /* ========== CLOSE POPUP ON OUTSIDE CLICK ========== */
-        document.addEventListener('click', function (event) {
-            const scrollY1 = window.scrollY;
-            if (
-                window.location.hash &&
-                !event.target.closest('.map-dot') &&
-                !event.target.closest('.tavern-popup')
-            ) {
-                window.location.hash = '';
-                window.scrollTo(0, scrollY1);
-            }
-        });
-
-        /* ========== CLOSE POPUP ON SCROLL ========== */
-        window.addEventListener('scroll', function () {
-            const scrollY2 = window.scrollY;
-            if (window.location.hash !== '') {
-                window.location.hash = '';
-            }
-            window.scrollTo(0, scrollY2);
-        });
-
-
-
-
-        window.addEventListener('load', function () {
-            history.replaceState(null, '', window.location.pathname);
-            window.scrollTo(0, 0);
-        });
-        ``
-
-
-    </script>
+    
 
 
 </body>
