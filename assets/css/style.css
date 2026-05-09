@@ -1443,16 +1443,11 @@ nav.site-navbar .nav-link:focus {
    LOCATIONS PAGE – MAP & INTERACTION STYLES
    ====================================================== */
 
-/* Global reset layer */
-.map-reset {
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-}
 
 /* Map frame */
 .map-wrapper {
     position: relative;
+    overflow: hidden;
     max-width: 950px;
     margin: 0 auto;
     background-color: var(--bg-section);
@@ -1949,8 +1944,6 @@ nav.site-navbar .nav-link:focus {
     transition-delay: 0.3s;
 }
 
-
-
 .menu main {
     background-color: var(--bg-section);
 }
@@ -1959,3 +1952,8 @@ nav.site-navbar .nav-link:focus {
     width: 90%;
     margin-bottom: 2rem
 }
+
+body, html {
+    overflow-x: hidden;
+}
+
