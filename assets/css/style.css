@@ -1913,3 +1913,8 @@ body {
 .menu {
     overflow-x: auto;
 }
+
+.gallery-item:hover {
+    transform: scale(1.04);
+    transition: transform 0.6s ease;
+}
