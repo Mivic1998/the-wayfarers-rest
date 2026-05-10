@@ -2,334 +2,167 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Menu & Provisions | The Wayfarer’s Rest</title>
+    <title>Menu &amp; Provisions | The Wayfarer’s Rest</title>
 
-  <meta name="description" content="Explore the Wayfarer’s Rest menu, featuring hearty tavern meals, seasonal dishes and traditional drinks.">
-  <meta name="keywords" content="tavern menu, medieval food, fantasy food and drink, inn menu, fictional tavern">
+    <meta name="description"
+        content="Explore the Wayfarer’s Rest menu, featuring hearty tavern meals, seasonal dishes and traditional drinks.">
+    <meta name="keywords"
+        content="tavern menu, medieval food, fantasy food and drink, inn menu, fictional tavern">
 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-    crossorigin="anonymous"
-  >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
 
-  <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100 menu">
+
+    <!-- HEADER -->
     <header>
         <nav class="site-navbar navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <picture>
-                        <!--Anything above 576px (mobile portrait) displays full logo-->
                         <source media="(min-width: 576px)" srcset="assets/images/logo-wayfarers-rest-parchment.png">
-                        <img src="assets/images/icon-lantern-parchment.png" alt="The Wayfarer’s Rest logo">
+                        <img src="assets/images/icon-lantern-parchment.png"
+                            alt="The Wayfarer’s Rest logo">
                     </picture>
                 </a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="true" href="menu.html">Menu</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="locations.html">Locations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- MAIN -->
     <main>
-        
-        
+
         <!-- PAGE HEADER -->
         <section class="page-header locations-header pt-5 tavern-types pb-2">
             <div class="container text-center">
-                <h1>Menu & Provisions</h1>
+                <h1>Menu &amp; Provisions</h1>
                 <p>
                     Explore tavern favourites, seasonal delights and beloved drinks prepared for adventurers who
-                            crave good food and welcoming company.
+                    crave good food and welcoming company.
                 </p>
             </div>
         </section>
 
-    <div class="menu-scroll-scope">
-        <section class="menu-anchors-bar">
-            <nav class="menu-anchors">
-                <a class="menu-anchor" href="#house-specials">House Specials</a>
-                <a class="menu-anchor" href="#starters">Starters</a>
-                <a class="menu-anchor" href="#mains">Mains</a>
-                <a class="menu-anchor" href="#sides">Sides</a>
-                <a class="menu-anchor" href="#desserts">Desserts</a>
-                <a class="menu-anchor" href="#drinks">Drinks</a>
-            </nav>
-        </section>
-        <div class="menu-section-icon">
-            <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
-        </div>
-        <section class="menu-category" id="house-specials">
-            <div class="container">
-                <h2 class="section-title text-center">House Specials</h2>
-                <div class="menu-category__hero">
-                    <img src="assets/images/house-specials-menu.jpg" alt="Roasted joint of meat served on a wooden board with root vegetables, steaming beside a candle in a warmly lit tavern interior.">
-                </div>
-                <div class="menu-items">
-                    <article class="menu-item">
-                        <div>
-                            <h3>The Roadwarden’s Roast</h3>
-                            <p>A generous cut of slow‑roasted beef glazed with garlic and herbs, served with
-                                hearth‑roasted potatoes and root vegetables in rich pan jus.</p>
-                        </div>
-                        <span class="menu-item__price">18 crwn.</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>Hearthkeeper's Feast</h3>
-                            <p>Fire‑roasted meats and seasonal vegetables arranged for sharing, cooked low and steady to
-                                sustain travellers bound for long roads.
-                            </p>
-                        </div>
-                        <span class="menu-item__price">17 crwn.</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>The Marchlands Platter</h3>
-                            <p>A rotating selection of tavern favourites drawn from local fare — roast cuts, hand pies,
-                                and vegetables — served as the house sees fit.
-                            </p>
-                        </div>
-                        <span class="menu-item__price">16 crwn.</span>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <div class="menu-section-icon">
-            <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
-        </div>
-        <section class="menu-category pt-2" id="starters">
-            <div class="container">
-                <h2 class="section-title text-center">Starters</h2>
-                <div class="menu-category__hero">
-                    <img src="assets/images/starters-menu.jpg" alt="Selection of rustic tavern starters including fresh bread, small pies, roasted beans, and bowls of simple accompaniments arranged on a wooden platter by warm window light." class="card-image">
-                </div>
-                <div class="menu-items">
-                    <article class="menu-item">
-                        <div>
-                            <h3>Traveller's Board</h3>
-                            <p>Warm bread, hand pies, pickled vegetables, and savoury bites, served for sharing or quiet
-                                arrival.</p>
-                        </div>
-                        <span class="menu-item__price">8 crwn.</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>Hearth Soup of the Day</h3>
-                            <p>A daily broth prepared from available vegetables and bones, served with coarse bread and
-                                butter.</p>
-                        </div>
-                        <span class="menu-item__price">6 crwn.</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>Market Hand Pies</h3>
-                            <p>Two baked pies filled with meat or spiced vegetables, eaten easily with one hand and no
-                                ceremony.
-                            </p>
-                        </div>
-                        <span class="menu-item__price">7 crwn.</span>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <div class="menu-section-icon">
-            <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
-        </div>
-        <section class="menu-category pt-2" id="mains">
-            <div class="container">
-                <h2 class="section-title text-center">Mains</h2>
-                <div class="menu-category__hero">
-                    <img src="assets/images/main-menu-one.jpg" alt="Hearty roast main dish served on a ceramic plate with root vegetables, set on a wooden table beside a candle in a softly lit tavern interior." class="card-image">
-                </div>
-                <div class="menu-items">
-                    <article class="menu-item">
-                        <div>
-                            <h3>Hearth-Roasted Beef</h3>
-                            <p>A thick slice of open‑flame beef, basted with herbs and served alongside potatoes cooked
-                                in rendered fat.</p>
-                        </div>
-                        <span class="menu-item__price">14 crwn.</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>Skillet-Seared Sausages</h3>
-                            <p>House sausages browned over the hearth, served with carrots, onions, and a ladle of
-                                savoury gravy.
-                            </p>
-                        </div>
-                        <span class="menu-item__price">17 crwn.</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>Braised Root Stew</h3>
-                            <p>A slow‑simmered stew of seasonal root vegetables and herbs, thickened with barley and
-                                served steaming hot.
-                            </p>
-                        </div>
-                        <span class="menu-item__price">11 crwn. <em>(V)</em></span>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <div class="menu-section-icon">
-            <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
-        </div>
-        <section class="menu-category pt-2" id="sides">
-            <div class="container">
-                <h2 class="section-title text-center">Sides</h2>
-                <div class="menu-category__hero">
-                    <img src="assets/images/sides-menu-one.jpg" alt="Rustic side dishes of roasted root vegetables and potatoes served on a wooden platter, surrounded by small bowls of sauces and greens beside a candlelit tavern table." class="card-image">
-                </div>
-                <div class="menu-items">
-                    <article class="menu-item">
-                        <div>
-                            <h3>Buttered Greens</h3>
-                            <p>Wilted greens dressed simply with butter and cracked pepper.</p>
-                        </div>
-                        <span class="menu-item__price">3 crwn.</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>Hearthside Potatoes</h3>
-                            <p>Roasted until crisp and finished with herbs and coarse salt.</p>
-                        </div>
-                        <span class="menu-item__price">4 crwn.</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>Glazed Carrots &amp; Roots</h3>
-                            <p>Carrots and seasonal roots cooked in honey and butter until tender.
-                            </p>
-                        </div>
-                        <span class="menu-item__price">4 crwn.</span>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <div class="menu-section-icon">
-            <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
-        </div>
-        <section class="menu-category pt-2" id="desserts">
-            <div class="container">
-                <h2 class="section-title text-center">Desserts</h2>
-                <div class="menu-category__hero">
-                    <img src="assets/images/desserts-menu-two.jpg" alt="Layered honey‑glazed cake topped with berries and edible flowers, set on a wooden table in warm tavern light." class="card-image">
-                </div>
-                <div class="menu-items">
-                    <article class="menu-item">
-                        <div>
-                            <h3>Honeyed Berry Cake</h3>
-                            <p>Golden sponge layered with soft cream, soaked in warm honey and topped with forest
-                                berries.</p>
-                        </div>
-                        <span class="menu-item__price">6 crwn.</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>Spiced Hearth Tart</h3>
-                            <p>A small baked tart filled with spiced fruit and nuts, served warm from the oven.
-                            </p>
-                        </div>
-                        <span class="menu-item__price">5 crwn.</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>Sweet Bread &amp; Cream</h3>
-                            <p>Fresh‑baked bread drizzled with honey and served with lightly whipped cream.
+        <div class="menu-scroll-scope">
 
-                            </p>
-                        </div>
-                        <span class="menu-item__price">4 crwn.</span>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <div class="menu-section-icon">
-            <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
-        </div>
-        <section class="menu-category pt-2" id="drinks">
-            <div class="container">
-                <h2 class="section-title text-center">Drinks</h2>
-                <div class="menu-category__hero">
-                    <img src="assets/images/drinks-menu-four.jpg" alt="Steaming earthenware mugs of ale and wine set on a wooden table beside a candle, with garlic bulbs resting nearby in a dimly lit tavern interior." class="card-image">
-                </div>
-                <div class="menu-items">
-                    <article class="menu-item">
-                        <div>
-                            <h3>Wayfarer's Pour</h3>
-                            <p>House‑brewed ale, mulled wine, or spiced broth, served hot or cold depending on season.
-                            </p>
-                        </div>
-                        <span class="menu-item__price">4 crwn.</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>Marchlands Red</h3>
-                            <p>A deep, warming red wine carried along southern trade routes and traditionally served
-                                with a clove of raw garlic — a Marchlands custom believed to ward illness and steady
-                                travellers before the road ahead.</p>
-                        </div>
-                        <span class="menu-item__price">5 crwn.</span>
-                    </article>
-                    <article class="menu-item">
-                        <div>
-                            <h3>Hearthbrew Ale</h3>
-                            <p>Dark, malty ale brewed for steady drinking by firelight.
-                            </p>
-                        </div>
-                        <span class="menu-item__price">3 crwn.</span>
-                    </article>
-                </div>
-            </div>
-        </div>    
-        </section>
+            <!-- MENU ANCHORS -->
+            <section class="menu-anchors-bar">
+                <nav class="menu-anchors">
+                    <a class="menu-anchor" href="#house-specials">House Specials</a>
+                    <a class="menu-anchor" href="#starters">Starters</a>
+                    <a class="menu-anchor" href="#mains">Mains</a>
+                    <a class="menu-anchor" href="#sides">Sides</a>
+                    <a class="menu-anchor" href="#desserts">Desserts</a>
+                    <a class="menu-anchor" href="#drinks">Drinks</a>
+                </nav>
+            </section>
 
+            <!-- HOUSE SPECIALS -->
+            <section class="menu-category" id="house-specials">
+                <div class="container">
+                    <h2 class="section-title text-center">House Specials</h2>
+                    <div class="menu-category__hero">
+                        <img src="assets/images/house-specials-menu.jpg"
+                            alt="Roasted joint of meat served with root vegetables in a candlelit tavern.">
+                    </div>
+                    <div class="menu-items">
+                        <article class="menu-item">
+                            <div>
+                                <h3>The Roadwarden’s Roast</h3>
+                                <p>
+                                    A generous cut of slow-roasted beef glazed with garlic and herbs.
+                                </p>
+                            </div>
+                            <span class="menu-item__price">18 crwn.</span>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STARTERS -->
+            <section class="menu-category pt-2" id="starters">
+                <div class="container">
+                    <h2 class="section-title text-center">Starters</h2>
+                </div>
+            </section>
+
+            <!-- MAINS -->
+            <section class="menu-category pt-2" id="mains">
+                <div class="container">
+                    <h2 class="section-title text-center">Mains</h2>
+                </div>
+            </section>
+
+            <!-- SIDES -->
+            <section class="menu-category pt-2" id="sides">
+                <div class="container">
+                    <h2 class="section-title text-center">Sides</h2>
+                </div>
+            </section>
+
+            <!-- DESSERTS -->
+            <section class="menu-category pt-2" id="desserts">
+                <div class="container">
+                    <h2 class="section-title text-center">Desserts</h2>
+                </div>
+            </section>
+
+            <!-- DRINKS -->
+            <section class="menu-category pt-2" id="drinks">
+                <div class="container">
+                    <h2 class="section-title text-center">Drinks</h2>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- NOTICES -->
         <section class="menu-notice text-center">
             <div class="container">
                 <div class="menu-notice__item">
                     <strong>Allergen Info</strong>
-                    <p>Our kitchens handle a wide range of ingredients. While care is taken in preparation, dishes may contain or come into contact with common allergens. Guests with dietary requirements or allergies are encouraged to speak with tavern staff before ordering.
+                    <p>
+                        Dishes may contain or come into contact with common allergens. Please speak to staff.
                     </p>
                 </div>
                 <div class="menu-notice__item">
                     <strong>Seasonality Info</strong>
-                    <p>Menus at the Wayfarer’s Rest reflect the land and the season. Offerings may vary by location across the Marchlands, shaped by local produce, climate, and the conditions of the road.
+                    <p>
+                        Menus reflect the land and season. Offerings may vary by location.
                     </p>
                 </div>
             </div>
         </section>
 
+        <!-- CTA -->
         <section class="menu-cta text-center">
             <div class="container">
                 <h2>Ready to Dine With Us?</h2>
@@ -340,90 +173,20 @@
                 </div>
             </div>
         </section>
+
     </main>
+
+    <!-- FOOTER -->
     <footer class="site-footer mt-5">
-            <div class="container text-center">
+        <div class="container text-center">
+            <p>© 2026 The Wayfarer’s Rest. All rights reserved.</p>
+        </div>
+    </footer>
 
-                <div class="row align-items-start">
-
-                    <!-- LOGO -->
-                    <div class="footer-logo col-12 col-lg-3 mb-4 mb-lg-0">
-                        <a href="index.html">
-                            <picture>
-                                <source media="(min-width: 992px)"
-                                    srcset="assets/images/logo-wayfarers-rest-parchment.png">
-                                <img src="assets/images/logo-wayfarers-rest-footer-stacked.png"
-                                    alt="The Wayfarer’s Rest logo">
-                            </picture>
-                        </a>
-                    </div>
-
-                    <!-- LINKS -->
-                    <div class="col-12 col-lg-9">
-                        <div class="row justify-content-center">
-
-                            <div class="col-12 col-md-4 col-lg-4">
-                                <h2 class="h5">The Tavern</h2>
-                                <ul>
-                                    <li><a href="index.html">About the Tavern</a></li>
-                                    <li><a href="faq.html">The Wayfarer's Code</a></li>
-                                    <li><a href="about.html">Our Story</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-12 col-md-4 col-lg-4">
-                                <h2 class="h5">The Road</h2>
-                                <ul>
-                                    <li><a href="locations.html">Taverns & Locations</a></li>
-                                    <li><a href="menu.html">Menu & Provisions</a></li>
-                                    <li><a href="about.html#other-services">Other Services</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-12 col-md-4 col-lg-4">
-                                <h2 class="h5">House Matters</h2>
-                                <ul>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                    <li><a href="faq.html#common-questions">Common Questions</a></li>
-                                    <li><a href="under-construction.html">Careers</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <p class="footer-hours">
-                    Opening times vary by location –
-                    <a href="locations.html">see individual taverns for details</a>.
-                </p>
-
-                <div class="footer-social d-flex justify-content-center gap-3">
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                        aria-label="Open Facebook in A New Tab">
-                        <img src="assets/images/icons/facebook.svg" alt="Facebook icon">
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                        aria-label="Open Twitter/X in A New Tab">
-                        <img src="assets/images/icons/twitter-x.svg" alt="Twitter/X icon">
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                        aria-label="Open Instagram in A New Tab">
-                        <img src="assets/images/icons/instagram.svg" alt="Instagram icon">
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="footer-copy">
-                © 2026 The Wayfarer’s Rest. All rights reserved.
-            </div>
-        </footer>
-    <!--Bootstrap 5 JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-        <script src="assets/js/script.js"></script>
-</body>
+    <script src="assets/js/script.js"></script>
 
+</body>
 </html>

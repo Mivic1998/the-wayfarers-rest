@@ -40,7 +40,7 @@ CSS validation was conducted using the **W3C CSS Validation Service** to ensure 
 
 HTML validation was carried out using the **W3C Nu HTML Checker**. Every HTML page in the project was individually tested and returned no errors or warnings.
 
-As all pages produced identical clean results, one representative validation result is shown below to avoid unnecessary repetition.
+As all pages produced identical clean results, one representative validation result (the home page) is shown below to avoid unnecessary repetition.
 
 **HTML Validation Result:**
 - *No errors or warnings*
