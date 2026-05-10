@@ -1910,5 +1910,3 @@ body {
 .menu {
     overflow-x: auto;
 }
-
-body::-webkit-scrollbar { display: none; }

@@ -92,7 +92,7 @@ The following user stories were used to guide the design and development of The 
 
 ## Design
 
-The design of The Wayfarer’s Rest was approached with both atmosphere and usability in mind. Visual choices were guided by the medieval tavern theme while ensuring accessibility, readability, and consistency across all pages. Colour, typography, imagery, and layout decisions work together to create an immersive experience without compromising clarity or responsive behaviour on different devices.
+The design of The Wayfarer’s Rest was approached with both atmosphere and usability in mind. Visual choices were guided by the medieval tavern theme while ensuring accessibility, readability, and consistency across all pages. Colour, typography, imagery, and layout decisions work together to create an immersive experience without compromising clarity or responsive behaviour on different devices. The design deliberately avoids a minimalistic, corporate aesthetic in favour of a more expansive, atmospheric experience that encourages exploration and immersion rather than efficiency alone.
 
 ### Colour Palette
 
