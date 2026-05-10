@@ -147,7 +147,7 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 
 | Screen Size | Wireframe |
 |------------|-----------|
-| Desktop | *(Insert Home desktop wireframe image here)* |
+| Desktop | ![Home Page – Desktop View](assets/images/readme/home-wf-d.png) |
 | Tablet | *(Insert Home tablet wireframe image here)* |
 | Mobile | *(Insert Home mobile wireframe image here)* |
 
