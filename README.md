@@ -418,9 +418,7 @@ The under consturction page communicates unavailable content while maintaining b
 ---
 
 ## Testing
-- Manual testing across major browsers  
-- Responsive testing across breakpoints  
-- Navigation and form interaction testing  
+Full testing and validation results can be found in the [TESTING.md](TESTING.md) file.
 
 ---
 
