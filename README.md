@@ -148,8 +148,8 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 | Screen Size | Wireframe |
 |------------|-----------|
 | Desktop | ![Home Page – Desktop View](assets/images/readme/home-wf-d.png) |
-| Tablet | *(Insert Home tablet wireframe image here)* |
-| Mobile | *(Insert Home mobile wireframe image here)* |
+| Tablet | ![Home Page – Tablet View](assets/images/readme/home-wf-t.png) |
+| Mobile | ![Home Page – Mobile View](assets/images/readme/home-wf-m.png) |
 
 ---
 
@@ -157,9 +157,9 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 
 | Screen Size | Wireframe |
 |------------|-----------|
-| Desktop | *(Insert About desktop wireframe image here)* |
-| Tablet | *(Insert About tablet wireframe image here)* |
-| Mobile | *(Insert About mobile wireframe image here)* |
+| Desktop | ![About Page – Desktop View](assets/images/readme/about-wf-d.png) |
+| Tablet | ![About Page – Tablet View](assets/images/readme/about-wf-t.png) |
+| Mobile | ![About Page – Mobile View](assets/images/readme/about-wf-m.png) |
 
 ---
 
@@ -167,9 +167,9 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 
 | Screen Size | Wireframe |
 |------------|-----------|
-| Desktop | *(Insert Menu desktop wireframe image here)* |
-| Tablet | *(Insert Menu tablet wireframe image here)* |
-| Mobile | *(Insert Menu mobile wireframe image here)* |
+| Desktop | ![Menu Page – Desktop View](assets/images/readme/menu-wf-d.png) |
+| Tablet | ![Menu Page – Tablet View](assets/images/readme/menu-wf-t.png) |
+| Mobile | ![Menu Page – Mobile View](assets/images/readme/menu-wf-m.png) |
 
 ---
 
@@ -177,9 +177,9 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 
 | Screen Size | Wireframe |
 |------------|-----------|
-| Desktop | *(Insert Locations desktop wireframe image here)* |
-| Tablet | *(Insert Locations tablet wireframe image here)* |
-| Mobile | *(Insert Locations mobile wireframe image here)* |
+| Desktop | ![Locations Page – Desktop View](assets/images/readme/locations-wf-d.png) |
+| Tablet | ![Locations Page – Tablet View](assets/images/readme/locations-wf-t.png) |
+| Mobile | ![Locations Page – Mobile View](assets/images/readme/locations-wf-m.png) |
 
 ---
 
@@ -187,9 +187,9 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 
 | Screen Size | Wireframe |
 |------------|-----------|
-| Desktop | *(Insert Gallery desktop wireframe image here)* |
-| Tablet | *(Insert Gallery tablet wireframe image here)* |
-| Mobile | *(Insert Gallery mobile wireframe image here)* |
+| Desktop | ![Gallery Page – Desktop View](assets/images/readme/gallery-wf-d.png) |
+| Tablet | ![Gallery Page – Tablet View](assets/images/readme/gallery-wf-t.png) |
+| Mobile | ![Gallery Page – Mobile View](assets/images/readme/gallery-wf-m.png) |
 
 ---
 
@@ -197,9 +197,9 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 
 | Screen Size | Wireframe |
 |------------|-----------|
-| Desktop | *(Insert FAQ desktop wireframe image here)* |
-| Tablet | *(Insert FAQ tablet wireframe image here)* |
-| Mobile | *(Insert FAQ mobile wireframe image here)* |
+| Desktop | ![FAQ Page – Desktop View](assets/images/readme/faq-wf-d.png) |
+| Tablet | ![FAQ Page – Tablet View](assets/images/readme/faq-wf-t.png) |
+| Mobile | ![FAQ Page – Mobile View](assets/images/readme/faq-wf-m.png) |
 
 ---
 
@@ -207,9 +207,9 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 
 | Screen Size | Wireframe |
 |------------|-----------|
-| Desktop | *(Insert Contact desktop wireframe image here)* |
-| Tablet | *(Insert Contact tablet wireframe image here)* |
-| Mobile | *(Insert Contact mobile wireframe image here)* |
+| Desktop | ![Contact Page – Desktop View](assets/images/readme/contact-wf-d.png) |
+| Tablet | ![Contact Page – Tablet View](assets/images/readme/contact-wf-t.png) |
+| Mobile | ![Contact Page – Mobile View](assets/images/readme/contact-wf-m.png) |
 
 ---
 
