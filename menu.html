@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Menu &amp; Provisions | The Wayfarer’s Rest</title>
+    <title>Menu & Provisions | The Wayfarer’s Rest</title>
 
     <meta name="description"
         content="Explore the Wayfarer’s Rest menu, featuring hearty tavern meals, seasonal dishes and traditional drinks.">
-    <meta name="keywords"
-        content="tavern menu, medieval food, fantasy food and drink, inn menu, fictional tavern">
+    <meta name="keywords" content="tavern menu, medieval food, fantasy food and drink, inn menu, fictional tavern">
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-        crossorigin="anonymous">
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -28,16 +28,13 @@
                 <a class="navbar-brand" href="index.html">
                     <picture>
                         <source media="(min-width: 576px)" srcset="assets/images/logo-wayfarers-rest-parchment.png">
-                        <img src="assets/images/icon-lantern-parchment.png"
-                            alt="The Wayfarer’s Rest logo">
+                        <img src="assets/images/icon-lantern-parchment.png" alt="The Wayfarer’s Rest logo">
                     </picture>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -73,8 +70,8 @@
 
         <div class="menu-scroll-scope">
 
-            <!-- MENU ANCHORS -->
-            <section class="menu-anchors-bar">
+            <!-- ANCHOR NAVIGATION -->
+            <div class="menu-anchors-bar">
                 <nav class="menu-anchors">
                     <a class="menu-anchor" href="#house-specials">House Specials</a>
                     <a class="menu-anchor" href="#starters">Starters</a>
@@ -83,76 +80,270 @@
                     <a class="menu-anchor" href="#desserts">Desserts</a>
                     <a class="menu-anchor" href="#drinks">Drinks</a>
                 </nav>
-            </section>
+            </div>
 
             <!-- HOUSE SPECIALS -->
+            <div class="menu-section-icon">
+                <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
+            </div>
+
             <section class="menu-category" id="house-specials">
                 <div class="container">
                     <h2 class="section-title text-center">House Specials</h2>
                     <div class="menu-category__hero">
                         <img src="assets/images/house-specials-menu.jpg"
-                            alt="Roasted joint of meat served with root vegetables in a candlelit tavern.">
+                            alt="Roasted joint of meat served on a wooden board with root vegetables in candlelight">
                     </div>
+
                     <div class="menu-items">
                         <article class="menu-item">
                             <div>
                                 <h3>The Roadwarden’s Roast</h3>
-                                <p>
-                                    A generous cut of slow-roasted beef glazed with garlic and herbs.
-                                </p>
+                                <p>A generous cut of slow‑roasted beef glazed with garlic and herbs,
+                                    served with hearth‑roasted potatoes and root vegetables.</p>
                             </div>
                             <span class="menu-item__price">18 crwn.</span>
+                        </article>
+
+                        <article class="menu-item">
+                            <div>
+                                <h3>Hearthkeeper's Feast</h3>
+                                <p>Fire‑roasted meats and seasonal vegetables arranged for sharing, cooked low and steady to sustain travellers bound for long roads.</p>
+                            </div>
+                            <span class="menu-item__price">17 crwn.</span>
+                        </article>
+
+                        <article class="menu-item">
+                            <div>
+                                <h3>The Marchlands Platter</h3>
+                                <p>A rotating selection of tavern favourites drawn from local fare — roast cuts, hand pies, and vegetables — served as the house sees fit.</p>
+                            </div>
+                            <span class="menu-item__price">16 crwn.</span>
                         </article>
                     </div>
                 </div>
             </section>
 
             <!-- STARTERS -->
+            <div class="menu-section-icon">
+                <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
+            </div>
+
             <section class="menu-category pt-2" id="starters">
                 <div class="container">
                     <h2 class="section-title text-center">Starters</h2>
+                    <div class="menu-category__hero">
+                        <img src="assets/images/starters-menu.jpg"
+                            alt="Selection of rustic tavern starters on a wooden platter">
+                    </div>
+
+                    <div class="menu-items">
+                        <article class="menu-item">
+                            <div>
+                                <h3>Traveller's Board</h3>
+                                <p>Warm bread, hand pies, pickled vegetables, and savoury bites.</p>
+                            </div>
+                            <span class="menu-item__price">8 crwn.</span>
+                        </article>
+
+                        <article class="menu-item">
+                            <div>
+                                <h3>Hearth Soup of the Day</h3>
+                                <p>A daily broth prepared from available vegetables and bones.</p>
+                            </div>
+                            <span class="menu-item__price">6 crwn.</span>
+                        </article>
+
+                        <article class="menu-item">
+                            <div>
+                                <h3>Market Hand Pies</h3>
+                                <p>Two baked pies filled with meat or spiced vegetables.</p>
+                            </div>
+                            <span class="menu-item__price">7 crwn.</span>
+                        </article>
+                    </div>
                 </div>
             </section>
 
             <!-- MAINS -->
+            <div class="menu-section-icon">
+                <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
+            </div>
+
             <section class="menu-category pt-2" id="mains">
                 <div class="container">
                     <h2 class="section-title text-center">Mains</h2>
+                    <div class="menu-category__hero">
+                        <img src="assets/images/main-menu-one.jpg"
+                            alt="Hearty roast main dish with vegetables in a tavern setting">
+                    </div>
+
+                    <div class="menu-items">
+                        <article class="menu-item">
+                            <div>
+                                <h3>Hearth-Roasted Beef</h3>
+                                <p>A thick slice of open‑flame beef, basted with herbs and served alongside potatoes cooked in rendered fat.</p>
+                            </div>
+                            <span class="menu-item__price">14 crwn.</span>
+                        </article>
+
+                        <article class="menu-item">
+                            <div>
+                                <h3>Skillet-Seared Sausages</h3>
+                                <p>House sausages browned over the hearth, served with carrots, onions, and a ladle of savoury gravy.</p>
+                            </div>
+                            <span class="menu-item__price">17 crwn.</span>
+                        </article>
+
+                        <article class="menu-item">
+                            <div>
+                                <h3>Braised Root Stew</h3>
+                                <p>A slow‑simmered stew of seasonal root vegetables and herbs, thickened with barley and served steaming hot.</p>
+                            </div>
+                            <span class="menu-item__price">11 crwn. <em>(V)</em></span>
+                        </article>
+                    </div>
                 </div>
             </section>
 
             <!-- SIDES -->
+            <div class="menu-section-icon">
+                <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
+            </div>
+
             <section class="menu-category pt-2" id="sides">
                 <div class="container">
                     <h2 class="section-title text-center">Sides</h2>
+                    <div class="menu-category__hero">
+                        <img src="assets/images/sides-menu-one.jpg"
+                            alt="Rustic side dishes of roasted root vegetables and potatoes served on a wooden platter beside a candlelit tavern table."
+                            class="card-image">
+                    </div>
+                    <div class="menu-items">
+                        <article class="menu-item">
+                            <div>
+                                <h3>Buttered Greens</h3>
+                                <p>Wilted greens dressed simply with butter and cracked pepper.</p>
+                            </div>
+                            <span class="menu-item__price">3 crwn.</span>
+                        </article>
+
+                        <article class="menu-item">
+                            <div>
+                                <h3>Hearthside Potatoes</h3>
+                                <p>Roasted until crisp and finished with herbs and coarse salt.</p>
+                            </div>
+                            <span class="menu-item__price">4 crwn.</span>
+                        </article>
+
+                        <article class="menu-item">
+                            <div>
+                                <h3>Glazed Carrots & Roots</h3>
+                                <p>Carrots and seasonal roots cooked in honey and butter until tender.</p>
+                            </div>
+                            <span class="menu-item__price">4 crwn.</span>
+                        </article>
+                    </div>
                 </div>
             </section>
 
             <!-- DESSERTS -->
+            <div class="menu-section-icon">
+                <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
+            </div>
+
             <section class="menu-category pt-2" id="desserts">
                 <div class="container">
                     <h2 class="section-title text-center">Desserts</h2>
+                    <div class="menu-category__hero">
+                        <img src="assets/images/desserts-menu-two.jpg"
+                            alt="Layered honey‑glazed cake topped with berries and edible flowers, set on a wooden table in warm tavern light."
+                            class="card-image">
+                    </div>
+                    <div class="menu-items">
+                        <article class="menu-item">
+                            <div>
+                                <h3>Honeyed Berry Cake</h3>
+                                <p>Golden sponge layered with soft cream, soaked in warm honey and topped with forest berries.</p>
+                            </div>
+                            <span class="menu-item__price">6 crwn.</span>
+                        </article>
+
+                        <article class="menu-item">
+                            <div>
+                                <h3>Spiced Hearth Tart</h3>
+                                <p>A small baked tart filled with spiced fruit and nuts, served warm from the oven.</p>
+                            </div>
+                            <span class="menu-item__price">5 crwn.</span>
+                        </article>
+
+                        <article class="menu-item">
+                            <div>
+                                <h3>Sweet Bread & Cream</h3>
+                                <p>Fresh‑baked sweet bread drizzled with honey and served with lightly whipped cream.</p>
+                            </div>
+                            <span class="menu-item__price">4 crwn.</span>
+                        </article>
+                    </div>
                 </div>
             </section>
 
             <!-- DRINKS -->
+            <div class="menu-section-icon">
+                <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
+            </div>
+
             <section class="menu-category pt-2" id="drinks">
                 <div class="container">
                     <h2 class="section-title text-center">Drinks</h2>
+
+                    <div class="menu-category__hero">
+                        <img src="assets/images/drinks-menu-four.jpg"
+                            alt="Steaming earthenware mugs of ale and wine set on a wooden tavern table beside a candle, with garlic bulbs nearby in warm lantern light."
+                            class="card-image">
+                    </div>
+
+                    <div class="menu-items">
+                        <article class="menu-item">
+                            <div>
+                                <h3>Wayfarer's Pour</h3>
+                                <p>House‑brewed ale, mulled wine, or spiced broth, served hot or cold depending on season.</p>
+                            </div>
+                            <span class="menu-item__price">4 crwn.</span>
+                        </article>
+
+                        <article class="menu-item">
+                            <div>
+                                <h3>Marchlands Red</h3>
+                                <p>A deep, warming red wine carried along southern trade routes and traditionally served with a clove of raw garlic — a Marchlands custom believed to ward illness and steady travellers before the road ahead.</p>
+                            </div>
+                            <span class="menu-item__price">5 crwn.</span>
+                        </article>
+
+                        <article class="menu-item">
+                            <div>
+                                <h3>Hearthbrew Ale</h3>
+                                <p>Dark, malty ale brewed for steady drinking by firelight.</p>
+                            </div>
+                            <span class="menu-item__price">3 crwn.</span>
+                        </article>
+                    </div>
                 </div>
             </section>
 
         </div>
 
         <!-- NOTICES -->
-        <section class="menu-notice text-center">
+        <div class="menu-notice text-center">
             <div class="container">
                 <div class="menu-notice__item">
                     <strong>Allergen Info</strong>
                     <p>
-                        Dishes may contain or come into contact with common allergens. Please speak to staff.
+                        Our kitchens handle a wide range of ingredients. Guests with allergies should speak
+                        with tavern staff before ordering.
                     </p>
                 </div>
+
                 <div class="menu-notice__item">
                     <strong>Seasonality Info</strong>
                     <p>
@@ -160,7 +351,7 @@
                     </p>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- CTA -->
         <section class="menu-cta text-center">
@@ -177,16 +368,19 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="site-footer mt-5">
+    <footer class="site-footer">
         <div class="container text-center">
             <p>© 2026 The Wayfarer’s Rest. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
     <script src="assets/js/script.js"></script>
 
 </body>
+
 </html>

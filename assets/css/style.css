@@ -578,10 +578,13 @@ nav.site-navbar .nav-link:focus {
     white-space: nowrap;
 }
 
+
 .menu-notice {
     background-color: var(--bg-page);
     padding-top: 3rem;
+    padding-bottom: 3rem;
 }
+
 
 .menu-notice__item {
     background: transparent;
