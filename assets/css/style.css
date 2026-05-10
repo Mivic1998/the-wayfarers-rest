@@ -1567,7 +1567,7 @@ nav.site-navbar .nav-link:focus {
         transform: translateX(-50%);
     }
     .tavern-popup p {
-        font-size: 0.7rem
+        font-size: 0.6rem
     }
 }
 
@@ -1813,6 +1813,8 @@ nav.site-navbar .nav-link:focus {
 }
 
 
+
+
 .menu main {
     background-color: var(--bg-section);
 }
@@ -1849,3 +1851,6 @@ body::-webkit-scrollbar { display: none; }
 .menu-scroll-scope {
     position: relative;
 }
+
+
+
