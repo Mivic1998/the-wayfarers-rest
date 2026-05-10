@@ -1,81 +1,90 @@
 # The Wayfarer’s Rest
 
-**Food, Ale and Shelter Across the Realm**
+The Wayfarer’s Rest is a fictional medieval‑themed tavern website created as part of the Code Institute HTML, CSS, and JavaScript curriculum. The project focuses on building a visually immersive, accessible, and fully responsive multi‑page site using front‑end technologies only.
 
-A fan‑made, fictional website for a medieval tavern chain operating across a bright‑fantasy realm.  
-Created as **Milestone Project 1** for the **Level 5 Web Application Development Diploma** (HTML & CSS).
-
-Live Site: *(add GitHub Pages URL here)*
+The site combines thematic world‑building with modern web standards, ensuring that atmosphere does not compromise usability, readability, or navigation across different devices.
 
 ---
 
-## Contents
-
-- User Experience (UX)
-  - #project-goals
-  - User Goals
-  - #business-goals
-  - User Stories
-- Design
-  - #colour-palette
-  - #typography
-  - Imagery
-  - Wireframes
-- #features
-  - All Pages
-  - Home Page
-  - #about-page
-  - Menu Page
-  - Gallery Page
-  - #locations-page
-  - #faq--tavern-code-page
-- Accessibility
-- #feedback
-- #testing
-- #credits
-- Technologies and Tools Used
-- #deployment
+## Table of Contents
+- [User Experience (UX)](#user-experience-ux)
+- [Design](#design)
+  - [Colour Palette](#colour-palette)
+  - [Typography](#typography)
+  - [Imagery](#imagery)
+  - [Wireframes](#wireframes)
+- [Features](#features)
+  - [Header & Navigation](#header--navigation)
+  - [Footer](#footer)
+  - [Home Page](#home-page)
+  - [About Page](#about-page)
+  - [Menu Page](#menu-page)
+  - [Locations Page](#locations-page)
+  - [Gallery Page](#gallery-page)
+  - [FAQ Page](#faq-page)
+  - [Contact Page](#contact-page)
+  - [Feedback Page](#feedback-page)
+  - [Under Construction Page](#under-construction-page)
+- [Technologies Used](#technologies-used)
+- [Accessibility](#accessibility)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
 
 ---
 
 ## User Experience (UX)
 
-### Project Goals
+The user experience design for The Wayfarer’s Rest focuses on clarity, immersion, and consistency. From first interaction, users should understand the purpose of the site, feel drawn into its setting, and be able to navigate comfortably regardless of device. User stories were developed to guide layout decisions, content hierarchy, and feature inclusion across all pages.
 
-The purpose of this project is to provide visitors with an immersive and easy‑to‑navigate introduction to **The Wayfarer’s Rest**, a fictional medieval tavern chain operating across a bright‑fantasy realm. The website allows users to explore what the taverns offer, where they can be found, and what kind of experience travellers can expect when visiting one.
-
----
-
-### User Goals
-
-The main users of the site can be grouped into the following categories:
-
-- **Travellers and visitors** seeking information about taverns, atmosphere, and locations  
-- **Fantasy enthusiasts** interested in world‑building and narrative design  
-- **Casual users** looking for a visually engaging and accessible experience  
-
-Users may visit once to explore the site, or return to browse images, locations, and menu offerings.
-
----
-
-### Business Goals
-
-Although fictional, the business goals of the Wayfarer’s Rest website are to:
-
-- Establish a recognisable and consistent tavern identity  
-- Communicate safety, neutrality, and hospitality  
-- Encourage exploration of tavern locations across the realm  
-- Provide an accessible and enjoyable experience on all devices  
-
----
+### Site Goals
+- Present a cohesive and immersive fantasy tavern brand  
+- Provide clear navigation and structured information  
+- Ensure full responsiveness across desktop, tablet, and mobile devices  
+- Maintain accessibility and readability throughout the site  
 
 ### User Stories
 
-| User Type | User Story | Acceptance Criteria | Status |
-|----------|-----------|---------------------|--------|
-| | | | |
-| | | | |
-| | | | |
+#### First‑Time Visitors
+- As a first‑time visitor, I want to quickly understand what The Wayfarer’s Rest is so that I can determine whether the site is relevant and engaging.
+- As a first‑time visitor, I want a visually immersive introduction so that the medieval tavern theme is established immediately.
+- As a first‑time visitor, I want clear and intuitive navigation so that I can explore different sections of the site without confusion.
+
+#### Returning Visitors
+- As a returning visitor, I want consistent navigation and page layout so that I can move through the site efficiently.
+- As a returning visitor, I want familiar structure and styling so that I can quickly locate information without relearning the interface.
+
+#### Users Exploring the Tavern Concept
+- As a user, I want to read about the tavern’s story and background so that I can understand the world and lore surrounding The Wayfarer’s Rest.
+- As a user, I want the site’s colours, typography, and imagery to reinforce the medieval theme so that the experience feels cohesive and intentional.
+
+#### Users Viewing Food and Drink Information
+- As a user, I want to browse the tavern’s menu so that I can see what food and drink are available.
+- As a user, I want menu sections to be clearly grouped so that I can scan items efficiently.
+- As a user with dietary concerns, I want allergen and seasonality information so that I can make informed choices.
+
+#### Users Exploring Locations
+- As a user, I want to explore different tavern locations so that I can see how the Wayfarer’s Rest exists across the realm.
+- As a user, I want the locations map to be interactive so that selection feels engaging rather than static.
+- As a user on a mobile device, I want location pop‑ups to remain visible and readable so that information is not cut off.
+
+#### Users Viewing Visual Content
+- As a user, I want to browse a gallery of images so that I can visually explore the tavern environment.
+- As a user, I want images to adapt to my screen size so that they remain clear and unobstructed.
+
+#### Users Seeking Help or Answers
+- As a user, I want to view frequently asked questions so that I can quickly find answers without needing to contact the tavern.
+- As a user, I want FAQ content to be expandable so that the page remains uncluttered.
+
+#### Users Making Contact
+- As a user, I want to send an enquiry using a simple contact form so that I can communicate easily.
+- As a user, I want clear confirmation after submitting a message so that I know it was successful.
+- As a user, I want clear navigation options after submission so that I can continue browsing.
+
+#### Users on Different Devices
+- As a user, I want the site to adapt smoothly to desktop, tablet, and mobile screen sizes so that my experience remains consistent.
+- As a mobile user, I want navigation and buttons to be touch‑friendly so that the site is comfortable to use.
+- As a user sensitive to motion, I want animations to respect reduced‑motion preferences so that the site remains comfortable to view.
 
 ---
 
@@ -83,190 +92,253 @@ Although fictional, the business goals of the Wayfarer’s Rest website are to:
 
 ### Colour Palette
 
-The colour palette is inspired by heritage pubs and parchment textures. Muted earth tones and warm accents are used to convey tradition and comfort, while maintaining sufficient contrast for accessibility.
+<!-- Insert Coolors palette screenshot here -->
+
+The colour palette was designed to evoke a warm, grounded medieval atmosphere while maintaining sufficient contrast and readability. Earthy greens form the structural backbone of the site, parchment tones provide balance and lightness, and gold accents are used sparingly to draw attention to key interactive elements.
+
+#### Primary / Structural Colours
+- `#1F2F27` – Deep forest green  
+  Used for the footer and darker background sections to anchor the design.
+- `#2F4F3E` – Primary brand green  
+  Used for the site header and navigation to maintain strong visual identity.
+
+#### Background Colours
+- `#F6F3EA` – Light parchment background  
+  Used for main page backgrounds to ensure readability and reduce eye strain.
+- `#E2D3B3` – Parchment highlight  
+  Used behind logos, cards, and decorative elements for subtle contrast.
+
+#### Accent Colours
+- `#B08D57` – Muted gold  
+  Used for buttons, hover states, and emphasis to draw attention without overpowering the layout.
 
 ---
 
 ### Typography
 
-The site uses typography to balance atmosphere and readability:
+<!-- Insert primary font screenshot here -->
+<!-- Insert secondary font screenshot here -->
 
-- A decorative serif typeface for headings to convey heritage  
-- A clean sans‑serif typeface for body text to ensure clarity across devices  
+Typography was chosen to balance atmosphere with usability.
+
+- **Cormorant Garamond**  
+  Used for headings, section titles, and branding elements. This serif font complements the medieval theme and gives the site a traditional, crafted feel.
+
+- **Inter**  
+  Used for body text, navigation, forms, and interface elements. Its clean, modern design ensures readability across different screen sizes and supports accessibility.
 
 ---
 
 ### Imagery
 
-Imagery focuses on tavern interiors, lantern‑lit spaces, shared tables, food, drink, and surrounding landscapes. Images reinforce the fantasy setting without distracting from content or accessibility.
+Imagery throughout the site focuses on tavern interiors, landscapes, and environments that support the fantasy setting. Images were chosen to enhance immersion without overwhelming content and are framed and styled consistently to maintain visual cohesion across pages.
 
-All images include descriptive `alt` text.
+All images are responsive and include descriptive alt text where appropriate.
 
 ---
 
-### Wireframes
+## Wireframes
 
-Wireframes were created using **Balsamiq** for desktop, tablet, and mobile views:
+Initial wireframes for all pages were created using **Balsamiq** to plan layout, content hierarchy, and responsive behaviour across different screen sizes before development began.
 
-- Home Page  
-- About Page  
-- Menu Page  
-- Gallery Page  
-- Locations Page  
-- FAQ / Tavern Code Page  
+---
 
-*(Wireframe images to be added.)*
+### Home Page Wireframes
+
+| Screen Size | Wireframe |
+|------------|-----------|
+| Desktop | *(Insert Home desktop wireframe image here)* |
+| Tablet | *(Insert Home tablet wireframe image here)* |
+| Mobile | *(Insert Home mobile wireframe image here)* |
+
+---
+
+### About Page Wireframes
+
+| Screen Size | Wireframe |
+|------------|-----------|
+| Desktop | *(Insert About desktop wireframe image here)* |
+| Tablet | *(Insert About tablet wireframe image here)* |
+| Mobile | *(Insert About mobile wireframe image here)* |
+
+---
+
+### Menu Page Wireframes
+
+| Screen Size | Wireframe |
+|------------|-----------|
+| Desktop | *(Insert Menu desktop wireframe image here)* |
+| Tablet | *(Insert Menu tablet wireframe image here)* |
+| Mobile | *(Insert Menu mobile wireframe image here)* |
+
+---
+
+### Locations Page Wireframes
+
+| Screen Size | Wireframe |
+|------------|-----------|
+| Desktop | *(Insert Locations desktop wireframe image here)* |
+| Tablet | *(Insert Locations tablet wireframe image here)* |
+| Mobile | *(Insert Locations mobile wireframe image here)* |
+
+---
+
+### Gallery Page Wireframes
+
+| Screen Size | Wireframe |
+|------------|-----------|
+| Desktop | *(Insert Gallery desktop wireframe image here)* |
+| Tablet | *(Insert Gallery tablet wireframe image here)* |
+| Mobile | *(Insert Gallery mobile wireframe image here)* |
+
+---
+
+### FAQ Page Wireframes
+
+| Screen Size | Wireframe |
+|------------|-----------|
+| Desktop | *(Insert FAQ desktop wireframe image here)* |
+| Tablet | *(Insert FAQ tablet wireframe image here)* |
+| Mobile | *(Insert FAQ mobile wireframe image here)* |
+
+---
+
+### Contact Page Wireframes
+
+| Screen Size | Wireframe |
+|------------|-----------|
+| Desktop | *(Insert Contact desktop wireframe image here)* |
+| Tablet | *(Insert Contact tablet wireframe image here)* |
+| Mobile | *(Insert Contact mobile wireframe image here)* |
 
 ---
 
 ## Features
 
-### All Pages
+The Wayfarer’s Rest is structured as a multi‑page site, with each page serving a clear purpose while sharing consistent navigation, branding, and layout patterns. Features were designed to support the user stories and ensure an intuitive browsing experience.
 
-- Responsive navigation bar with collapsible mobile menu  
-- Consistent footer with navigation links and social icons  
-- Mobile‑first responsive design  
-- Consistent visual and narrative theme  
+### Header & Navigation
 
-<!-- Screenshot: Global navigation and footer -->
+<!-- Header screenshots -->
+
+The header provides consistent navigation across all pages. It adapts responsively from a full horizontal menu on desktop to a hamburger‑based menu on tablet and mobile, ensuring accessibility and ease of use.
+
+---
+
+### Footer
+
+<!-- Footer screenshots -->
+
+The footer contains secondary navigation links, opening‑time information, social media links, and branding. Its layout adapts from a multi‑column structure on desktop to a stacked layout on mobile.
 
 ---
 
 ### Home Page
 
-- Hero section introducing the Wayfarer’s Rest  
-- Welcoming overview aimed at travellers  
-- Clear pathways to other site sections  
+<!-- Home screenshots -->
 
-<!-- Screenshot: Home page -->
+Introduces the tavern, establishes theme, and directs users toward key areas of the site such as locations and services.
 
 ---
 
 ### About Page
 
-- Fictional origin story and background  
-- Core values of neutrality, safety, and shelter  
-- Timeline illustrating the tavern’s history  
+<!-- About screenshots -->
 
-<!-- Screenshot: About page -->
+Provides background lore, timeline information, and an overview of the tavern’s values and services.
 
 ---
 
 ### Menu Page
 
-- Fictional menu categories and house specials  
-- Clear, readable layouts  
-- Supporting imagery  
+<!-- Menu screenshots -->
 
-<!-- Screenshot: Menu page -->
-
----
-
-### Gallery Page
-
-- Grid‑based image layout  
-- Images of interiors, food, and social scenes  
-- Accessible captions and alt text  
-
-<!-- Screenshot: Gallery page -->
+Displays food and drink offerings in structured categories with allergen and seasonality notices and sticky anchor navigation.
 
 ---
 
 ### Locations Page
 
-- Stylised fantasy map  
-- Interactive markers indicating tavern locations  
-- Location key explaining tavern types  
-- Pop‑up panels with detailed descriptions  
+<!-- Locations screenshots -->
 
-<!-- Screenshot: Locations page -->
+Features an interactive map and location descriptions, allowing users to explore different taverns across the realm.
 
 ---
 
-### FAQ / Tavern Code Page
+### Gallery Page
 
-- Explanation of tavern customs and rules  
-- Accordion layout for frequently asked questions  
-- Reinforces safety and neutrality themes  
+<!-- Gallery screenshots -->
 
-<!-- Screenshot: Tavern Code page -->
+Showcases visual imagery of the tavern environment in a responsive grid layout.
 
 ---
 
-## Accessibility
+### FAQ Page
 
-Accessibility considerations include:
+<!-- FAQ screenshots -->
 
-- Semantic HTML elements  
-- Logical heading hierarchy  
-- Adequate colour contrast  
-- Descriptive `alt` text on all images  
-- Clear hover and focus states  
-- Reduced‑motion considerations  
+Uses expandable accordion components to answer common questions clearly and concisely.
 
 ---
 
-## Feedback
+### Contact Page
 
-Feedback was received during mentor sessions throughout development. This feedback informed:
+<!-- Contact screenshots -->
 
-- Improvements to layout consistency  
-- Clearer navigation structure  
-- Improved documentation clarity  
+Provides a user‑friendly contact form alongside supporting information.
 
 ---
 
-## Testing
+### Feedback Page
 
-Manual testing was carried out across all pages.
+<!-- Feedback screenshots -->
 
-| Feature | Test Performed | Expected Result | Actual Result | Pass |
-|--------|----------------|-----------------|---------------|------|
-| | | | | |
-| | | | | |
-| | | | | |
-
-Further testing details are documented in `TESTING.md`.
+Confirms successful form submission and provides clear next actions for the user.
 
 ---
 
-## Credits
+### Under Construction Page
 
-### Media
+<!-- Under Construction screenshots -->
 
-- Images sourced from royalty‑free image providers  
-- Icons sourced from open‑source icon libraries  
-- Map graphics created for fictional use  
+Communicates unavailable content while maintaining brand consistency and navigation.
 
 ---
 
-### Code and Resources Used
-
-- Bootstrap 5 for layout and responsive components  
-- Heritage pub websites for design inspiration  
-- Fantasy world‑building references  
-
----
-
-## Technologies and Tools Used
-
+## Technologies Used
 - HTML5  
 - CSS3  
+- JavaScript (Vanilla)  
 - Bootstrap 5  
-- Git & GitHub  
-- GitHub Pages  
+- Google Fonts  
+- Coolors  
 - Balsamiq  
 
 ---
 
+## Accessibility
+- Semantic HTML elements  
+- High‑contrast colour choices  
+- Descriptive alt text  
+- Keyboard‑friendly navigation  
+- Reduced‑motion animation support  
+- Clear focus and hover states  
+
+---
+
+## Testing
+- Manual testing across major browsers  
+- Responsive testing across breakpoints  
+- Navigation and form interaction testing  
+
+---
+
 ## Deployment
+The project was deployed using **GitHub Pages** from the main branch.
 
-The website was deployed using **GitHub Pages**.
+---
 
-### Deployment Steps
-
-| Step | Description | Completed |
-|-----|-------------|-----------|
-| | | |
-| | | |
-| | | |
+## Credits
+- Fonts provided by Google Fonts  
+- Colour palette generated using Coolors  
+- Wireframes created using Balsamiq  
