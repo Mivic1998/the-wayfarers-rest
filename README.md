@@ -45,6 +45,8 @@ The user experience design for The Wayfarer’s Rest focuses on clarity, immersi
 
 ### User Stories
 
+The following user stories were used to guide the design and development of The Wayfarer’s Rest. They helped ensure that the site structure, content, and features were built around the needs of different users, including first‑time visitors, returning visitors, and users accessing the site on a range of devices.
+
 #### First‑Time Visitors
 - As a first‑time visitor, I want to quickly understand what The Wayfarer’s Rest is so that I can determine whether the site is relevant and engaging.
 - As a first‑time visitor, I want a visually immersive introduction so that the medieval tavern theme is established immediately.
@@ -90,6 +92,8 @@ The user experience design for The Wayfarer’s Rest focuses on clarity, immersi
 
 ## Design
 
+The design of The Wayfarer’s Rest was approached with both atmosphere and usability in mind. Visual choices were guided by the medieval tavern theme while ensuring accessibility, readability, and consistency across all pages. Colour, typography, imagery, and layout decisions work together to create an immersive experience without compromising clarity or responsive behaviour on different devices.
+
 ### Colour Palette
 
 ![Colour Palette Used](assets/images/readme/colour-palette.png)
@@ -116,18 +120,17 @@ The colour palette was designed to evoke a warm, grounded medieval atmosphere wh
 
 ### Typography
 
-![Primary Font Used](assets/images/readme/readme-primary-font.png)
-
-![Primary Font Used](assets/images/readme/readme-primary-font.png)
-
-Typography was chosen to balance atmosphere with usability.
+Typography for this website was chosen to balance atmosphere with usability.
 
 - **Cormorant Garamond**  
   Used for headings, section titles, and branding elements. This serif font complements the medieval theme and gives the site a traditional, crafted feel.
+  
+![Primary Font Used](assets/images/readme/readme-primary-font.png)
 
 - **Inter**  
   Used for body text, navigation, forms, and interface elements. Its clean, modern design ensures readability across different screen sizes and supports accessibility.
 
+![Primary Font Used](assets/images/readme/readme-primary-font.png)
 ---
 
 ### Imagery
@@ -146,6 +149,8 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 
 ### Home Page Wireframes
 
+These wireframes outline the planned structure of the home page, focusing on establishing the site’s theme, introducing key content sections, and guiding users toward further exploration across different screen sizes.
+
 | Screen Size | Wireframe |
 |------------|-----------|
 | Desktop | ![Home Page – Desktop View](assets/images/readme/home-wf-d.png) |
@@ -155,6 +160,8 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 ---
 
 ### About Page Wireframes
+
+These wireframes show how the About page content was structured to present the tavern’s story, timeline, and supporting information clearly across desktop, tablet, and mobile layouts.
 
 | Screen Size | Wireframe |
 |------------|-----------|
@@ -166,6 +173,8 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 
 ### Menu Page Wireframes
 
+These wireframes illustrate the organisation of menu categories, pricing, and supporting information, ensuring the content remains easy to scan and navigate on all devices.
+
 | Screen Size | Wireframe |
 |------------|-----------|
 | Desktop | ![Menu Page – Desktop View](assets/images/readme/menu-wf-d.png) |
@@ -175,6 +184,8 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 ---
 
 ### Locations Page Wireframes
+
+These wireframes demonstrate the planned layout for displaying tavern locations, including map placement and supporting content, with particular consideration for responsive interaction.
 
 | Screen Size | Wireframe |
 |------------|-----------|
@@ -186,6 +197,8 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 
 ### Gallery Page Wireframes
 
+These wireframes reflect the intended presentation of visual content, focusing on responsive image grids that adapt cleanly to different screen widths without overwhelming the user.
+
 | Screen Size | Wireframe |
 |------------|-----------|
 | Desktop | ![Gallery Page – Desktop View](assets/images/readme/gallery-wf-d.png) |
@@ -196,6 +209,8 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 
 ### FAQ Page Wireframes
 
+These wireframes show the planned layout for presenting frequently asked questions in a clear, expandable format that maintains readability across screen sizes.
+
 | Screen Size | Wireframe |
 |------------|-----------|
 | Desktop | ![FAQ Page – Desktop View](assets/images/readme/faq-wf-d.png) |
@@ -205,6 +220,8 @@ Initial wireframes for all pages were created using **Balsamiq** to plan layout,
 ---
 
 ### Contact Page Wireframes
+
+These wireframes outline the structure of the contact page, balancing the enquiry form and supporting information while prioritising ease of use on smaller devices.
 
 | Screen Size | Wireframe |
 |------------|-----------|
@@ -220,6 +237,8 @@ The Wayfarer’s Rest is structured as a multi‑page site, with each page servi
 
 ### Header & Navigation
 
+The images below show how the website's header is displayed across different screen sizes:
+
 | Screen Size | Display |
 |------------|-----------|
 | Desktop | ![Header – Desktop View](assets/images/readme/readme-one.png) |
@@ -231,6 +250,8 @@ The header provides consistent navigation across all pages. It adapts responsive
 ---
 
 ### Footer
+
+The images below show how the footer is displayed across different screen sizes:
 
 | Screen Size | Display |
 |------------|-----------|
@@ -244,120 +265,145 @@ The footer contains secondary navigation links, opening‑time information, soci
 
 ### Home Page
 
+This page introduces the tavern, establishes theme, and directs users toward key areas of the site such as locations and services. The images below show how the home page is displayed across different screen sizes for different sections of the page.
+
+This image shows the responsive behaviour of the homepage hero section and primary navigation, where the full navigation menu is displayed on larger screens and progressively collapses into a mobile‑friendly hamburger menu on smaller devices.
+
 ![Home Page Responsiveness – First View](assets/images/readme/readme-home-one.png)
+
+This image illustrates how the “What You’ll Find” feature section reflows across screen sizes, transitioning from a multi‑column layout on desktop to stacked content cards on tablet and mobile devices for improved readability.
 
 ![Home Page Responsiveness – Second View](assets/images/readme/readme-home-two.png)
 
-![Home Page Responsiveness - Third View](assets/images/readme/readme-home-three.png)
+This image highlights the responsive behaviour of the “Locations Across the Realm” section, where location cards are displayed in a grid on larger screens and reorganised into a swipeable carousel on mobile devices to improve usability and conserve vertical space.
 
-Introduces the tavern, establishes theme, and directs users toward key areas of the site such as locations and services.
+![Home Page Responsiveness - Third View](assets/images/readme/readme-home-three.png)
 
 ---
 
 ### About Page
 
+This page provides fantasy-inspired background lore, timeline information, and an overview of the tavern’s values and services. The images below show how the about page is displayed across different screen sizes for different sections of the page.
+
+The image below shows how the hero and navigation section appear across screens of different dimensions.
+
 ![About Page Responsiveness – First View](assets/images/readme/readme-about-one.png)
+
+The two images below shows how primary content is structured to allow images and text to alternate visually on larger screens for improved readability, while naturally stacking into a single‑column layout on smaller devices to maintain a clear and continuous reading flow.
 
 ![About Page Responsiveness – Second View](assets/images/readme/readme-about-two.png)
 
 ![About Page Responsiveness - Third View](assets/images/readme/readme-about-three.png)
 
+The two images below demonstrate how the timeline section adapts for mobile devices, collapsing into a single‑column layout to prioritise vertical scrolling and maintain narrative flow.
+
 ![About Page Responsiveness – Fourth View](assets/images/readme/readme-about-four.png)
 
 ![About Page Responsiveness – Fifth View](assets/images/readme/readme-about-five.png)
 
-![About Page Responsiveness – Sixth View](assets/images/readme/readme-about-six.png)
+This image shows the responsive layout of the “Other Services” section, where service cards are displayed in a horizontal arrangement on desktop, tighten and reduce spacing on tablet screens, and then transition into stacked content on mobile devices to improve clarity and touch accessibility.
 
-Provides background lore, timeline information, and an overview of the tavern’s values and services.
+![About Page Responsiveness – Sixth View](assets/images/readme/readme-about-six.png)
 
 ---
 
 ### Menu Page
 
+The menu page displays food and drink offerings in structured categories with allergen and seasonality notices and sticky anchor navigation. The images below show how the menu page is displayed across different screen sizes for different sections of the page.
+
+This image shows the menu page header and category navigation across desktop, tablet, and mobile devices, where the horizontal anchor navigation remains visible while scrolling, allowing users to quickly jump between menu sections regardless of screen size.
+
 ![Menu Page Responsiveness – First View](assets/images/readme/readme-menu-one.png)
+
+This image illustrates how menu categories and individual items are laid out responsively, transitioning from wider, spaced layouts on desktop to a more vertically condensed flow on tablet and mobile to support comfortable scrolling and reading.
 
 ![Menu Page Responsiveness – Second View](assets/images/readme/readme-menu-two.png)
 
-Sticky nav bar stops at information section by wrapping menu in a div and setting position of the navigation bar as relative.
+This image highlights the lower sections of the menu page, including allergen and seasonality notices and call‑to‑action content, which stack vertically on smaller devices to maintain clarity, accessibility, and a clear reading order. Note that the sticky navigation bar stops scrolling with the page when the information section starts, achieved by wrapping menu in a div and setting position of the navigation bar as relative.
 
 ![Menu Page Responsiveness - Third View](assets/images/readme/readme-menu-three.png)
-
-Displays food and drink offerings in structured categories with allergen and seasonality notices and sticky anchor navigation.
 
 ---
 
 ### Taverns & Locations Page
 
+This page features an interactive map and location descriptions, allowing users to explore different taverns across the realm. The images below show how the locations page is displayed across different screen sizes for different sections of the page.
+
+The image below shows how the hero and navigation section appear across screens of different dimensions.
+
 ![Taverns & Locations Page Responsiveness – First View](assets/images/readme/readme-locations-one.png)
+
+This image shows the responsive layout of the Taverns & Locations page header and tavern types section, where content is displayed in multi‑column layouts on desktop, tightened on tablet, and stacked vertically on mobile to preserve readability and visual hierarchy.
 
 ![Taverns & Locations Page Responsiveness – Second View](assets/images/readme/readme-locations-two.png)
 
+This image demonstrates how the map section adapts for smaller screens, with the map and key stacking vertically to ensure continued usability on mobile devices without reducing the clarity of interactive elements.
+
 ![Taverns & Locations Page Responsiveness - Third View](assets/images/readme/readme-locations-three.png)
 
-The pop-up displays on different screen sizes are showcased below:
+This image showcases the responsive behaviour of the interactive map pop‑ups, where JavaScript‑driven panels reposition dynamically to remain visible within the viewport across desktop, tablet, and mobile devices, ensuring location details are accessible without obscuring the map.
 
 ![Taverns & Locations Page Responsiveness – Fourth View](assets/images/readme/readme-locations-four.png)
-
-Features an interactive map and location descriptions, allowing users to explore different taverns across the realm.
 
 ---
 
 ### Gallery Page
 
+This page showcases visual imagery of the tavern environment in a responsive grid layout, allowing users to explore different taverns across the realm. The images below show how the pictures are formatted across different screen sizes to ensure visual content remains clear, balanced and immersive.
+
 ![Gallery Page Responsiveness – First View](assets/images/readme/readme-gallery-one.png)
 
 ![Gallery Page Responsiveness – Second View](assets/images/readme/readme-gallery-two.png)
-
-Showcases visual imagery of the tavern environment in a responsive grid layout.
 
 ---
 
 ### Tavern Code & FAQ Page
 
+This page provides a list of tavern rules that guests must adhere to with expandable accordion components to answer common questions clearly and concisely. The images below show how the locations page is displayed across different screen sizes for different sections of the page.
+
 ![Tavern Code & FAQ Page Responsiveness – First View](assets/images/readme/readme-faq-one.png)
+
+The image below provides a fuller view of the page's tavern code section
 
 ![Tavern Code & FAQ Page Responsiveness – Second View](assets/images/readme/readme-faq-two.png)
 
-![Tavern Code & FAQ Page Responsiveness - Third View](assets/images/readme/readme-faq-three.png)
+This image demonstrates how the Tavern Code and FAQ page adapts for mobile devices, where accordion elements stack vertically with increased spacing to support touch interaction and ensure a clear, uninterrupted reading
 
-Uses expandable accordion components to answer common questions clearly and concisely.
+![Tavern Code & FAQ Page Responsiveness - Third View](assets/images/readme/readme-faq-three.png)
 
 ---
 
 ### Contact Page
 
-![Contact Page Responsiveness – First View](assets/images/readme/readme-contact-one.png)
+The contact page provides a user‑friendly contact form alongside supporting information. The image below shows how the page is displayed across different screen sizes. Note the appearance of the green lantern logo on tablet and mobile devices when page content becomes centred using the bootstrap grid layout, helping reinforce brand identity while maintaining visual balance on narrower screens.
 
-![Contact Page Responsiveness – Second View](assets/images/readme/readme-contact-two.png)
-
-Provides a user‑friendly contact form alongside supporting information.
+![Contact Page Responsiveness](assets/images/readme/readme-contact.png)
 
 ---
 
 ### Feedback Page
 
-![Feedback Page Responsiveness – First View](assets/images/readme/readme-feedback.png)
+The feedback page confirms successful form submission and provides clear next actions for the user. The image below shows how the page appears across different screen sizes for the user.
 
-Confirms successful form submission and provides clear next actions for the user.
+![Feedback Page Responsiveness](assets/images/readme/readme-feedback.png)
 
 ---
 
 ### Under Construction Page
 
-![Under Construction Page Responsiveness – First View](assets/images/readme/readme-under-construction.png)
+The under consturction page communicates unavailable content while maintaining brand consistency and navigation, only used for the careers link on the footer of the website The image below shows how the page appears across different screen sizes for the user.
 
-Communicates unavailable content while maintaining brand consistency and navigation.
+![Under Construction Page Responsiveness](assets/images/readme/readme-under-construction.png)
 
 ---
 
 ## Technologies Used
-- HTML5  
-- CSS3  
-- JavaScript (Vanilla)  
-- Bootstrap 5  
-- Google Fonts  
-- Coolors  
-- Balsamiq  
+- HTML/CSS: used for site structure and styling 
+- JavaScript: used for subtle visual effects on reload and scroll and for producing interactive map
+- Bootstrap 5: frontend framework used
+- Google Fonts: used to acquire fonts used throught the website
+- Coolors: used to create colour palette for website 
+- Balsamiq: used to make wireframes across screen sizes
 
 ---
 
@@ -386,4 +432,6 @@ The project was deployed using **GitHub Pages** from the main branch.
 ## Credits
 - Fonts provided by Google Fonts  
 - Colour palette generated using Coolors  
-- Wireframes created using Balsamiq  
+- Wireframes created using Balsamiq 
+- Images and logos created using Copilot Chat Assistant 
+
