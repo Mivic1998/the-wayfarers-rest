@@ -145,6 +145,8 @@ section {
 
 
 
+
+
 /* =========================
    Images
    ========================= */
@@ -1874,3 +1876,9 @@ nav.site-navbar .nav-link:focus {
 }
 
 body::-webkit-scrollbar { display: none; }
+
+@media (max-width: 768px) {
+    .hero-height img {
+        height: 85vh;
+    }
+}
