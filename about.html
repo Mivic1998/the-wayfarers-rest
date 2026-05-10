@@ -4,53 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wayfarer's Rest | Food, Ale and Shelter Across the Realm</title>
-    <!--Bootstrap 5 CSS-->
+
+
+    <title>About the Wayfarer’s Rest | Life Along the Road</title>
+
+    <meta name="description"
+        content="Learn about the origins, traditions and values of the Wayfarer’s Rest, a sanctuary for travellers across the Marchlands.">
+    <meta name="keywords"
+        content="Wayfarer’s Rest, fantasy lore, medieval inn history, tavern traditions, fictional worldbuilding, roleplay setting">
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Custom CSS -->
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <nav class="site-navbar navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <picture>
-                    <!--Anything above 576px (mobile portrait) displays full logo-->
-                    <source media="(min-width: 576px)" srcset="assets/images/logo-wayfarers-rest-parchment.png">
-                    <img src="assets/images/icon-lantern-parchment.png" alt="The Wayfarer’s Rest logo">
-                </picture>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="locations.html">Locations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="site-navbar navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <picture>
+                        <!--Anything above 576px (mobile portrait) displays full logo-->
+                        <source media="(min-width: 576px)" srcset="assets/images/logo-wayfarers-rest-parchment.png">
+                        <img src="assets/images/icon-lantern-parchment.png" alt="The Wayfarer’s Rest logo">
+                    </picture>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locations.html">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <main>
         <!-- About Hero -->
         <section class="about-hero">
@@ -180,6 +190,7 @@
                         </a>
                     </div>
                 </div>
+            </div>    
         </section>
 
 
@@ -207,7 +218,7 @@
         <section class="about-timeline pt-2">
             <div class="container text-center">
                 <div class="section-icon--large">
-                    <img src="assets/images/icons/icon-lantern-green.svg" alt="Green lantern icon" aria-hidden="true">
+                    <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
                 </div>
                 <h2>The World Beyond the Road</h2>
                 <p>
@@ -230,7 +241,7 @@
 
                             <div class="timeline-meta">
                                 <div class="pillar-icon">
-                                    <img src="assets/images/icons/time-icon.svg" alt="Time icon" aria-hidden="true">
+                                    <img src="assets/images/icons/time-icon.svg" alt="" aria-hidden="true">
                                 </div>
                                 <span class="timeline-year">0 A.R.</span>
                             </div>
@@ -249,11 +260,12 @@
                         <span class="timeline-marker"></span>
                         <div class="timeline-content">
                             <h3 class="mt-4">The First Lantern</h3>
-                            <img src="assets/images/timeline-image-two.jpg" alt="Two travellers approaching a lantern-lit roadside tavern at dusk, its thatched roof and glowing windows standing beside a winding road under darkening skies.">
+                            <img src="assets/images/timeline-image-two.jpg"
+                                alt="Two travellers approaching a lantern-lit roadside tavern at dusk, its thatched roof and glowing windows standing beside a winding road under darkening skies.">
 
                             <div class="timeline-meta">
                                 <div class="pillar-icon">
-                                    <img src="assets/images/icons/time-icon.svg" alt="Time icon" aria-hidden="true">
+                                    <img src="assets/images/icons/time-icon.svg" alt="" aria-hidden="true">
                                 </div>
                                 <span class="timeline-year">3 A.R.</span>
                             </div>
@@ -278,7 +290,7 @@
 
                             <div class="timeline-meta">
                                 <div class="pillar-icon">
-                                    <img src="assets/images/icons/time-icon.svg" alt="Time icon" aria-hidden="true">
+                                    <img src="assets/images/icons/time-icon.svg" alt="" aria-hidden="true">
                                 </div>
                                 <span class="timeline-year">12 A.R.</span>
                             </div>
@@ -294,11 +306,12 @@
                         <span class="timeline-marker"></span>
                         <div class="timeline-content">
                             <h3 class='mt-4'>The Rest Spreads</h3>
-                            <img src="assets/images/timeline-image-four.jpg" alt="Winding lantern-lit road crossing dark forested hills toward distant mountains under a cloudy night sky.">
+                            <img src="assets/images/timeline-image-four.jpg"
+                                alt="Winding lantern-lit road crossing dark forested hills toward distant mountains under a cloudy night sky.">
 
                             <div class="timeline-meta">
                                 <div class="pillar-icon">
-                                    <img src="assets/images/icons/time-icon.svg" alt="Time icon" aria-hidden="true">
+                                    <img src="assets/images/icons/time-icon.svg" alt="" aria-hidden="true">
                                 </div>
                                 <span class="timeline-year">28 A.R.</span>
                             </div>
@@ -319,13 +332,14 @@
 
                             <!-- Main timeline image -->
                             <div class="timeline-image">
-                                <img src="assets/images/timeline-image-five.jpg" alt="Lantern hanging beside a quiet roadside tavern at night, its thatched roof and glowing windows standing in mist beneath darkened skies.">
+                                <img src="assets/images/timeline-image-five.jpg"
+                                    alt="Lantern hanging beside a quiet roadside tavern at night, its thatched roof and glowing windows standing in mist beneath darkened skies.">
                             </div>
 
                             <!-- Icon + year row -->
                             <div class="timeline-meta">
                                 <div class="pillar-icon">
-                                    <img src="assets/images/icons/time-icon.svg" alt="Time icon" aria-hidden="true">
+                                    <img src="assets/images/icons/time-icon.svg" alt="" aria-hidden="true">
                                 </div>
                                 <span class="timeline-year">47 A.R.</span>
                             </div>
@@ -349,7 +363,7 @@
 ========================= -->
         <section class="about-services mb-5 pt-2" id="other-services">
             <div class="section-icon--large">
-                <img src="assets/images/icons/icon-lantern-green.svg" alt="Green lantern icon" aria-hidden="true">
+                <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
             </div>
             <div class="container text-center">
                 <h2>Other Services</h2>
@@ -361,8 +375,8 @@
 
                     <div class="col-6 col-lg-3">
                         <div class="card service-card reveal">
-                            <img src="assets/images/other-services-one.jpg" class="card-image" alt="Lantern being handed from a tavern doorway to a road‑worn traveller at dusk, with a hanging sign and warm light glowing against a distant landscape."
-                                aria-hidden="true">
+                            <img src="assets/images/other-services-one.jpg" class="card-image"
+                                alt="Lantern being handed from a tavern doorway to a road‑worn traveller at dusk, with a hanging sign and warm light glowing against a distant landscape.">
                             <h3 class="pt-2">Guided Lantern Blessings</h3>
                             <p>Before setting out, travellers may request a lantern prepared according to old
                                 road‑customs. These lights are said to steady the path ahead and are returned when
@@ -372,8 +386,8 @@
 
                     <div class="col-6 col-lg-3">
                         <div class="card service-card reveal">
-                            <img src="assets/images/other-services-two.jpg" class="card-image" alt="Two figures seated across a small wooden table inside a dim tavern, sharing a quiet conversation by the glow of a lantern."
-                                aria-hidden="true">
+                            <img src="assets/images/other-services-two.jpg" class="card-image"
+                                alt="Two figures seated across a small wooden table inside a dim tavern, sharing a quiet conversation by the glow of a lantern.">
                             <h3 class="pt-2">Dream Seating &amp; Quiet Counsel</h3>
                             <p>For those troubled by dreams, omens, or the weight of the road, quiet seating may be
                                 requested where travellers can speak privately with staff trained in old road‑lore.</p>
@@ -382,8 +396,8 @@
 
                     <div class="col-6 col-lg-3">
                         <div class="card service-card reveal">
-                            <img src="assets/images/other-services-three.jpg" class="card-image" alt="A hooded figure receiving a lantern from another person outside a small roadside tavern at night, with a hanging lantern glowing beside the doorway."
-                                aria-hidden="true">
+                            <img src="assets/images/other-services-three.jpg" class="card-image"
+                                alt="A hooded figure receiving a lantern from another person outside a small roadside tavern at night, with a hanging lantern glowing beside the doorway.">
                             <h3 class="pt-2">Night-Road Warnings &amp; Watchlight</h3>
                             <p>When conditions along the road are known to be unsettled, staff may share quiet warnings
                                 or keep watch‑lanterns burning through the night. Travellers remain free to depart, but
@@ -393,8 +407,8 @@
 
                     <div class="col-6 col-lg-3">
                         <div class="card service-card reveal">
-                            <img src="assets/images/other-services-four.jpg" class="card-image" alt="Traveller and tavern guide studying a parchment map by lantern light, with one figure pointing out routes while the other listens inside a dim interior."
-                                aria-hidden="true">
+                            <img src="assets/images/other-services-four.jpg" class="card-image"
+                                alt="Traveller and tavern guide studying a parchment map by lantern light, with one figure pointing out routes while the other listens inside a dim interior.">
                             <h3 class="pt-2">Route Marking &amp; Quiet Guidance</h3>
                             <p>Staff may offer guidance on safer routes ahead, including shared signs and markings used
                                 by those who know the road well. Such knowledge is given quietly and only when
@@ -407,61 +421,61 @@
         </section>
     </main>
     <footer class="site-footer mt-5">
-        <div class="row text-center">
-            <div class="footer-logo col-12 col-lg-3">
-                <a href="index.html">
-                    <picture>
-                        <!--Desktop displays standard logo while anything smaller has title stacked below icon-->
-                        <source media="(min-width: 992px)" srcset="assets/images/logo-wayfarers-rest-parchment.png">
-                        <img src="assets/images/logo-wayfarers-rest-footer-stacked.png" alt="The Wayfarer’s Rest logo">
-                    </picture>
-                </a>
+        <div class="container text-center">
+
+            <div class="row align-items-start">
+
+                <!-- LOGO -->
+                <div class="footer-logo col-12 col-lg-3 mb-4 mb-lg-0">
+                    <a href="index.html">
+                        <picture>
+                            <source media="(min-width: 992px)" srcset="assets/images/logo-wayfarers-rest-parchment.png">
+                            <img src="assets/images/logo-wayfarers-rest-footer-stacked.png"
+                                alt="The Wayfarer’s Rest logo">
+                        </picture>
+                    </a>
+                </div>
+
+                <!-- LINKS -->
+                <div class="col-12 col-lg-9">
+                    <div class="row justify-content-center">
+
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <h2 class="h5">The Tavern</h2>
+                            <ul>
+                                <li><a href="index.html">About the Tavern</a></li>
+                                <li><a href="faq.html">The Wayfarer's Code</a></li>
+                                <li><a href="about.html">Our Story</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <h2 class="h5">The Road</h2>
+                            <ul>
+                                <li><a href="locations.html">Taverns & Locations</a></li>
+                                <li><a href="menu.html">Menu & Provisions</a></li>
+                                <li><a href="about.html#other-services">Other Services</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <h2 class="h5">House Matters</h2>
+                            <ul>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="faq.html#common-questions">Common Questions</a></li>
+                                <li><a href="under-construction.html">Careers</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-lg-3">
-                <h2 class="h5">The Tavern</h2>
-                <ul>
-                    <li>
-                        <a href="index.html">About the Tavern</a>
-                    </li>
-                    <li>
-                        <a href="faq.html">The Wayfarer's Code</a>
-                    </li>
-                    <li>
-                        <a href="about.html">Our Story</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-lg-3">
-                <h2 class="h5">The Road</h2>
-                <ul>
-                    <li>
-                        <a href="locations.html">Taverns & Locations</a>
-                    </li>
-                    <li>
-                        <a href="menu.html">Menu & Provisions</a>
-                    </li>
-                    <li>
-                        <a href="about.html#other-services">Other Services</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-lg-3">
-                <h2 class="h5">House Matters</h2>
-                <ul>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="faq.html#common-questions">Common Questions</a>
-                    </li>
-                    <li>
-                        <a href="under-construction.html">Careers</a>
-                    </li>
-                </ul>
-            </div>
+
             <p class="footer-hours">
-                Opening times vary by location - <a href="locations.html">see individual taverns for details</a>.
+                Opening times vary by location –
+                <a href="locations.html">see individual taverns for details</a>.
             </p>
+
             <div class="footer-social d-flex justify-content-center gap-3">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
                     aria-label="Open Facebook in A New Tab">
@@ -476,7 +490,9 @@
                     <img src="assets/images/icons/instagram.svg" alt="Instagram icon">
                 </a>
             </div>
+
         </div>
+
         <div class="footer-copy">
             © 2026 The Wayfarer’s Rest. All rights reserved.
         </div>

@@ -2,56 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wayfarer's Rest | Food, Ale and Shelter Across the Realm</title>
-    <!--Bootstrap 5 CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Wayfarer’s Rest | Food, Ale & Shelter Across the Realm</title>
+
+  <meta name="description" content="The Wayfarer’s Rest is a fictional medieval tavern offering food, ale, shelter and safety to travellers across the Marchlands.">
+  <meta name="keywords" content="Wayfarer’s Rest, fantasy tavern, medieval tavern, fantasy inn, travelling inn, fantasy worldbuilding, roleplay tavern, medieval food and drink, fictional business website, HTML CSS project">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  >
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <!--Classes on body set to create a flex column layout that expands to fill the viewport height by pushing the footer to the bottom-->
 
 <body class="d-flex flex-column min-vh-100">
-    <nav class="site-navbar navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <picture>
-                    <!--Anything above 576px (mobile portrait) displays full logo-->
-                    <source media="(min-width: 576px)" srcset="assets/images/logo-wayfarers-rest-parchment.png">
-                    <img src="assets/images/icon-lantern-parchment.png" alt="The Wayfarer’s Rest logo">
-                </picture>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="locations.html">Locations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="site-navbar navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <picture>
+                        <!--Anything above 576px (mobile portrait) displays full logo-->
+                        <source media="(min-width: 576px)" srcset="assets/images/logo-wayfarers-rest-parchment.png">
+                        <img src="assets/images/icon-lantern-parchment.png" alt="The Wayfarer’s Rest logo">
+                    </picture>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locations.html">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
     <main>
         <section class="home-hero">
             <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
@@ -68,7 +82,8 @@
                         <picture>
                             <!--Desktop displays standard logo while anything smaller has title stacked below icon-->
                             <source media="(min-width: 992px)" srcset="assets/images/home-carousel-20.png">
-                            <img src="assets/images/home-carousel-05.jpg" class="d-block w-100 hero-image" alt="Stone seaside tavern built into coastal cliffs, with travellers seated beneath arched colonnades by candlelight as the moon hangs over the dark sea.">
+                            <img src="assets/images/home-carousel-05.jpg" class="d-block w-100 hero-image"
+                                alt="Stone seaside tavern built into coastal cliffs, with travellers seated beneath arched colonnades by candlelight as the moon hangs over the dark sea.">
                         </picture>
                     </div>
                     <div class="carousel-item">
@@ -86,7 +101,7 @@
         </section>
         <section class="home-intro text-center pt-2">
             <div class="section-icon--large d-flex justify-content-center">
-                <img src="assets/images/icons/icon-lantern-green.svg" alt="Green lantern icon" aria-hidden="true">
+                <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
             </div>
             <div class="container">
                 <h2>What You’ll Find</h2>
@@ -153,7 +168,7 @@
         <!-- Locations Across the Realm -->
         <section class="home-locations text-center pt-2">
             <div class="section-icon--large d-flex justify-content-center">
-                <img src="assets/images/icons/icon-lantern-green.svg" alt="Green lantern icon" aria-hidden="true">
+                <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true">
             </div>
             <div class="container">
                 <h2>Locations Across the Realm</h2>
@@ -295,80 +310,83 @@
     </main>
     <!--Class to push footer to the bottom of the viewport-->
     <footer class="site-footer mt-5">
-        <div class="row text-center">
-            <div class="footer-logo col-12 col-lg-3">
-                <a href="index.html">
-                    <picture>
-                        <!--Desktop displays standard logo while anything smaller has title stacked below icon-->
-                        <source media="(min-width: 992px)" srcset="assets/images/logo-wayfarers-rest-parchment.png">
-                        <img src="assets/images/logo-wayfarers-rest-footer-stacked.png" alt="The Wayfarer’s Rest logo">
-                    </picture>
-                </a>
+            <div class="container text-center">
+
+                <div class="row align-items-start">
+
+                    <!-- LOGO -->
+                    <div class="footer-logo col-12 col-lg-3 mb-4 mb-lg-0">
+                        <a href="index.html">
+                            <picture>
+                                <source media="(min-width: 992px)"
+                                    srcset="assets/images/logo-wayfarers-rest-parchment.png">
+                                <img src="assets/images/logo-wayfarers-rest-footer-stacked.png"
+                                    alt="The Wayfarer’s Rest logo">
+                            </picture>
+                        </a>
+                    </div>
+
+                    <!-- LINKS -->
+                    <div class="col-12 col-lg-9">
+                        <div class="row justify-content-center">
+
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <h2 class="h5">The Tavern</h2>
+                                <ul>
+                                    <li><a href="index.html">About the Tavern</a></li>
+                                    <li><a href="faq.html">The Wayfarer's Code</a></li>
+                                    <li><a href="about.html">Our Story</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <h2 class="h5">The Road</h2>
+                                <ul>
+                                    <li><a href="locations.html">Taverns & Locations</a></li>
+                                    <li><a href="menu.html">Menu & Provisions</a></li>
+                                    <li><a href="about.html#other-services">Other Services</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <h2 class="h5">House Matters</h2>
+                                <ul>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="faq.html#common-questions">Common Questions</a></li>
+                                    <li><a href="under-construction.html">Careers</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <p class="footer-hours">
+                    Opening times vary by location –
+                    <a href="locations.html">see individual taverns for details</a>.
+                </p>
+
+                <div class="footer-social d-flex justify-content-center gap-3">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="Open Facebook in A New Tab">
+                        <img src="assets/images/icons/facebook.svg" alt="Facebook icon">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="Open Twitter/X in A New Tab">
+                        <img src="assets/images/icons/twitter-x.svg" alt="Twitter/X icon">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="Open Instagram in A New Tab">
+                        <img src="assets/images/icons/instagram.svg" alt="Instagram icon">
+                    </a>
+                </div>
+
             </div>
-            <div class="col-12 col-lg-3">
-                <h2 class="h5">The Tavern</h2>
-                <ul>
-                    <li>
-                        <a href="index.html">About the Tavern</a>
-                    </li>
-                    <li>
-                        <a href="faq.html">The Wayfarer's Code</a>
-                    </li>
-                    <li>
-                        <a href="about.html">Our Story</a>
-                    </li>
-                </ul>
+
+            <div class="footer-copy">
+                © 2026 The Wayfarer’s Rest. All rights reserved.
             </div>
-            <div class="col-12 col-lg-3">
-                <h2 class="h5">The Road</h2>
-                <ul>
-                    <li>
-                        <a href="locations.html">Taverns & Locations</a>
-                    </li>
-                    <li>
-                        <a href="menu.html">Menu & Provisions</a>
-                    </li>
-                    <li>
-                        <a href="about.html#other-services">Other Services</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-lg-3">
-                <h2 class="h5">House Matters</h2>
-                <ul>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="faq.html#common-questions">Common Questions</a>
-                    </li>
-                    <li>
-                        <a href="under-construction.html">Careers</a>
-                    </li>
-                </ul>
-            </div>
-            <p class="footer-hours">
-                Opening times vary by location - <a href="locations.html">see individual taverns for details</a>.
-            </p>
-            <div class="footer-social d-flex justify-content-center gap-3">
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                    aria-label="Open Facebook in A New Tab">
-                    <img src="assets/images/icons/facebook.svg" alt="Facebook icon">
-                </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                    aria-label="Open Twitter/X in A New Tab">
-                    <img src="assets/images/icons/twitter-x.svg" alt="Twitter/X icon">
-                </a>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                    aria-label="Open Instagram in A New Tab">
-                    <img src="assets/images/icons/instagram.svg" alt="Instagram icon">
-                </a>
-            </div>
-        </div>
-        <div class="footer-copy">
-            © 2026 The Wayfarer’s Rest. All rights reserved.
-        </div>
-    </footer>
+        </footer>
     <!--Bootstrap 5 JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">

@@ -82,6 +82,12 @@ function positionPopup(dot, popup) {
     dot.offsetHeight / 2 -
     popupRect.height / 2;
 
+    
+if (window.innerWidth <= 576) {
+  popup.style.top = `${dot.offsetTop + dot.offsetHeight + 16}px`;
+}
+
+
   // Check if that position would overflow the map
   const overflowsBottom =
     top + popupRect.height > mapHeight - gap;
