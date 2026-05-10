@@ -1879,7 +1879,7 @@ body::-webkit-scrollbar { display: none; }
 
 @media (max-width: 768px) {
     .hero-height img {
-        height: 85vh;
+        height: 90vh;
     }
 }
 
