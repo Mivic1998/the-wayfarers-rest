@@ -1814,7 +1814,6 @@ nav.site-navbar .nav-link:focus {
 
 
  
-
 .menu main {
     background-color: var(--bg-section);
 }
@@ -1844,6 +1843,7 @@ body::-webkit-scrollbar { display: none; }
     }
     .about-hero h1 {
         padding-bottom: 0;
+        padding-top: 0;
     }
 }
 
