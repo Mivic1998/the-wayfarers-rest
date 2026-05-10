@@ -1813,7 +1813,17 @@ nav.site-navbar .nav-link:focus {
 }
 
 
- 
+ /* Hidden state */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    will-change: transform, opacity;
+}
+
+
+
+
 
 .menu main {
     background-color: var(--bg-section);
@@ -1840,7 +1850,10 @@ body::-webkit-scrollbar { display: none; }
 
 @media (max-width: 768px) {
     .hero-height img {
-        height: 95vh;
+        height: 90vh;
+    }
+    .about-hero h1 {
+        padding-top: 0;
     }
 }
 
