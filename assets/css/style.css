@@ -358,6 +358,10 @@ nav.site-navbar .nav-link:focus {
     padding-top: 0;
 }
 
+.home-hero img {
+    height: 100%
+}
+
 
 .hero-overlay {
     position: absolute;
@@ -1561,15 +1565,17 @@ nav.site-navbar .nav-link:focus {
     overflow: visible;
 }
 
+
 @media (max-width: 576px) {
     .tavern-popup {
-        left: 50% !important;
+        left: 20% !important;
         transform: translateX(-50%);
     }
     .tavern-popup p {
         font-size: 0.5rem
     }
 }
+
 
 @media (max-width: 576px) {
   .map-dot {
