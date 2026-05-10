@@ -92,7 +92,7 @@ The user experience design for The Wayfarer’s Rest focuses on clarity, immersi
 
 ### Colour Palette
 
-<!-- Insert Coolors palette screenshot here -->
+![Colour Palette Used](assets/images/readme/colour-palette.png)
 
 The colour palette was designed to evoke a warm, grounded medieval atmosphere while maintaining sufficient contrast and readability. Earthy greens form the structural backbone of the site, parchment tones provide balance and lightness, and gold accents are used sparingly to draw attention to key interactive elements.
 
@@ -116,8 +116,9 @@ The colour palette was designed to evoke a warm, grounded medieval atmosphere wh
 
 ### Typography
 
-<!-- Insert primary font screenshot here -->
-<!-- Insert secondary font screenshot here -->
+![Primary Font Used](assets/images/readme/readme-primary-font.png)
+
+![Primary Font Used](assets/images/readme/readme-primary-font.png)
 
 Typography was chosen to balance atmosphere with usability.
 
@@ -219,7 +220,11 @@ The Wayfarer’s Rest is structured as a multi‑page site, with each page servi
 
 ### Header & Navigation
 
-<!-- Header screenshots -->
+| Screen Size | Display |
+|------------|-----------|
+| Desktop | ![Header – Desktop View](assets/images/readme/readme-one.png) |
+| Tablet | ![Header – Tablet View](assets/images/readme/readme-two.png) |
+| Mobile | ![Header – Mobile View](assets/images/readme/readme-three.png) |
 
 The header provides consistent navigation across all pages. It adapts responsively from a full horizontal menu on desktop to a hamburger‑based menu on tablet and mobile, ensuring accessibility and ease of use.
 
@@ -227,7 +232,11 @@ The header provides consistent navigation across all pages. It adapts responsive
 
 ### Footer
 
-<!-- Footer screenshots -->
+| Screen Size | Display |
+|------------|-----------|
+| Desktop | ![Footer – Desktop View](assets/images/readme/readme-four.png) |
+| Tablet | ![Footer – Tablet View](assets/images/readme/readme-five.png) |
+| Mobile | ![Footer – Mobile View](assets/images/readme/readme-six.png) |
 
 The footer contains secondary navigation links, opening‑time information, social media links, and branding. Its layout adapts from a multi‑column structure on desktop to a stacked layout on mobile.
 
@@ -235,7 +244,11 @@ The footer contains secondary navigation links, opening‑time information, soci
 
 ### Home Page
 
-<!-- Home screenshots -->
+![Home Page Responsiveness – First View](assets/images/readme/readme-home-one.png)
+
+![Home Page Responsiveness – Second View](assets/images/readme/readme-home-two.png)
+
+![Home Page Responsiveness - Third View](assets/images/readme/readme-home-three.png)
 
 Introduces the tavern, establishes theme, and directs users toward key areas of the site such as locations and services.
 
@@ -243,7 +256,17 @@ Introduces the tavern, establishes theme, and directs users toward key areas of 
 
 ### About Page
 
-<!-- About screenshots -->
+![About Page Responsiveness – First View](assets/images/readme/readme-about-one.png)
+
+![About Page Responsiveness – Second View](assets/images/readme/readme-about-two.png)
+
+![About Page Responsiveness - Third View](assets/images/readme/readme-about-three.png)
+
+![About Page Responsiveness – Fourth View](assets/images/readme/readme-about-four.png)
+
+![About Page Responsiveness – Fifth View](assets/images/readme/readme-about-five.png)
+
+![About Page Responsiveness – Sixth View](assets/images/readme/readme-about-six.png)
 
 Provides background lore, timeline information, and an overview of the tavern’s values and services.
 
@@ -251,15 +274,29 @@ Provides background lore, timeline information, and an overview of the tavern’
 
 ### Menu Page
 
-<!-- Menu screenshots -->
+![Menu Page Responsiveness – First View](assets/images/readme/readme-menu-one.png)
+
+![Menu Page Responsiveness – Second View](assets/images/readme/readme-menu-two.png)
+
+Sticky nav bar stops at information section by wrapping menu in a div and setting position of the navigation bar as relative.
+
+![Menu Page Responsiveness - Third View](assets/images/readme/readme-menu-three.png)
 
 Displays food and drink offerings in structured categories with allergen and seasonality notices and sticky anchor navigation.
 
 ---
 
-### Locations Page
+### Taverns & Locations Page
 
-<!-- Locations screenshots -->
+![Taverns & Locations Page Responsiveness – First View](assets/images/readme/readme-locations-one.png)
+
+![Taverns & Locations Page Responsiveness – Second View](assets/images/readme/readme-locations-two.png)
+
+![Taverns & Locations Page Responsiveness - Third View](assets/images/readme/readme-locations-three.png)
+
+The pop-up displays on different screen sizes are showcased below:
+
+![Taverns & Locations Page Responsiveness – Fourth View](assets/images/readme/readme-locations-four.png)
 
 Features an interactive map and location descriptions, allowing users to explore different taverns across the realm.
 
@@ -267,15 +304,21 @@ Features an interactive map and location descriptions, allowing users to explore
 
 ### Gallery Page
 
-<!-- Gallery screenshots -->
+![Gallery Page Responsiveness – First View](assets/images/readme/readme-gallery-one.png)
+
+![Gallery Page Responsiveness – Second View](assets/images/readme/readme-gallery-two.png)
 
 Showcases visual imagery of the tavern environment in a responsive grid layout.
 
 ---
 
-### FAQ Page
+### Tavern Code & FAQ Page
 
-<!-- FAQ screenshots -->
+![Tavern Code & FAQ Page Responsiveness – First View](assets/images/readme/readme-faq-one.png)
+
+![Tavern Code & FAQ Page Responsiveness – Second View](assets/images/readme/readme-faq-two.png)
+
+![Tavern Code & FAQ Page Responsiveness - Third View](assets/images/readme/readme-faq-three.png)
 
 Uses expandable accordion components to answer common questions clearly and concisely.
 
@@ -283,7 +326,9 @@ Uses expandable accordion components to answer common questions clearly and conc
 
 ### Contact Page
 
-<!-- Contact screenshots -->
+![Contact Page Responsiveness – First View](assets/images/readme/readme-contact-one.png)
+
+![Contact Page Responsiveness – Second View](assets/images/readme/readme-contact-two.png)
 
 Provides a user‑friendly contact form alongside supporting information.
 
@@ -291,7 +336,7 @@ Provides a user‑friendly contact form alongside supporting information.
 
 ### Feedback Page
 
-<!-- Feedback screenshots -->
+![Feedback Page Responsiveness – First View](assets/images/readme/readme-feedback.png)
 
 Confirms successful form submission and provides clear next actions for the user.
 
@@ -299,7 +344,7 @@ Confirms successful form submission and provides clear next actions for the user
 
 ### Under Construction Page
 
-<!-- Under Construction screenshots -->
+![Under Construction Page Responsiveness – First View](assets/images/readme/readme-under-construction.png)
 
 Communicates unavailable content while maintaining brand consistency and navigation.
 
