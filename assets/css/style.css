@@ -1567,7 +1567,7 @@ nav.site-navbar .nav-link:focus {
         transform: translateX(-50%);
     }
     .tavern-popup p {
-        font-size: 0.6rem
+        font-size: 0.7rem
     }
 }
 
@@ -1813,8 +1813,7 @@ nav.site-navbar .nav-link:focus {
 }
 
 
-
-
+ 
 .menu main {
     background-color: var(--bg-section);
 }
@@ -1853,4 +1852,9 @@ body::-webkit-scrollbar { display: none; }
 }
 
 
-
+@media (max-width: 576px) {
+  .tavern-popup {
+    width: 70vw;
+    max-width: 360px;
+  }
+}
