@@ -1814,6 +1814,7 @@ nav.site-navbar .nav-link:focus {
 
 
  
+
 .menu main {
     background-color: var(--bg-section);
 }
@@ -1839,7 +1840,7 @@ body::-webkit-scrollbar { display: none; }
 
 @media (max-width: 768px) {
     .hero-height img {
-        height: 90vh;
+        height: 95vh;
     }
 }
 
