@@ -1003,7 +1003,7 @@ nav.site-navbar .nav-link:focus {
 .home-hero img,
 .about-hero-image img {
     width: 100%;
-    max-height: 80vh;
+    max-height: 85vh;
     display: block;
 }
 
@@ -1880,3 +1880,7 @@ html {
         transform: none;
     }
 }
+
+@media (max-width: 640px) {
+    body::-webkit-scrollbar { display: none; }
+} 
