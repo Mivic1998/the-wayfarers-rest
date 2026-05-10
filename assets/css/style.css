@@ -1881,6 +1881,5 @@ html {
     }
 }
 
-@media (max-width: 800px) {
+
     body::-webkit-scrollbar { display: none; }
-} 
