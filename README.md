@@ -96,25 +96,33 @@ The design of The Wayfarer’s Rest was approached with both atmosphere and usab
 
 ### Colour Palette
 
+The colours below are listed in the same order as they appear in the Coolors palette used during the design phase:
+
+1. **#1F2F27** – Deep forest green 
+2. **#2F4F3E** – Primary brand green (navigation and headers)
+3. **#B08D57** – Muted gold accent (buttons and highlights)
+4. **#E2D3B3** – Parchment tone (secondary backgrounds and panels)
+5. **#F6F3EA** – Light parchment (main page background)
+
 ![Colour Palette Used](assets/images/readme/colour-palette.png)
 
 The colour palette was designed to evoke a warm, grounded medieval atmosphere while maintaining sufficient contrast and readability. Earthy greens form the structural backbone of the site, parchment tones provide balance and lightness, and gold accents are used sparingly to draw attention to key interactive elements.
 
 #### Primary / Structural Colours
-- `#1F2F27` – Deep forest green  
-  Used for the footer and darker background sections to anchor the design.
 - `#2F4F3E` – Primary brand green  
-  Used for the site header and navigation to maintain strong visual identity.
+  Used as the main structural colour for navigation, interactive elements, and anchoring key layout components such as the site header and footer.
+- `#1F2F27` – Deep forest green
+Included as a deep structural colour within the palette and available for future expansion, though currently used sparingly in favour of the primary brand green.
 
 #### Background Colours
 - `#F6F3EA` – Light parchment background  
-  Used for main page backgrounds to ensure readability and reduce eye strain.
+  Used as the primary page background to maximise readability and reduce eye strain.
 - `#E2D3B3` – Parchment highlight  
-  Used behind logos, cards, and decorative elements for subtle contrast.
+  Used for brand accents, framed imagery, and decorative elements to soften transitions between sections.
 
 #### Accent Colours
 - `#B08D57` – Muted gold  
-  Used for buttons, hover states, and emphasis to draw attention without overpowering the layout.
+  Used for buttons, active states, and hover interactions to draw attention without overpowering the layout.
 
 ---
 
@@ -130,7 +138,7 @@ Typography for this website was chosen to balance atmosphere with usability.
 - **Inter**  
   Used for body text, navigation, forms, and interface elements. Its clean, modern design ensures readability across different screen sizes and supports accessibility.
 
-![Primary Font Used](assets/images/readme/readme-primary-font.png)
+![Primary Font Used](assets/images/readme/readme-secondary-font.png)
 ---
 
 ### Imagery
