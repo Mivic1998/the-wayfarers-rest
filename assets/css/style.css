@@ -1,72 +1,106 @@
 /* Google Fonts Import */
+/* Imports the two fonts used across the site:
+   - Cormorant Garamond for headings (atmosphere, medieval tone)
+   - Inter for body text (clarity and accessibility)
+   These must load before any rules that reference them.
+*/
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
     /* =========================
-     Brand Colours
-     ========================= */
+       Brand Colours
+       ========================= */
 
-    /* Primary structural colour */
+    /* Primary structural colour used for
+       navbar, footer, headings, and accents */
     --color-primary: #2F4F3E;
-    /* forest green */
+    /* forest green – anchors the brand */
 
-    /* Secondary accent (use sparingly) */
+    /* Secondary accent colour for interaction
+       (buttons, hover states, highlights) */
     --color-accent: #B08D57;
-    /* muted gold */
+    /* muted gold – draws attention without overpowering */
 
-    /* Brand highlight (logos, emphasis text) */
+    /* Brand highlight used for parchment effects,
+       logo framing, and subtle emphasis */
     --color-brand: #E2D3B3;
-    /* parchment */
+    /* parchment tone */
 
     /* =========================
-     Backgrounds
-     ========================= */
+       Backgrounds
+       ========================= */
 
+    /* Primary page background used on most pages
+       to maximise readability */
     --bg-page: #F6F3EA;
-    /* light parchment background */
+
+    /* Slightly darker background used to visually
+       separate sections from the page */
     --bg-section: #EFE9DC;
-    /* subtle section contrast */
+
+    /* Deep background variant reserved for
+       darker structural areas (defined for flexibility) */
     --bg-dark: #1F2F27;
-    /* footer / deep header variant */
 
     /* =========================
-     Text Colours
-     ========================= */
+       Text Colours
+       ========================= */
 
+    /* Default body text colour */
     --text-primary: #2A2A2A;
+
+    /* Secondary, reduced-emphasis text
+       (descriptions, metadata) */
     --text-secondary: #5F5F5F;
+
+    /* Text used on dark backgrounds
+       (nav, footer, hero overlays) */
     --text-inverse: #F6F3EA;
-    /* text on dark backgrounds */
 
     /* =========================
-     Typography
-     ========================= */
+       Typography
+       ========================= */
 
+    /* Serif heading font to reinforce theme */
     --font-heading: "Cormorant Garamond", serif;
+
+    /* Sans-serif body font for readability,
+       with full system fallback stack */
     --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 
+    /* Explicit font weights to avoid magic numbers
+       and keep typography consistent */
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
 
     /* =========================
-     Layout & Spacing
-     ========================= */
+       Layout & Spacing
+       ========================= */
 
+    /* Maximum readable width for content containers */
     --container-max-width: 1200px;
+
+    /* Default vertical spacing between sections */
     --section-padding-y: 3rem;
+
+    /* Reduced vertical spacing for smaller screens */
     --section-padding-y-sm: 2.5rem;
 
+    /* Border radius tokens for consistent rounding */
     --radius-sm: 4px;
     --radius-md: 8px;
 
     /* =========================
-     UI Elements
-     ========================= */
+       UI Elements
+       ========================= */
 
+    /* Neutral border colour used throughout
+       (cards, dividers, inputs) */
     --border-color: #D6D2C7;
 
+    /* Button colour tokens for reusability */
     --button-primary-bg: var(--color-primary);
     --button-primary-text: var(--text-inverse);
 
@@ -75,26 +109,26 @@
     --button-secondary-border: var(--color-primary);
 
     /* =========================
-     Image & Overlay Helpers
-     ========================= */
+       Image & Overlay Helpers
+       ========================= */
 
+    /* Light overlay for hero text legibility */
     --overlay-dark: rgba(0, 0, 0, 0.08);
-    /* hero text support */
+
+    /* Stronger overlay used when images are busy */
     --overlay-darker: rgba(0, 0, 0, 0.15);
-    /* busy images */
 }
 
 /* =========================
    Base Reset & Defaults
    ========================= */
 
-
 body {
-    font-family: var(--font-body);
-    font-weight: var(--font-weight-regular);
-    line-height: 1.6;
-    color: var(--text-primary);
-    background-color: var(--bg-page);
+    font-family: var(--font-body);              /* Default font for body content */
+    font-weight: var(--font-weight-regular);    /* Normal weight for readability */
+    line-height: 1.6;                           /* Comfortable reading rhythm */
+    color: var(--text-primary);                 /* High-contrast body text */
+    background-color: var(--bg-page);           /* Parchment-style background */
 }
 
 /* =========================
@@ -104,29 +138,32 @@ body {
 h1,
 h2,
 h3 {
-    font-family: var(--font-heading);
-    line-height: 1.2;
-    margin-bottom: 0.75em;
-    color: var(--text-primary);
+    font-family: var(--font-heading);            /* Use serif font for hierarchy */
+    line-height: 1.2;                            /* Tighter than body text */
+    margin-bottom: 0.75em;                       /* Consistent spacing below */
+    color: var(--text-primary);                  /* Ensure readability */
 }
 
 h1 {
+    /* Responsive scaling for large hero headings */
     font-size: clamp(2.2rem, 3vw, 3rem);
 }
 
 h2 {
+    /* Slightly smaller than h1, still responsive */
     font-size: clamp(1.6rem, 2.5vw, 2.1rem);
 }
 
 h3 {
+    /* Fixed size for subheadings and card titles */
     font-size: 1.2rem;
 }
 
 p {
-    max-width: 65ch;
-    margin-inline: auto;
-    margin-bottom: 1rem;
-    font-size: 0.95rem;
+    max-width: 65ch;                             /* Optimal line length */
+    margin-inline: auto;                        /* Centre text blocks */
+    margin-bottom: 1rem;                        /* Paragraph separation */
+    font-size: 0.95rem;                         /* Slightly condensed text */
 }
 
 /* =========================
@@ -134,43 +171,41 @@ p {
    ========================= */
 
 section {
+    /* Consistent vertical rhythm between sections */
     padding-top: var(--section-padding-y);
 }
 
 @media (max-width: 768px) {
     section {
+        /* Reduced spacing on smaller screens */
         padding-top: var(--section-padding-y-sm);
     }
 }
-
-
-
-
 
 /* =========================
    Images
    ========================= */
 
 img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: block;                              /* Remove inline image gaps */
+    width: 100%;                                 /* Responsive scaling */
+    height: 100%;                                /* Fill container when constrained */
+    object-fit: cover;                           /* Prevent image distortion */
 }
 
-
-
 /* Aspect‑ratio helpers */
+/* These ensure consistent cropping across layouts */
+
 .hero-image {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 9;                        /* Landscape hero imagery */
 }
 
 .card-image {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1;                         /* Square cards (features, gallery) */
 }
 
 .location-image {
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 4 / 5;                         /* Portrait orientation for locations */
 }
 
 /* =========================
@@ -180,25 +215,25 @@ img {
 .card,
 .feature-card,
 .location-card {
-    background-color: #fff;
-    border-radius: var(--radius-md);
-    padding: 1.5rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    background-color: #fff;                      /* Contrast against parchment */
+    border-radius: var(--radius-md);             /* Soften card edges */
+    padding: 1.5rem;                             /* Internal spacing */
+    height: 100%;                                /* Equal-height cards in grids */
+    display: flex;                               /* Flexbox for vertical control */
+    flex-direction: column;                      /* Stack content top-to-bottom */
+    gap: 0.75rem;                                /* Space between elements */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);    /* Subtle elevation */
 }
 
 .card p,
 .feature-card p,
 .location-card p {
-    font-size: 0.9rem;
-    flex-grow: 1;
+    font-size: 0.9rem;                           /* Slightly smaller supporting text */
+    flex-grow: 1;                                /* Push CTAs or metadata to bottom */
 }
 
 .location-card img {
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 3 / 2; /*Forces landscape framing for location card image, ensuring consistency across uneven image sources */
 }
 
 /* =========================
@@ -206,21 +241,21 @@ img {
    ========================= */
 
 .btn-primary {
-    display: inline-block;
-    background-color: var(--color-accent);
-    color: var(--color-primary);
-    border: none;
-    border-radius: 999px;
-    padding: 0.6rem 1.5rem;
-    font-weight: var(--font-weight-semibold);
-    font-size: 0.9rem;
-    text-decoration: none;
-    transition: filter 0.2s ease;
+    display: inline-block;           /* Allows padding, width, and margin to apply cleanly */
+    background-color: var(--color-accent); /* Gold accent colour to draw attention */
+    color: var(--color-primary);     /* Dark green text to maintain brand coherence */
+    border: none;                    /* Removes default browser border */
+    border-radius: 999px;            /* Fully rounded pill-style button */
+    padding: 0.6rem 1.5rem;          /* Comfortable clickable area for mouse & touch */
+    font-weight: var(--font-weight-semibold); /* Gives CTA visual importance */
+    font-size: 0.9rem;               /* Compact size to suit UI elements */
+    text-decoration: none;           /* Removes underline from anchor buttons */
+    transition: filter 0.2s ease;    /* Smooth visual feedback on hover/focus */
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    filter: brightness(1.05);
+    filter: brightness(1.05);        /* Slight brightening for interaction feedback */
 }
 
 /* =========================
@@ -228,162 +263,167 @@ img {
    ========================= */
 
 .text-center {
-    text-align: center;
+    text-align: center;              /* Simple utility class to centre text where needed */
 }
 
 
-/* Navbar */
+/* =========================
+   Navbar
+   ========================= */
 
 .site-navbar {
     background-color: var(--color-primary);
-    /* forest green */
+    /* Applies the forest green brand colour to the main site navigation */
 }
 
-/* Hover effect for the brand/logo to provide subtle feedback and interactivity without being too distracting, maintaining the elegant and understated aesthetic of the site. The opacity change is a simple way to achieve this while keeping the logo clear and recognizable.*/
+/* Hover effect for the brand/logo to provide subtle feedback and interactivity
+   without being distracting. Opacity change preserves logo clarity. */
 .site-navbar .navbar-brand:hover {
-    opacity: 0.9
+    opacity: 0.9                    /* Very subtle hover feedback */
 }
 
 .site-navbar .navbar-brand img {
-    height: auto;
-    width: 50px;
+    height: auto;                   /* Preserve aspect ratio */
+    width: 50px;                    /* Small logo size on very small screens */
 }
 
+/* Tablet breakpoint: expand logo to full horizontal version */
 @media (min-width: 576px) {
     .site-navbar .navbar-brand img {
-        width: 175px;
-        /* Adjust as needed for the full logo */
+        width: 175px;               /* Allows full logo mark to display */
     }
 }
 
+/* Desktop breakpoint: slightly larger logo for visual balance */
 @media (min-width: 768px) {
     .site-navbar .navbar-brand img {
-        width: 220px;
-        /* Adjust as needed for the full logo */
+        width: 220px;               /* Optimised size for larger headers */
     }
 }
 
 .site-navbar .nav-link {
-    color: var(--text-inverse);
-    font-family: var(--font-body);
-    /* Inter */
+    color: var(--text-inverse);     /* Light text on dark navbar */
+    font-family: var(--font-body);  /* Inter for clarity */
     font-weight: var(--font-weight-medium);
-    font-size: 0.95rem;
+    font-size: 0.95rem;             /* Slightly larger for comfortable navigation */
 }
 
 /* 
   Hover vs Focus states:
+  These comments explain an important accessibility concept.
 
-  :hover applies when a user points at a link with a mouse or trackpad.
-  :focus applies when a link is selected via keyboard navigation (Tab key)
-  or other non-mouse interactions (including some touch and assistive tech).
+  :hover → mouse & pointer users
+  :focus → keyboard & assistive technology users
 
-  Styling both ensures:
-  - Mouse users get visual feedback (:hover)
-  - Keyboard and accessibility users get the same feedback (:focus)
-
-  This is important for usability and accessibility, not just aesthetics.
+  Styling both ensures equivalent feedback for all users.
 */
 
-/* Align mobile nav with brand, not screen edge */
+/* =========================
+   Mobile Navbar Adjustments
+   ========================= */
 
 @media (max-width: 992px) {
 
-    /* Adds a subtle border to separate the mobile nav from the brand/logo */
+    /* Creates separation between logo header and collapsible nav */
     .site-navbar .navbar-collapse {
         margin-top: 0.5rem;
-        border-top: 1px solid rgba(242, 236, 221, 0.15);
+        border-top: 1px solid rgba(242, 236, 221, 0.15); /* Low-contrast divider */
     }
 
-    /* Aligns list of navigation links with the left edge of the logo on mobile and provides breathing room away from the logo */
+    /* Aligns nav links visually with the logo on small screens */
     .site-navbar .navbar-nav {
-        padding-left: 0.6rem;
-        padding-top: 0.5rem;
+        padding-left: 0.6rem;        /* Prevents nav sticking to screen edge */
+        padding-top: 0.5rem;         /* Breathing room beneath logo */
     }
 
-    /* Adjusts padding and font size for mobile nav links to better fit the smaller screen while darkening text slightly to avoid clashing with logo */
+    /* Optimises link spacing and contrast for mobile */
     .site-navbar .nav-link {
-        padding: 0.5rem 0;
-        font-size: 0.95rem;
-        color: rgba(242, 236, 221, 0.9);
+        padding: 0.5rem 0;           /* Tap‑friendly spacing */
+        font-size: 0.95rem;          /* Maintains readability */
+        color: rgba(242, 236, 221, 0.9); /* Slightly muted to reduce glare */
     }
 }
 
+/* Interaction feedback for nav links */
 nav.site-navbar .nav-link:hover,
 nav.site-navbar .nav-link:focus {
-    color: var(--color-accent);
-    /* muted gold */
+    color: var(--color-accent);      /* Muted gold hover/focus state */
 }
 
-/* To indicate active state for the current page's nav link, affects elements which are children of the site navbar and have both the active class and the nav-link class */
+/* Active page indicator — shows which page user is on */
 .site-navbar .nav-link.active {
-    color: var(--color-accent);
-    font-weight: var(--font-weight-semibold);
+    color: var(--color-accent);      /* Matches hover colour for consistency */
+    font-weight: var(--font-weight-semibold); /* Stronger weight for emphasis */
 }
 
-/* Navbar hamburger styling */
+/* =========================
+   Navbar Hamburger Button
+   ========================= */
 
-/*Removing default border and adjusting padding for better click area on mobile*/
+/* Removes default Bootstrap border and adjusts padding */
 .site-navbar .navbar-toggler {
     border: none;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.5rem;         /* Larger click target on mobile */
 }
 
-/*Removing default focus outline and shadow for a cleaner look*/
+/* Removes default focus ring to avoid visual clutter */
 .site-navbar .navbar-toggler:focus {
     box-shadow: none;
 }
 
-/* Use filter as color cannot be applied to the default Bootstrap hamburger icon, this inverts the icon to white and adds a subtle gold tint (sepia) to match the brand palette, saturate then increases colour intensity*/
+/* 
+   Cannot directly colour Bootstrap hamburger icon.
+   Filter is used instead to:
+   - invert to white
+   - add sepia for gold warmth
+   - saturate to enhance colour strength
+*/
 .site-navbar .navbar-toggler-icon {
     width: 1.5rem;
     height: 1.5rem;
     filter: invert(1) sepia(20%) saturate(80%);
-    /* Scale resizes element after its drawn*/
-    transform: scale(1.1);
+    transform: scale(1.1);           /* Slight enlargement for visibility */
 }
 
-/* Main Content */
+/* =========================
+   Hero Section Overrides
+   ========================= */
 
-/*Overriding default padding for the hero section so that image meets navbar while ensuring that bottom padding is maintained for all screen sizres */
+/* Removes padding above hero so it meets the navbar */
+.home-hero {
+    position: relative;              /* Needed for absolute-positioned overlay */
+    padding-top: 0;
+}
 
-
+.home-hero img {
+    height: 100%                    /* Allows hero image to fill container */
+}
 
 /* =========================
    Hero Text Overlay
    ========================= */
 
-.home-hero {
-    position: relative;
-    padding-top: 0;
-}
-
-.home-hero img {
-    height: 100%
-}
-
-
 .hero-overlay {
     position: absolute;
-    inset: 0;
+    inset: 0;                        /* Full cover over hero image,takes overlay out of document flow */
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;          /* Stack heading & text vertically */
+    justify-content: center;         /* Centre vertically */
+    align-items: center;             /* Centre horizontally */
 
     text-align: center;
-    padding: 2rem;
+    padding: 2rem;                   /* Prevent text touching edges */
 
-    color: var(--text-inverse);
-    z-index: 2;
+    color: var(--text-inverse);      /* Light text for contrast */
+    z-index: 2;                      /* Above hero image */
 }
 
 .hero-overlay h1 {
-    color: var(--text-inverse);
+    color: var(--text-inverse);      /* Explicit override for heading colour */
 }
 
-
+/* Mobile safeguard to ensure hero remains flush */
 @media (max-width: 768px) {
     .home-hero {
         padding-top: 0;
@@ -394,228 +434,254 @@ nav.site-navbar .nav-link:focus {
    Menu Page
    ========================= */
 
+/* Wrapper for the menu hero section.
+   Resets vertical spacing so the hero image can sit flush with the navbar. */
 .menu-hero {
-    background-color: var(--bg-section);
-    padding-top: 0;
-    padding-bottom: 0;
+    background-color: var(--bg-section);     /* Matches surrounding page sections */
+    padding-top: 0;                          /* Removes default section padding */
+    padding-bottom: 0;                       /* Ensures hero controls spacing itself */
 }
 
+/* Container for the menu hero image.
+   Breaks out of the standard content width to span full viewport width. */
 .menu-hero-image {
-    position: relative;
-    width: 100vw;
-    max-width: none;
-    margin: 0 calc(50% - 50vw) 0;
-    overflow: hidden;
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    position: relative;                      /* Establishes positioning context for overlay */
+    width: 100vw;                            /* Full viewport width */
+    max-width: none;                         /* Overrides container constraints */
+    margin: 0 calc(50% - 50vw) 0;             /* True full-width breakout trick */
+    overflow: hidden;                        /* Prevents image bleed */
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12); /* Depth to separate hero from content */
 }
 
+/* Image inside the hero container */
 .menu-hero-image img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 100%;                             /* Fully responsive */
+    height: auto;                            /* Preserve aspect ratio */
+    display: block;                          /* Removes inline whitespace */
 }
 
-
+/* Text overlay for the menu hero.
+   Positioned on top of the image, centred using Flexbox. */
 .menu-hero .hero-content {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1.5rem;
-    z-index: 1;
-    color: var(--text-inverse);
-    font-family: var(--font-body);
+    position: absolute;                      /* Allows overlay on top of image */
+    inset: 0;                                /* Fills the entire hero image */
+    display: flex;                           /* Flexbox for internal alignment */
+    flex-direction: column;                 /* Stack heading and paragraph */
+    justify-content: center;                /* Vertical centring */
+    align-items: center;                    /* Horizontal centring */
+    padding: 2rem 1.5rem;                   /* Prevents text touching edges */
+    z-index: 1;                             /* Above hero image */
+    color: var(--text-inverse);             /* Light text for contrast */
+    font-family: var(--font-body);          /* Inter for legibility */
 }
 
+/* Menu hero heading style */
 .menu-hero .hero-content h1 {
-    font-family: var(--font-heading);
-    font-weight: var(--font-weight-bold);
-    font-size: clamp(2rem, 3vw, 3rem);
-    margin-bottom: 1rem;
-    max-width: 12ch;
-    color: inherit;
+    font-family: var(--font-heading);        /* Decorative serif for hierarchy */
+    font-weight: var(--font-weight-bold);    /* Strong brand emphasis */
+    font-size: clamp(2rem, 3vw, 3rem);       /* Responsive scaling */
+    margin-bottom: 1rem;                    /* Separation from description */
+    max-width: 12ch;                        /* Prevents overly long lines */
+    color: inherit;                         /* Inherits light overlay colour */
 }
 
+/* Menu hero descriptive paragraph */
 .menu-hero .hero-content p {
-    margin-bottom: 0;
-    max-width: 45rem;
-    font-size: 1rem;
-    line-height: 1.65;
-    color: inherit;
+    margin-bottom: 0;                       /* Tightens layout */
+    max-width: 45rem;                       /* Readable line length */
+    font-size: 1rem;                        /* Slightly larger for hero copy */
+    line-height: 1.65;                      /* Comfortable reading */
+    color: inherit;                         /* Ensures consistent colouring */
 }
 
+/* Sticky anchor bar containing menu section links */
 .menu-anchors-bar {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    background-color: rgba(246, 243, 234, 0.97);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    display: flex;
+    position: sticky;                       /* Sticks to top on scroll */
+    top: 0;                                 /* Anchored to top of viewport */
+    z-index: 20;                            /* Above menu content */
+    background-color: rgba(246, 243, 234, 0.97); /* Semi‑opaque parchment */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* Subtle separation line */
+    display: flex;                          /* Centres inner anchor container */
     justify-content: center;
-    padding: 1rem 0;
+    padding: 1rem 0;                       /* Vertical spacing */
 }
 
+/* Container holding the individual anchor links */
 .menu-anchors {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;                          /* Horizontal layout */
+    flex-wrap: wrap;                       /* Allows wrapping on small screens */
+    justify-content: center;               /* Centre alignment */
     align-items: center;
     align-content: center;
-    gap: 0.75rem;
-    padding: 0 1rem;
+    gap: 0.75rem;                          /* Space between anchor buttons */
+    padding: 0 1rem;                       /* Prevents edge collision */
     width: 100%;
-    max-width: 1150px;
+    max-width: 1150px;                     /* Prevents anchors stretching too wide */
 }
 
+/* Individual menu anchor links */
 .menu-anchor {
-    display: inline-flex;
+    display: inline-flex;                  /* Enables flex centring */
     align-items: center;
     justify-content: center;
-    padding: 0.35rem 0.8rem;
-    color: var(--color-primary);
-    text-decoration: none;
+    padding: 0.35rem 0.8rem;               /* Clickable area */
+    color: var(--color-primary);           /* Brand green text */
+    text-decoration: none;                 /* Remove underline */
     font-weight: var(--font-weight-medium);
-    letter-spacing: 0.01em;
-    transition: color 0.2s ease, opacity 0.2s ease;
+    letter-spacing: 0.01em;                /* Slight clarity improvement */
+    transition: color 0.2s ease,
+                opacity 0.2s ease;         /* Smooth interaction feedback */
 }
 
+/* Hover and focus interaction for anchors */
 .menu-anchor:hover,
 .menu-anchor:focus {
-    color: var(--color-accent);
-    opacity: 0.85;
+    color: var(--color-accent);             /* Gold highlight */
+    opacity: 0.85;                          /* Softens feedback */
 }
 
+/* Active menu section indicator (updated via JS) */
 .menu-anchor.active {
-    color: var(--color-accent);
+    color: var(--color-accent);             /* Persistent highlight */
 }
 
+/* Wrapper for each menu category section */
 .menu-category {
-    background-color: var(--bg-section);
+    background-color: var(--bg-section);    /* Section separation */
     padding-top: 2rem;
     padding-bottom: 2rem;
-    scroll-margin-top: 5rem;
+    scroll-margin-top: 5rem;                /* Prevents sticky bar overlap when anchored */
 }
 
+/* First section offset to compensate for hero overlap */
 #house-specials {
     padding-top: 0.5rem;
 }
 
-
+/* Duplicate rule ensures consistency if overridden elsewhere */
 .menu-category {
     background-color: var(--bg-section);
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
+/* Spacing beneath section headings */
 .menu-category .section-title {
     margin-bottom: 1.2rem;
 }
 
+/* Shared framed image styling for menu heroes and about pillars */
 .menu-category__hero,
 .about-pillars img.pillar-image {
-    max-width: 840px;
-    padding: 0.1rem;
-    margin: 0 auto 1.75rem;
-    background-color: var(--bg-page);
-    /* parchment backdrop */
-    border: 3px solid rgba(168, 134, 62, 0.6);
-    /* antique gold */
-
-
+    max-width: 840px;                       /* Aligns with menu content width */
+    padding: 0.1rem;                        /* Creates frame thickness */
+    margin: 0 auto 1.75rem;                 /* Centres and spaces image */
+    background-color: var(--bg-page);       /* Parchment backdrop */
+    border: 3px solid rgba(168, 134, 62, 0.6); /* Antique gold frame */
     box-shadow:
-        inset 0 0 0 1px rgba(255, 236, 180, 0.4);
-
+        inset 0 0 0 1px rgba(255, 236, 180, 0.4); /* Inner highlight for depth */
 }
 
-
-
+/* Image inside the framed hero */
 .menu-category__hero img {
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 3 / 2;                    /* Consistent landscape framing */
     width: 100%;
     height: auto;
     display: block;
 }
 
+/* Grid wrapper for menu items */
 .menu-items {
-    display: grid;
-    gap: 0;
-    max-width: 840px;
-    margin: 0 auto;
+    display: grid;                          /* Grid allows simple vertical stacking */
+    gap: 0;                                 /* Borders provide separation instead */
+    max-width: 840px;                       /* Aligns with hero images */
+    margin: 0 auto;                         /* Centre container */
 }
 
+/* Individual menu item rows */
 .menu-item {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 1rem;
-    align-items: flex-start;
-    padding: 1rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    display: grid;                          /* Two-column layout */
+    grid-template-columns: 1fr auto;       /* Item name left, price right */
+    gap: 1rem;                              /* Space between text and price */
+    align-items: flex-start;               /* Prevents price centring vertically */
+    padding: 1rem 0;                        /* Vertical rhythm */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* Divider line */
 }
 
+/* Remove divider from final item */
 .menu-item:last-child {
     border-bottom: none;
 }
 
+/* Menu item name styling */
 .menu-item h3 {
     margin-bottom: 0.35rem;
     font-size: 1.05rem;
     letter-spacing: 0.02em;
 }
 
+/* Menu item description */
 .menu-item p {
     margin: 0;
-    color: var(--text-secondary);
+    color: var(--text-secondary);           /* Reduced emphasis */
     font-size: 0.95rem;
-    max-width: 55ch;
+    max-width: 55ch;                        /* Readability control */
 }
 
+/* Price styling */
 .menu-item__price {
     font-weight: var(--font-weight-semibold);
-    color: var(--color-primary);
+    color: var(--color-primary);            /* Reinforces brand colour */
     text-align: right;
-    white-space: nowrap;
+    white-space: nowrap;                    /* Prevents wrapping prices */
 }
 
-
+/* Wrapper for allergen and seasonality notices */
 .menu-notice {
-    background-color: var(--bg-page);
+    background-color: var(--bg-page);       /* Returns to page background */
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 3rem;                   /* Ensures full visibility of content */
 }
 
-
+/* Individual notice blocks */
 .menu-notice__item {
-    background: transparent;
+    background: transparent;                /* Allows background to show through */
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: var(--radius-md);
     padding: 1.5rem;
     margin-bottom: 1rem;
 }
 
+/* Notice headings */
 .menu-notice__item strong {
     display: block;
     margin-bottom: 0.5rem;
     font-size: 1rem;
 }
 
+/* Call-to-action container */
 .menu-cta {
-    padding-bottom: 3rem;
+    padding-bottom: 3rem;                   /* Spacing before footer */
 }
 
+/* CTA button wrapper */
 .menu-cta-buttons {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;                        /* Buttons stack on small screens */
     justify-content: center;
     gap: 1rem;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
 
+/* Ensures consistent CTA button width */
 .menu-cta .btn-primary {
     min-width: 210px;
 }
+
+/* =========================
+   Tablet Adjustments
+   ========================= */
 
 @media (max-width: 992px) {
     .menu-anchors {
@@ -640,14 +706,18 @@ nav.site-navbar .nav-link:focus {
     }
 }
 
+/* =========================
+   Mobile Adjustments
+   ========================= */
+
 @media (max-width: 768px) {
     .menu-item {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;         /* Stack price below description */
         text-align: left;
     }
 
     .menu-item__price {
-        text-align: left;
+        text-align: left;                   /* Align price with text */
     }
 
     .menu-anchors {
@@ -659,7 +729,7 @@ nav.site-navbar .nav-link:focus {
     }
 
     .menu-hero .hero-content {
-        padding: 1.3rem 1rem;
+        padding: 1.3rem 1rem;              /* Tighter hero spacing on mobile */
     }
 
     .menu-category {
@@ -668,7 +738,7 @@ nav.site-navbar .nav-link:focus {
     }
 
     .menu-category .section-title {
-        font-size: 1.3rem;
+        font-size: 1.3rem;                  /* Prevents oversized headings */
     }
 
     .menu-item {
@@ -936,9 +1006,6 @@ nav.site-navbar .nav-link:focus {
 .tavern-rule {
     margin-bottom: 2.5rem;
 }
-
-
-
 
 .tavern-rule h3 {
     margin-bottom: 0.5rem;
