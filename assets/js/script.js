@@ -95,7 +95,7 @@ function positionPopup(dot, popup) {
   // If placing it on the right would overflow the map…
   if (left + popupRect.width > mapWidth - gap) {
     // …flip it to the left side instead
-    left = dot.offsetLeft - popupRect.width - gap;
+    left = dot.offsetLeft - popupRect.width - 2*gap;
   }
 
   /* ---------- Vertical positioning ---------- */
@@ -105,29 +105,6 @@ function positionPopup(dot, popup) {
     dot.offsetTop +
     dot.offsetHeight / 2 -
     popupRect.height / 2;
-
-  // Check if that position would overflow the map
-  const overflowsBottom =
-    top + popupRect.height > mapHeight - gap;
-
-  const overflowsTop = top < gap;
-
-  // If it would overflow top or bottom…
-  if (overflowsBottom || overflowsTop) {
-    // Measure available space above and below the dot
-    const spaceAbove = dot.offsetTop;
-    const spaceBelow =
-      mapHeight - (dot.offsetTop + dot.offsetHeight);
-
-    // Prefer placing above if there’s enough room
-    if (spaceAbove >= popupRect.height + gap) {
-      top = dot.offsetTop - popupRect.height - gap;
-    }
-    // Otherwise place below if possible
-    else if (spaceBelow >= popupRect.height + gap) {
-      top = dot.offsetTop + dot.offsetHeight + gap;
-    }
-  }
 
   // Apply the calculated position
   popup.style.left = `${left}px`;

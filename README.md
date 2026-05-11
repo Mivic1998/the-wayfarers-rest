@@ -454,11 +454,11 @@ Due to these constraints, JavaScript was introduced to manage popup interaction 
 JavaScript is now used to:
 - Open and close popups when map dots are clicked
 - Ensure only one popup is visible at any time
-- Dynamically position popups relative to the clicked marker
+- Dynamically positions popups horizontally relative to the clicked marker
 - Adjust behaviour for different screen sizes
 - Close popups when the user clicks outside the map or scrolls
 
-Popup positioning logic measures both the map container and popup dimensions at runtime, choosing appropriate placement to avoid clipping. On smaller screens, behaviour is simplified to prioritise readability and predictability rather than precise spatial positioning.
+Popup positioning logic measures both the map container and popup dimensions at runtime, choosing appropriate placement to avoid popups overflowing map horizontally. On smaller screens, behaviour is simplified to prioritise readability and predictability rather than precise spatial positioning.
 
 To improve usability, the script also distinguishes between **user‑initiated scrolling** and **programmatic scrolling** (used to reveal clipped popups), preventing popups from immediately closing themselves.
 

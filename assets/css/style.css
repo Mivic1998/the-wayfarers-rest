@@ -1947,3 +1947,9 @@ body {
     transform: scale(1.04);
     transition: transform 0.6s ease;
 }
+
+.type-card img {
+  max-width: 100%;
+  height: auto;
+  align-self: stretch;
+}
