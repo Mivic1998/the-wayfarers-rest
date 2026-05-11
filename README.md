@@ -26,6 +26,7 @@ The site combines thematic world‑building with modern web standards, ensuring 
   - [Feedback Page](#feedback-page)
   - [Under Construction Page](#under-construction-page)
 - [Technologies Used](#technologies-used)
+- [JavaScript & Interaction Logic](#javascript--interaction-logic)
 - [Accessibility](#accessibility)
 - [Testing](#testing)
 - [Deployment](#deployment)
@@ -412,6 +413,70 @@ The under consturction page communicates unavailable content while maintaining b
 - Google Fonts: used to acquire fonts used throught the website
 - Coolors: used to create colour palette for website 
 - Balsamiq: used to make wireframes across screen sizes
+
+---
+
+## JavaScript & Interaction Logic
+
+JavaScript is used in this project only where interactivity and state management are required. Layout, styling, and animation are primarily handled in CSS, with JavaScript responsible for triggering state changes and managing user interaction.
+
+---
+
+### Scroll Reveal Animations
+
+Scroll‑based reveal animations are implemented using the **Intersection Observer API**. Elements with the `.reveal` and `.reveal-sub` classes are observed, and when approximately 15% of an element enters the viewport, a `.visible` class is added to trigger CSS transitions.
+
+Each element is unobserved after activation so animations only run once, improving performance and avoiding unnecessary processing.
+
+---
+
+### Locations Map & Popup Interaction
+
+The interactive map on the Locations page is the most JavaScript‑driven feature in the project.
+
+#### Initial CSS‑Only Approach
+
+Initially, popup behaviour was explored using a **CSS‑only solution**, primarily relying on the `:target` pseudo‑class to control popup visibility via anchor links. While this approach worked for simple cases, it quickly proved too restrictive for the required behaviour.
+
+Limitations encountered included:
+- Difficulty reliably closing popups without awkward workarounds
+- Inability to manage click‑away interactions
+- No way to dynamically position popups relative to map markers
+- Poor handling of mobile layouts and viewport constraints
+- Limited control over interaction state
+
+Due to these constraints, JavaScript was introduced to manage popup interaction in a more flexible and maintainable way.
+
+---
+
+#### JavaScript‑Driven Solution
+
+JavaScript is now used to:
+- Open and close popups when map dots are clicked
+- Ensure only one popup is visible at any time
+- Dynamically position popups relative to the clicked marker
+- Adjust behaviour for different screen sizes
+- Close popups when the user clicks outside the map or scrolls
+
+Popup positioning logic measures both the map container and popup dimensions at runtime, choosing appropriate placement to avoid clipping. On smaller screens, behaviour is simplified to prioritise readability and predictability rather than precise spatial positioning.
+
+To improve usability, the script also distinguishes between **user‑initiated scrolling** and **programmatic scrolling** (used to reveal clipped popups), preventing popups from immediately closing themselves.
+
+---
+
+### Design Philosophy
+
+This approach reflects a **progressive enhancement** mindset:
+- Core content remains usable without JavaScript
+- JavaScript is added only where CSS alone is insufficient
+- CSS remains responsible for layout, styling, and animation
+- JavaScript manages interaction logic and UI state
+
+---
+
+## Summary
+
+JavaScript in this project is used purposefully and sparingly, enabling interactive features that would be impractical or fragile to implement with CSS alone. The transition from a CSS‑only popup approach to a JavaScript‑managed solution demonstrates an understanding of browser limitations and an emphasis on maintainable, user‑focused design.
 
 ---
 

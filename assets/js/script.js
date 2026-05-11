@@ -1,22 +1,46 @@
-console.log("Reveal script loaded");
+
+// Wait until the DOM is fully loaded before querying elements
 document.addEventListener("DOMContentLoaded", () => {
-  // Select BOTH reveal types
+
+  // Select all elements that should animate into view.
+  // This includes both primary and secondary reveal styles.
   const revealElements = document.querySelectorAll(".reveal, .reveal-sub");
 
+  // Create a new IntersectionObserver instance.
+  // The browser will call this callback whenever observed
+  // elements enter or leave the viewport.
   const observer = new IntersectionObserver(
+
+    // Callback function executed when visibility changes
     (entries, observer) => {
+
+      // Loop over each observed visibility change
       entries.forEach(entry => {
+
+        // Check if the element is currently intersecting
+        // (i.e. visible in the viewport)
         if (entry.isIntersecting) {
+
+          // Add the "visible" class to trigger CSS transitions
           entry.target.classList.add("visible");
+
+          // Stop observing this element so the animation
+          // only runs once
           observer.unobserve(entry.target);
         }
       });
     },
+
+    // Observer options
     {
+      // Threshold defines how much of the element must be visible
+      // before the callback runs.
+      // 0.15 = 15% of the element is in view
       threshold: 0.15
     }
   );
 
+  // Attach the observer to each reveal element
   revealElements.forEach(el => observer.observe(el));
 });
 
@@ -51,7 +75,7 @@ function closeAllPopups() {
 /* ---------- Position popup relative to map ---------- */
 function positionPopup(dot, popup) {
   // Find the map container the dot belongs to
-  const map = dot.closest(".map-wrapper");
+  const map = document.querySelector(".map-wrapper");
 
   // Gap between dot and popup so they don’t touch visually
   const gap = 16;
@@ -82,12 +106,6 @@ function positionPopup(dot, popup) {
     dot.offsetHeight / 2 -
     popupRect.height / 2;
 
-    
-if (window.innerWidth <= 576) {
-  popup.style.top = `${dot.offsetTop + dot.offsetHeight + 16}px`;
-}
-
-
   // Check if that position would overflow the map
   const overflowsBottom =
     top + popupRect.height > mapHeight - gap;
@@ -110,12 +128,6 @@ if (window.innerWidth <= 576) {
       top = dot.offsetTop + dot.offsetHeight + gap;
     }
   }
-
-  // Final safety clamp to ensure popup remains inside the map
-  top = Math.max(
-    gap,
-    Math.min(top, mapHeight - popupRect.height - gap)
-  );
 
   // Apply the calculated position
   popup.style.left = `${left}px`;
