@@ -1,8 +1,14 @@
 # The Wayfarer’s Rest
 
-The Wayfarer’s Rest is a fictional medieval‑themed tavern website created as part of the Code Institute HTML, CSS, and JavaScript curriculum. The project focuses on building a visually immersive, accessible, and fully responsive multi‑page site using front‑end technologies only.
+The Wayfarer’s Rest is a fictional medieval‑themed tavern website created as part of the Code Institute HTML, CSS, and JavaScript curriculum. The project focuses on building a visually immersive, accessible, and fully responsive multi‑page site using front‑end technologies only. 
+
+The purpose of this website is to provide visitors with an immersive and easy to navigate introduction to a fictional medieval tavern chain operating across a bright‑fantasy realm, allowing them to explore what the taverns offer, where they can be found, and what kind of experience travellers can expect when visiting one.
 
 The site combines thematic world‑building with modern web standards, ensuring that atmosphere does not compromise usability, readability, or navigation across different devices.
+
+View Site -> **The Wayfarer’s Rest:** https://mivic1998.github.io/the-wayfarers-rest/
+
+![The Wayfarer's Rest](assets/images/readme/readme-home-one.png)
 
 ---
 
@@ -46,48 +52,75 @@ The user experience design for The Wayfarer’s Rest focuses on clarity, immersi
 
 ### User Stories
 
-The following user stories were used to guide the design and development of The Wayfarer’s Rest. They helped ensure that the site structure, content, and features were built around the needs of different users, including first‑time visitors, returning visitors, and users accessing the site on a range of devices.
+The following user stories were used to guide the design and development of *The Wayfarer’s Rest*. All user stories follow the format **“As a… I want to… so that…”** to clearly define user needs and expected outcomes.
+
+---
 
 #### First‑Time Visitors
-- As a first‑time visitor, I want to quickly understand what The Wayfarer’s Rest is so that I can determine whether the site is relevant and engaging.
-- As a first‑time visitor, I want a visually immersive introduction so that the medieval tavern theme is established immediately.
-- As a first‑time visitor, I want clear and intuitive navigation so that I can explore different sections of the site without confusion.
+
+- **As a first‑time visitor**, I want to quickly understand what The Wayfarer’s Rest is, **so that** I can decide whether the site is relevant and engaging to me.
+- **As a first‑time visitor**, I want a visually immersive introduction, **so that** the medieval tavern theme is established immediately.
+- **As a first‑time visitor**, I want clear and intuitive navigation, **so that** I can explore the site without confusion.
+
+---
 
 #### Returning Visitors
-- As a returning visitor, I want consistent navigation and page layout so that I can move through the site efficiently.
-- As a returning visitor, I want familiar structure and styling so that I can quickly locate information without relearning the interface.
+
+- **As a returning visitor**, I want consistent navigation and page layouts, **so that** I can move through the site efficiently.
+- **As a returning visitor**, I want familiar structure and styling, **so that** I can locate information quickly without relearning the interface.
+
+---
 
 #### Users Exploring the Tavern Concept
-- As a user, I want to read about the tavern’s story and background so that I can understand the world and lore surrounding The Wayfarer’s Rest.
-- As a user, I want the site’s colours, typography, and imagery to reinforce the medieval theme so that the experience feels cohesive and intentional.
+
+- **As a user**, I want to read about the tavern’s story and background, **so that** I can understand the world and lore surrounding The Wayfarer’s Rest.
+- **As a user**, I want the site’s colours, typography, and imagery to reinforce the medieval theme, **so that** the experience feels cohesive and intentional.
+
+---
 
 #### Users Viewing Food and Drink Information
-- As a user, I want to browse the tavern’s menu so that I can see what food and drink are available.
-- As a user, I want menu sections to be clearly grouped so that I can scan items efficiently.
-- As a user with dietary concerns, I want allergen and seasonality information so that I can make informed choices.
+
+- **As a user**, I want to browse the tavern’s menu, **so that** I can see what food and drink are available.
+- **As a user**, I want menu sections to be clearly grouped, **so that** I can scan items efficiently.
+- **As a user with dietary concerns**, I want to view allergen and seasonality information, **so that** I can make informed choices.
+
+---
 
 #### Users Exploring Locations
-- As a user, I want to explore different tavern locations so that I can see how the Wayfarer’s Rest exists across the realm.
-- As a user, I want the locations map to be interactive so that selection feels engaging rather than static.
-- As a user on a mobile device, I want location pop‑ups to remain visible and readable so that information is not cut off.
+
+- **As a user**, I want to explore different tavern locations, **so that** I can understand how The Wayfarer’s Rest exists across the realm.
+- **As a user**, I want the locations map to be interactive, **so that** exploring locations feels engaging rather than static.
+- **As a mobile user**, I want location pop‑ups to remain visible and readable, **so that** information is not cut off on smaller screens.
+
+---
 
 #### Users Viewing Visual Content
-- As a user, I want to browse a gallery of images so that I can visually explore the tavern environment.
-- As a user, I want images to adapt to my screen size so that they remain clear and unobstructed.
+
+- **As a user**, I want to browse a gallery of images, **so that** I can visually explore the tavern environment.
+- **As a user**, I want images to adapt to my screen size, **so that** they remain clear and unobstructed on all devices.
+
+---
 
 #### Users Seeking Help or Answers
-- As a user, I want to view frequently asked questions so that I can quickly find answers without needing to contact the tavern.
-- As a user, I want FAQ content to be expandable so that the page remains uncluttered.
+
+- **As a user**, I want to view frequently asked questions, **so that** I can find answers quickly without needing to make direct contact.
+- **As a user**, I want FAQ content to be expandable, **so that** the page remains uncluttered and easy to scan.
+
+---
 
 #### Users Making Contact
-- As a user, I want to send an enquiry using a simple contact form so that I can communicate easily.
-- As a user, I want clear confirmation after submitting a message so that I know it was successful.
-- As a user, I want clear navigation options after submission so that I can continue browsing.
 
-#### Users on Different Devices
-- As a user, I want the site to adapt smoothly to desktop, tablet, and mobile screen sizes so that my experience remains consistent.
-- As a mobile user, I want navigation and buttons to be touch‑friendly so that the site is comfortable to use.
-- As a user sensitive to motion, I want animations to respect reduced‑motion preferences so that the site remains comfortable to view.
+- **As a user**, I want to send an enquiry using a simple contact form, **so that** I can communicate easily with the tavern.
+- **As a user**, I want clear confirmation after submitting a message, **so that** I know my enquiry was successful.
+- **As a user**, I want clear navigation options after submission, **so that** I can continue browsing the site.
+
+---
+
+#### Users on Different Devices and With Accessibility Needs
+
+- **As a user**, I want the site to adapt smoothly across desktop, tablet, and mobile devices, **so that** my experience remains consistent.
+- **As a mobile user**, I want navigation and buttons to be touch‑friendly, **so that** the site is comfortable to use.
+- **As a user sensitive to motion**, I want animations to respect reduced‑motion preferences, **so that** the site remains comfortable and accessible.
 
 ---
 

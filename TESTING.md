@@ -17,6 +17,7 @@
   - [Feedback / Message Received Page](#feedback--message-received-page)
   - [Under Construction Page](#under-construction-page)
 - [Performance Considerations and Impact](#performance-considerations-and-impact)
+  - [Lazy Loading Performance Impact](#lazy-loading-performance-impact)
 - [Conclusion](#conclusion)
 
 # Testing and Validation
@@ -170,6 +171,12 @@ While most pages achieved strong performance scores, some pages recorded lower r
 - **No advanced optimisation pipeline:** As this is an educational front‑end project, no build tools, image compression pipelines, or CDN services were implemented. Advanced optimisations such as WebP image conversion or aggressive lazy loading represent potential future improvements rather than current requirements.
 
 Despite performance variation on certain pages, **Accessibility, Best Practices, and SEO scores remained consistently high across the entire site**, indicating well‑structured markup, accessible design, and adherence to modern web standards.
+
+---
+
+## Lazy Loading Performance Impact
+
+Lazy loading was applied selectively to images that are not visible on initial page load in order to reduce unnecessary network requests and improve perceived performance. This had a noticeable positive impact on Lighthouse performance scores in image‑heavy areas. The Home page on desktop showed the most pronounced improvement, with the Performance score increasing to 98, largely due to deferring off‑screen gallery and feature imagery. On mobile, the largest gains were observed on the Taverns and Locations pages, where performance improved to 83, reflecting reduced initial load cost for map‑related and content images. On other pages, the impact of lazy loading was minimal or negligible. In some cases, even pages with a high number of images showed little measurable change in Lighthouse scores, suggesting that factors such as image size, caching, and overall page structure had a greater influence than deferred loading alone. This indicates that lazy loading was most effective only where off‑screen imagery significantly affected the initial page load.
 
 ---
 
