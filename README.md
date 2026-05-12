@@ -1,14 +1,14 @@
 # The Wayfarer’s Rest
 
-The Wayfarer’s Rest is a fictional medieval‑themed tavern website created as part of the Code Institute HTML, CSS, and JavaScript curriculum. The project focuses on building a visually immersive, accessible, and fully responsive multi‑page site using front‑end technologies only. 
+The Wayfarer’s Rest is a fictional medieval‑themed website created as part of the Code Institute HTML, CSS, and JavaScript curriculum. The project focuses on building a visually immersive, accessible, and fully responsive multi‑page site using front‑end technologies only. 
 
 The purpose of this website is to provide visitors with an immersive and easy to navigate introduction to a fictional medieval tavern chain operating across a bright‑fantasy realm, allowing them to explore what the taverns offer, where they can be found, and what kind of experience travellers can expect when visiting one.
 
 The site combines thematic world‑building with modern web standards, ensuring that atmosphere does not compromise usability, readability, or navigation across different devices.
 
-View Site -> **The Wayfarer’s Rest:** https://mivic1998.github.io/the-wayfarers-rest/
+**The Wayfarer’s Rest Deployed Link:** https://mivic1998.github.io/the-wayfarers-rest/
 
-![The Wayfarer's Rest](assets/images/readme/readme-home-one.png)
+![The Wayfarer's Rest Initial View](assets/images/readme/readme-home-one.png)
 
 ---
 
@@ -58,9 +58,10 @@ The following user stories were used to guide the design and development of *The
 
 #### First‑Time Visitors
 
-- **As a first‑time visitor**, I want to quickly understand what The Wayfarer’s Rest is, **so that** I can decide whether the site is relevant and engaging to me.
+- **As a first‑time visitor**, I want an immediate overview of what The Wayfarer's Rest offers, **so that** I can quickly understand the purpose of the site and its fantasy tavern concept.
 - **As a first‑time visitor**, I want a visually immersive introduction, **so that** the medieval tavern theme is established immediately.
 - **As a first‑time visitor**, I want clear and intuitive navigation, **so that** I can explore the site without confusion.
+- **As a user**, I want information to be clearly structured and prioritised, **so that** I can find what I need without unnecessary effort.
 
 ---
 
@@ -71,10 +72,18 @@ The following user stories were used to guide the design and development of *The
 
 ---
 
+#### Users Engaging with Theme and Atmosphere
+
+- **As a user**, I want the site’s visual style to reflect heritage and tradition, **so that** the tavern feels established, authentic, and grounded.
+- **As a user**, I want the site to avoid a modern corporate aesthetic, **so that** the fantasy setting feels appropriate and immersive.
+
+----
+
 #### Users Exploring the Tavern Concept
 
 - **As a user**, I want to read about the tavern’s story and background, **so that** I can understand the world and lore surrounding The Wayfarer’s Rest.
 - **As a user**, I want the site’s colours, typography, and imagery to reinforce the medieval theme, **so that** the experience feels cohesive and intentional.
+- **As a user**, I want a consistent fictional narrative across all pages, **so that** the world‑building feels believable and cohesive.
 
 ---
 
@@ -98,6 +107,7 @@ The following user stories were used to guide the design and development of *The
 
 - **As a user**, I want to browse a gallery of images, **so that** I can visually explore the tavern environment.
 - **As a user**, I want images to adapt to my screen size, **so that** they remain clear and unobstructed on all devices.
+- **As a user**, I want images to include clear context or descriptions, **so that** visual content remains meaningful and accessible.
 
 ---
 
@@ -120,6 +130,7 @@ The following user stories were used to guide the design and development of *The
 
 - **As a user**, I want the site to adapt smoothly across desktop, tablet, and mobile devices, **so that** my experience remains consistent.
 - **As a mobile user**, I want navigation and buttons to be touch‑friendly, **so that** the site is comfortable to use.
+- **As a user on a small screen**, I want all content to remain readable without loss of functionality, **so that** I can use the site comfortably on mobile devices.
 - **As a user sensitive to motion**, I want animations to respect reduced‑motion preferences, **so that** the site remains comfortable and accessible.
 
 ---
