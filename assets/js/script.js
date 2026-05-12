@@ -220,3 +220,14 @@ window.addEventListener(
   },
   { passive: true }
 );
+
+
+window.addEventListener(
+  "touchstart",
+  () => {
+    if (ignoreNextScroll) return;
+    closeAllPopups();
+  },
+  { passive: true }
+);
+

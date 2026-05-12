@@ -75,22 +75,22 @@
 
                             <div class="mb-4">
                                 <label for="name" class="form-label">Name</label>
-                                <input type="text" id="name" class="form-control" required>
+                                <input type="text" id="name" name="name" class="form-control" required minlength="2">
                             </div>
 
                             <div class="mb-4">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea id="message" class="form-control" rows="6" required></textarea>
+                                <textarea id="message" name="message" class="form-control" rows="6" required minlength="10"></textarea>
                             </div>
 
                             <div class="mb-4">
                                 <label for="reason" class="form-label">Reason For Enquiry</label>
-                                <select id="reason" class="form-select">
-                                    <option>General Enquiry</option>
-                                    <option>Book A Table</option>
-                                    <option>Tavern Locations</option>
-                                    <option>Tavern Code &amp; Conduct</option>
-                                    <option>Other</option>
+                                <select id="reason" name="reason" class="form-select">
+                                    <option value="general" selected>General Enquiry</option>
+                                    <option value="booking">Book A Table</option>
+                                    <option value="locations">Tavern Locations</option>
+                                    <option value="code">Tavern Code &amp; Conduct</option>
+                                    <option value="other">Other</option>
                                 </select>
                             </div>
 
@@ -100,7 +100,6 @@
                                 </button>
                             </div>
 
-
                         </form>
 
                     </div>
@@ -108,12 +107,13 @@
                     <!-- RIGHT: INFO -->
                     <div class="col-12 col-lg-5">
                         <div class="contact-section-icon pb-3">
-                            <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true" loading="lazy">
+                            <img src="assets/images/icons/icon-lantern-green.svg" alt="" aria-hidden="true"
+                                loading="lazy">
                         </div>
 
                         <h2 class="mb-4">Other Ways To Reach Us</h2>
 
-                        <p>
+                        <p class="mb-5">
                             Whether you’re planning a visit, enquiring about reservations, or simply wish to send word
                             ahead, there are many ways to reach the Wayfarer’s Rest. Messages left here are carried
                             directly to our hearthkeeper, who will see them answered in due course. For matters of
