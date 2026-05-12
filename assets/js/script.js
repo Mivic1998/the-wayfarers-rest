@@ -223,7 +223,7 @@ window.addEventListener(
 
 
 window.addEventListener(
-  "touchstart",
+  "touchmove",
   () => {
     if (ignoreNextScroll) return;
     closeAllPopups();
