@@ -823,7 +823,7 @@ nav.site-navbar .nav-link:focus {
 }
 
 @media (max-width: 991px) {
-    .contact h2 {
+    .contact h2, .contact h1 {
         text-align: center;
     }
 

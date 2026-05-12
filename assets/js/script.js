@@ -54,10 +54,17 @@ const dots = document.querySelectorAll(".map-dot");
 // Select all popup panels
 const popups = document.querySelectorAll(".tavern-popup");
 
-// Track which dot is currently active (if any)
+// Track which dot is currently active (if any) used in close all pop ups function//
 let activeDot = null;
 
-// Flag used to ignore scroll events triggered by our own auto-scrolling
+/* Flag used to ignore scroll events triggered by our own auto-scrolling,
+used in nested function in scrollViewPortIfNeeded function
+(sets it to true) which scrolls to the pop-up if it
+is out of frame which sets it to false when there is a delay in scrolling after
+auto scrolling is executed by scrollViewPort if needed, scroll listener will not
+execute pop up close when the flag is set to true. */
+
+
 let ignoreNextScroll = false;
 
 /* ---------- Close all popups ---------- */
@@ -98,9 +105,7 @@ function positionPopup(dot, popup) {
     left = dot.offsetLeft - popupRect.width - 2*gap;
   }
 
-  /* ---------- Vertical positioning ---------- */
-
-  // Default: vertically centre popup against the dot
+//vertically centre popup against the dot
   let top =
     dot.offsetTop +
     dot.offsetHeight / 2 -
@@ -111,7 +116,8 @@ function positionPopup(dot, popup) {
   popup.style.top = `${top}px`;
 }
 
-/* ---------- Re-enable scroll closing AFTER scrolling stops ---------- */
+/* ---------- Re-enable scroll closing AFTER scrolling stops ----------
+used in the scrollViewportIfNeeded function */
 function unlockScrollAfterStop(delay = 120) {
   let timer;
 
