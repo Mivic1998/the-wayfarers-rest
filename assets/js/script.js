@@ -186,8 +186,18 @@ dots.forEach(dot => {
     const popup = document.getElementById(dot.dataset.popup);
     if (!popup) return;
 
-    // Close any existing popup
+   
+
+    
+// If clicking the same dot, just close everything and stop
+    if (activeDot === dot) {
+      closeAllPopups();
+      return;
+    }
+
+     // Close any existing popup
     closeAllPopups();
+
 
     // Mark this dot and popup as active
     dot.classList.add("active");
