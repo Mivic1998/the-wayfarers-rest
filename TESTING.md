@@ -210,7 +210,20 @@ Performance, Accessibility, Best Practices, and SEO testing was conducted using 
 While most pages achieved strong performance scores, some pages recorded lower results, particularly during mobile Lighthouse testing. These outcomes reflect deliberate optimisation decisions made to balance technical performance with real user experience, rather than implementation errors.
 
 - **Image format trade-offs:**  
-  Images were initially converted from JPG to WebP to reduce file sizes and improve Lighthouse performance metrics. While this improved measured performance, above‑the‑fold WebP images introduced a noticeable delay before rendering. As a result, hero and top-of-page images were reverted to JPG to prioritise faster perceived load times, while WebP was retained for lower-priority images further down the page.
+  Images were initially converted from JPG to WebP to reduce file sizes and improve Lighthouse performance metrics. Following further testing, hero images were retained in WebP format, as they load individually and benefit from improved compression without noticeable delays.
+
+  However, images within the homepage carousel were found to perform differently. While the first (visible) carousel image loaded efficiently, subsequent images converted to WebP introduced slower perceived rendering when multiple images were processed together. As a result, these carousel images were reverted to JPG format to ensure faster visual display.
+
+  This resulted in a context-based approach:
+  - WebP is used for hero and lower-priority images where compression improves performance without affecting render speed  
+  - JPG is used in multi-image contexts, such as carousel slides, where faster decoding improves perceived performance  
+
+  This approach ensures an effective balance between file size optimisation and user-perceived responsiveness.
+
+- **Image file structure:**  
+  Both WebP and JPG versions of all non-logo images are stored within the project in separate folders. This structure allows flexible testing and selective use of formats depending on context, enabling different optimisation strategies across the site.
+
+  While this approach increases file duplication and would not be ideal for a large-scale production system, it provides full control over format selection and supports performance testing and comparison within the scope of the project.
 
 - **Perceived vs measured performance:**  
   Testing demonstrated that improved Lighthouse scores do not always correspond to improved user experience. In particular, some optimisations resulted in slower visual rendering despite better performance metrics, highlighting the difference between measured performance and perceived responsiveness.
@@ -219,24 +232,45 @@ While most pages achieved strong performance scores, some pages recorded lower r
   Lazy loading was initially applied to non-visible images to reduce initial load cost. However, this introduced visible delays when scrolling, particularly on image-heavy pages such as the Gallery. Lazy loading was therefore removed from most content images to ensure immediate rendering and smoother interaction.
 
   Lazy loading was retained in specific cases where it does not negatively impact user experience:
-  - **Small, non-critical images such as icons**, where the delay is negligible  
-  - **Tavern popup images**, which are not part of the initial page render and only load when triggered by user interaction  
+  - small, non-critical images such as icons, where any delay is negligible  
+  - tavern popup images, which are not part of the initial page render and only load when triggered by user interaction  
 
   This approach maintains performance benefits without compromising usability.
 
 - **Image-heavy content:**  
   Pages such as the Home, Gallery, and Locations pages rely on multiple high-quality images to support immersion and visual storytelling. While this enhances the overall experience, it increases load time and impacts Lighthouse performance scores, particularly under mobile conditions.
 
+- **Client-side JavaScript and interactivity:**  
+  The Locations page includes JavaScript-driven interactivity such as map markers, popup positioning logic, scroll handling, and viewport adjustment. These features introduce additional runtime processing, which can affect performance scores in Lighthouse, particularly under mobile throttling conditions.
+
+  While this contributes to lower performance metrics compared to simpler pages, these interactions were intentionally implemented to enhance usability, providing contextual information dynamically without requiring page navigation.
+
 - **Simulated mobile constraints:**  
   Lighthouse mobile testing simulates reduced network speeds and CPU performance. As a result, image-heavy and interactive pages tend to show lower performance scores compared to desktop testing.
-
-- **Client-side interactivity:**  
-  Interactive features such as scroll-reveal animations and JavaScript-driven map popups introduce additional runtime processing. These features were intentionally included to enhance usability and engagement, with a minor impact on performance.
 
 - **CSS file size:**  
   The project uses a single stylesheet containing styles for all pages. This increases the volume of CSS loaded on each page, including unused rules. While fragmenting the CSS into page-specific files would improve efficiency, this was not implemented due to project scope and complexity.
 
-Despite variation in performance scores, **Accessibility, Best Practices, and SEO scores remained consistently high across all pages**, demonstrating strong adherence to modern web standards, accessible design, and well-structured content.
+Despite variation in performance scores, Accessibility, Best Practices, and SEO scores remained consistently high across all pages, demonstrating strong adherence to modern web standards, accessible design, and well-structured content.
+
+#### Observed Performance Improvements
+
+Following the optimisation changes described above, updated Lighthouse testing showed measurable improvements in performance scores across key pages, particularly those affected by image-heavy content and interactivity.
+
+- Home Page:  
+![Lighthouse performance improvement for Home Page showing increased performance score](assets/images/testing/lighthouse-home-d-improvement.PNG)
+
+- About Page:  
+![Lighthouse performance improvement for About Page showing increased performance score](assets/images/testing/lighthouse-about-d-improvement.PNG)
+
+- Locations Page:  
+![Lighthouse performance improvement for Locations Page showing increased performance score](assets/images/testing/lighthouse-locations-d-improvement.PNG)
+
+These results demonstrate that selective optimisation strategies, including context-based image format selection and refinement of lazy loading behaviour, led to improved performance scores without negatively affecting accessibility, best practices, or SEO.
+
+Further performance improvements could have been achieved through more aggressive optimisation strategies, such as extensive lazy loading of images and additional deferral of content. While these approaches improved Lighthouse performance metrics, testing showed that they introduced delays in visual rendering and interaction.
+
+As a result, these strategies were not fully implemented, as they compromised perceived performance and overall user experience. This reinforces the decision to prioritise real-world usability over purely metric-driven optimisation.
 
 ---
 
