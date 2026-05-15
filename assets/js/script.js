@@ -88,7 +88,6 @@ function positionPopup(dot, popup) {
   const gap = 16;
 
   // Get map dimensions
-  const mapHeight = map.offsetHeight;
   const mapWidth = map.offsetWidth;
 
   // Measure popup size (after it becomes visible)

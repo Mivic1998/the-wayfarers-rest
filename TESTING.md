@@ -37,22 +37,71 @@ CSS validation was conducted using the **W3C CSS Validation Service** to ensure 
 
 ---
 
-## HTML Validation
+### HTML Validation
+  
+HTML validation was carried out using the **W3C Nu HTML Checker**. Every HTML page in the project was individually tested and returned no errors or warnings.  
 
-HTML validation was carried out using the **W3C Nu HTML Checker**. Every HTML page in the project was individually tested and returned no errors or warnings.
+The following pages were validated:
 
-As all pages produced identical clean results, one representative validation result (the home page) is shown below to avoid unnecessary repetition.
+- Home Page  
+- About Page  
+- Menu Page  
+- Locations Page  
+- Gallery Page  
+- FAQ / Tavern Code Page  
+- Contact Page  
+- Feedback / Message Received Page  
+- Under Construction Page  
 
-**HTML Validation Result:**
-- *No errors or warnings*
+Initially, minor warnings were identified relating to:
 
-![HTML Validation Results](assets/images/testing/html-validation.png)
+"Section lacks heading"
+
+This affected the Gallery section and the Home features section.  
+
+These warnings were resolved by:
+
+- adding hidden `<h2>` elements to the affected sections  
+- implementing a `.visually-hidden` class to maintain accessibility without altering the visual design  
+
+This ensured:
+
+- correct semantic structure  
+- improved accessibility  
+- no impact on layout or user experience  
+
+As each page produced a clean validation result after these fixes, screenshots are provided below as evidence.
+
+**HTML Validation Results:**
+- *No errors found*
+
+![Home Page Validation](assets/images/testing/html-validation-index.png)  
+![About Page Validation](assets/images/testing/html-validation-about.png)  
+![Menu Page Validation](assets/images/testing/html-validation-menu.png)  
+![Locations Page Validation](assets/images/testing/html-validation-locations.png)  
+![Gallery Page Validation](assets/images/testing/html-validation-gallery.png)  
+![FAQ Page Validation](assets/images/testing/html-validation-faq.png)  
+![Contact Page Validation](assets/images/testing/html-validation-contact.png)  
+![Feedback Page Validation](assets/images/testing/html-validation-feedback.png)  
+![Under Construction Validation](assets/images/testing/html-validation-under-construction.png)
+
 
 ---
 
-## JavaScript Validation
+### JavaScript Validation
+  
+JavaScript was validated using **JSHint**.
 
-JavaScript was validated using **JSHint** and passed with no errors.
+The validation process returned warnings related to the use of modern JavaScript features such as `let` and `const`, which are not supported in older JavaScript versions (ES5).
+
+These warnings were reviewed and are expected, as the project uses **ES6+ syntax**, which is supported by all modern browsers.
+
+No unused variables, errors or issues affecting functionality were identified, and the code runs as intended across tested environments. A screenshot is provided as evidence of testing below.
+
+**JavaScript Validation Results:**
+- *No errors found*
+
+![JavaScript Validation](assets/images/testing/js-validation.png)  
 
 ---
 
@@ -156,27 +205,38 @@ Performance, Accessibility, Best Practices, and SEO testing was conducted using 
 
 ---
 
-## Performance Considerations and Impact
+### Performance Considerations and Impact
+  
+While most pages achieved strong performance scores, some pages recorded lower results, particularly during mobile Lighthouse testing. These outcomes reflect deliberate optimisation decisions made to balance technical performance with real user experience, rather than implementation errors.
 
-While most pages achieved strong performance scores, some pages recorded lower results, particularly during mobile Lighthouse testing. These outcomes are expected and reflect deliberate design and content decisions rather than implementation issues.
+- **Image format trade-offs:**  
+  Images were initially converted from JPG to WebP to reduce file sizes and improve Lighthouse performance metrics. While this improved measured performance, above‑the‑fold WebP images introduced a noticeable delay before rendering. As a result, hero and top-of-page images were reverted to JPG to prioritise faster perceived load times, while WebP was retained for lower-priority images further down the page.
 
-- **Image‑heavy content:** Pages such as the Home, Gallery, and Locations pages rely on large, high‑quality images to support visual storytelling and immersion. Lighthouse performance scoring penalises large image assets, especially on mobile where network and CPU throttling are applied.
+- **Perceived vs measured performance:**  
+  Testing demonstrated that improved Lighthouse scores do not always correspond to improved user experience. In particular, some optimisations resulted in slower visual rendering despite better performance metrics, highlighting the difference between measured performance and perceived responsiveness.
 
-- **Simulated mobile throttling:** Lighthouse mobile audits intentionally simulate slower network connections and reduced processing power. This results in consistently lower mobile performance scores when compared to desktop, particularly on visually rich pages.
+- **Lazy loading strategy:**  
+  Lazy loading was initially applied to non-visible images to reduce initial load cost. However, this introduced visible delays when scrolling, particularly on image-heavy pages such as the Gallery. Lazy loading was therefore removed from most content images to ensure immediate rendering and smoother interaction.
 
-- **Multiple assets loading simultaneously:** Gallery and map‑based pages load several images during initial render. While this enhances visual impact and user experience, it increases load time and negatively affects performance metrics.
+  Lazy loading was retained in specific cases where it does not negatively impact user experience:
+  - **Small, non-critical images such as icons**, where the delay is negligible  
+  - **Tavern popup images**, which are not part of the initial page render and only load when triggered by user interaction  
 
-- **Client‑side interactivity:** Interactive features such as carousels, accordions, scroll‑reveal animations, and JavaScript‑driven map pop‑ups add runtime overhead. These features prioritise engagement and usability over raw performance scores.
+  This approach maintains performance benefits without compromising usability.
 
-- **No advanced optimisation pipeline:** As this is an educational front‑end project, no build tools, image compression pipelines, or CDN services were implemented. Advanced optimisations such as WebP image conversion or aggressive lazy loading represent potential future improvements rather than current requirements.
+- **Image-heavy content:**  
+  Pages such as the Home, Gallery, and Locations pages rely on multiple high-quality images to support immersion and visual storytelling. While this enhances the overall experience, it increases load time and impacts Lighthouse performance scores, particularly under mobile conditions.
 
-Despite performance variation on certain pages, **Accessibility, Best Practices, and SEO scores remained consistently high across the entire site**, indicating well‑structured markup, accessible design, and adherence to modern web standards.
+- **Simulated mobile constraints:**  
+  Lighthouse mobile testing simulates reduced network speeds and CPU performance. As a result, image-heavy and interactive pages tend to show lower performance scores compared to desktop testing.
 
----
+- **Client-side interactivity:**  
+  Interactive features such as scroll-reveal animations and JavaScript-driven map popups introduce additional runtime processing. These features were intentionally included to enhance usability and engagement, with a minor impact on performance.
 
-## Lazy Loading Performance Impact
+- **CSS file size:**  
+  The project uses a single stylesheet containing styles for all pages. This increases the volume of CSS loaded on each page, including unused rules. While fragmenting the CSS into page-specific files would improve efficiency, this was not implemented due to project scope and complexity.
 
-Lazy loading was applied selectively to images that are not visible on initial page load in order to reduce unnecessary network requests and improve perceived performance. This had a noticeable positive impact on Lighthouse performance scores in image‑heavy areas. The Home page on desktop showed the most pronounced improvement, with the Performance score increasing to 98, largely due to deferring off‑screen gallery and feature imagery. On mobile, the largest gains were observed on the Taverns and Locations pages, where performance improved to 83, reflecting reduced initial load cost for map‑related and content images. On other pages, the impact of lazy loading was minimal or negligible. In some cases, even pages with a high number of images showed little measurable change in Lighthouse scores, suggesting that factors such as image size, caching, and overall page structure had a greater influence than deferred loading alone. This indicates that lazy loading was most effective only where off‑screen imagery significantly affected the initial page load.
+Despite variation in performance scores, **Accessibility, Best Practices, and SEO scores remained consistently high across all pages**, demonstrating strong adherence to modern web standards, accessible design, and well-structured content.
 
 ---
 
