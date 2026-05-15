@@ -1950,7 +1950,7 @@ nav.site-navbar .nav-link:focus {
 
 @media (max-width: 992px) {
     .tavern-popup {
-        width: 50%;
+        width: 75vw;
     }
 }
 
@@ -2327,4 +2327,12 @@ textarea.form-control {
     box-shadow: 0 0 0 2px var(--bg-section);
   }
 }
+
+
+@media (max-width: 576px) {
+    .tavern-popup {
+        width: 85vw;
+    }
+}
+
 
