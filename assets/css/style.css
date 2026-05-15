@@ -1951,7 +1951,7 @@ nav.site-navbar .nav-link:focus {
 
 @media (max-width: 992px) {
     .tavern-popup {
-        width: 30%;
+        width: 50%;
     }
 }
 
@@ -2324,6 +2324,7 @@ textarea.form-control {
 
 @media (hover: none) {
   .map-dot:hover {
-    transform: none;
+    transform: translate(-50%, -50%);
   }
 }
+
