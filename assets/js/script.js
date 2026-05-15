@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Select all elements that should animate into view.
   // This includes both primary and secondary reveal styles.
-  const revealElements = document.querySelectorAll(".reveal, .reveal-sub");
+  const revealElements = document.querySelectorAll(".reveal, .reveal-sub, .tablet-mobile-reveal");
 
   // Create a new IntersectionObserver instance.
   // The browser will call this callback whenever observed

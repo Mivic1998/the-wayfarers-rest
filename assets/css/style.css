@@ -124,11 +124,16 @@
    ========================= */
 
 body {
-    font-family: var(--font-body);              /* Default font for body content */
-    font-weight: var(--font-weight-regular);    /* Normal weight for readability */
-    line-height: 1.6;                           /* Comfortable reading rhythm */
-    color: var(--text-primary);                 /* High-contrast body text */
-    background-color: var(--bg-page);           /* Parchment-style background */
+    font-family: var(--font-body);
+    /* Default font for body content */
+    font-weight: var(--font-weight-regular);
+    /* Normal weight for readability */
+    line-height: 1.6;
+    /* Comfortable reading rhythm */
+    color: var(--text-primary);
+    /* High-contrast body text */
+    background-color: var(--bg-page);
+    /* Parchment-style background */
 }
 
 /* =========================
@@ -138,10 +143,14 @@ body {
 h1,
 h2,
 h3 {
-    font-family: var(--font-heading);            /* Use serif font for hierarchy */
-    line-height: 1.2;                            /* Tighter than body text */
-    margin-bottom: 0.75em;                       /* Consistent spacing below */
-    color: var(--text-primary);                  /* Ensure readability */
+    font-family: var(--font-heading);
+    /* Use serif font for hierarchy */
+    line-height: 1.2;
+    /* Tighter than body text */
+    margin-bottom: 0.75em;
+    /* Consistent spacing below */
+    color: var(--text-primary);
+    /* Ensure readability */
 }
 
 h1 {
@@ -160,10 +169,14 @@ h3 {
 }
 
 p {
-    max-width: 65ch;                             /* Optimal line length */
-    margin-inline: auto;                        /* Centre text blocks */
-    margin-bottom: 1rem;                        /* Paragraph separation */
-    font-size: 0.95rem;                         /* Slightly condensed text */
+    max-width: 65ch;
+    /* Optimal line length */
+    margin-inline: auto;
+    /* Centre text blocks */
+    margin-bottom: 1rem;
+    /* Paragraph separation */
+    font-size: 0.95rem;
+    /* Slightly condensed text */
 }
 
 /* =========================
@@ -187,25 +200,32 @@ section {
    ========================= */
 
 img {
-    display: block;                              /* Remove inline image gaps */
-    width: 100%;                                 /* Responsive scaling */
-    height: 100%;                                /* Fill container when constrained */
-    object-fit: cover;                           /* Prevent image distortion */
+    display: block;
+    /* Remove inline image gaps */
+    width: 100%;
+    /* Responsive scaling */
+    height: 100%;
+    /* Fill container when constrained */
+    object-fit: cover;
+    /* Prevent image distortion */
 }
 
 /* Aspect‑ratio helpers */
 /* These ensure consistent cropping across layouts */
 
 .hero-image {
-    aspect-ratio: 16 / 9;                        /* Landscape hero imagery */
+    aspect-ratio: 16 / 9;
+    /* Landscape hero imagery */
 }
 
 .card-image {
-    aspect-ratio: 1 / 1;                         /* Square cards (features, gallery) */
+    aspect-ratio: 1 / 1;
+    /* Square cards (features, gallery) */
 }
 
 .location-image {
-    aspect-ratio: 4 / 5;                         /* Portrait orientation for locations */
+    aspect-ratio: 4 / 5;
+    /* Portrait orientation for locations */
 }
 
 /* =========================
@@ -215,25 +235,36 @@ img {
 .card,
 .feature-card,
 .location-card {
-    background-color: #fff;                      /* Contrast against parchment */
-    border-radius: var(--radius-md);             /* Soften card edges */
-    padding: 1.5rem;                             /* Internal spacing */
-    height: 100%;                                /* Equal-height cards in grids */
-    display: flex;                               /* Flexbox for vertical control */
-    flex-direction: column;                      /* Stack content top-to-bottom */
-    gap: 0.75rem;                                /* Space between elements */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);    /* Subtle elevation */
+    background-color: #fff;
+    /* Contrast against parchment */
+    border-radius: var(--radius-md);
+    /* Soften card edges */
+    padding: 1.5rem;
+    /* Internal spacing */
+    height: 100%;
+    /* Equal-height cards in grids */
+    display: flex;
+    /* Flexbox for vertical control */
+    flex-direction: column;
+    /* Stack content top-to-bottom */
+    gap: 0.75rem;
+    /* Space between elements */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    /* Subtle elevation */
 }
 
 .card p,
 .feature-card p,
 .location-card p {
-    font-size: 0.9rem;                           /* Slightly smaller supporting text */
-    flex-grow: 1;                                /* Push CTAs or metadata to bottom */
+    font-size: 0.9rem;
+    /* Slightly smaller supporting text */
+    flex-grow: 1;
+    /* Push CTAs or metadata to bottom */
 }
 
 .location-card img {
-    aspect-ratio: 3 / 2; /*Forces landscape framing for location card image, ensuring consistency across uneven image sources */
+    aspect-ratio: 3 / 2;
+    /*Forces landscape framing for location card image, ensuring consistency across uneven image sources */
 }
 
 /* =========================
@@ -241,21 +272,32 @@ img {
    ========================= */
 
 .btn-primary {
-    display: inline-block;           /* Allows padding, width, and margin to apply cleanly */
-    background-color: var(--color-accent); /* Gold accent colour to draw attention */
-    color: var(--color-primary);     /* Dark green text to maintain brand coherence */
-    border: none;                    /* Removes default browser border */
-    border-radius: 999px;            /* Fully rounded pill-style button */
-    padding: 0.6rem 1.5rem;          /* Comfortable clickable area for mouse & touch */
-    font-weight: var(--font-weight-semibold); /* Gives CTA visual importance */
-    font-size: 0.9rem;               /* Compact size to suit UI elements */
-    text-decoration: none;           /* Removes underline from anchor buttons */
-    transition: filter 0.2s ease;    /* Smooth visual feedback on hover/focus */
+    display: inline-block;
+    /* Allows padding, width, and margin to apply cleanly */
+    background-color: var(--color-accent);
+    /* Gold accent colour to draw attention */
+    color: var(--color-primary);
+    /* Dark green text to maintain brand coherence */
+    border: none;
+    /* Removes default browser border */
+    border-radius: 999px;
+    /* Fully rounded pill-style button */
+    padding: 0.6rem 1.5rem;
+    /* Comfortable clickable area for mouse & touch */
+    font-weight: var(--font-weight-semibold);
+    /* Gives CTA visual importance */
+    font-size: 0.9rem;
+    /* Compact size to suit UI elements */
+    text-decoration: none;
+    /* Removes underline from anchor buttons */
+    transition: filter 0.2s ease;
+    /* Smooth visual feedback on hover/focus */
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    filter: brightness(1.05);        /* Slight brightening for interaction feedback */
+    filter: brightness(1.05);
+    /* Slight brightening for interaction feedback */
 }
 
 /* =========================
@@ -263,7 +305,8 @@ img {
    ========================= */
 
 .text-center {
-    text-align: center;              /* Simple utility class to centre text where needed */
+    text-align: center;
+    /* Simple utility class to centre text where needed */
 }
 
 
@@ -279,33 +322,41 @@ img {
 /* Hover effect for the brand/logo to provide subtle feedback and interactivity
    without being distracting. Opacity change preserves logo clarity. */
 .site-navbar .navbar-brand:hover {
-    opacity: 0.9                    /* Very subtle hover feedback */
+    opacity: 0.9
+        /* Very subtle hover feedback */
 }
 
 .site-navbar .navbar-brand img {
-    height: auto;                   /* Preserve aspect ratio */
-    width: 50px;                    /* Small logo size on very small screens */
+    height: auto;
+    /* Preserve aspect ratio */
+    width: 50px;
+    /* Small logo size on very small screens */
 }
 
 /* Tablet breakpoint: expand logo to full horizontal version */
 @media (min-width: 576px) {
     .site-navbar .navbar-brand img {
-        width: 175px;               /* Allows full logo mark to display */
+        width: 175px;
+        /* Allows full logo mark to display */
     }
 }
 
 /* Desktop breakpoint: slightly larger logo for visual balance */
 @media (min-width: 768px) {
     .site-navbar .navbar-brand img {
-        width: 220px;               /* Optimised size for larger headers */
+        width: 220px;
+        /* Optimised size for larger headers */
     }
 }
 
 .site-navbar .nav-link {
-    color: var(--text-inverse);     /* Light text on dark navbar */
-    font-family: var(--font-body);  /* Inter for clarity */
+    color: var(--text-inverse);
+    /* Light text on dark navbar */
+    font-family: var(--font-body);
+    /* Inter for clarity */
     font-weight: var(--font-weight-medium);
-    font-size: 0.95rem;             /* Slightly larger for comfortable navigation */
+    font-size: 0.95rem;
+    /* Slightly larger for comfortable navigation */
 }
 
 /* 
@@ -327,33 +378,42 @@ img {
     /* Creates separation between logo header and collapsible nav */
     .site-navbar .navbar-collapse {
         margin-top: 0.5rem;
-        border-top: 1px solid rgba(242, 236, 221, 0.15); /* Low-contrast divider */
+        border-top: 1px solid rgba(242, 236, 221, 0.15);
+        /* Low-contrast divider */
     }
 
     /* Aligns nav links visually with the logo on small screens */
     .site-navbar .navbar-nav {
-        padding-left: 0.6rem;        /* Prevents nav sticking to screen edge */
-        padding-top: 0.5rem;         /* Breathing room beneath logo */
+        padding-left: 0.6rem;
+        /* Prevents nav sticking to screen edge */
+        padding-top: 0.5rem;
+        /* Breathing room beneath logo */
     }
 
     /* Optimises link spacing and contrast for mobile */
     .site-navbar .nav-link {
-        padding: 0.5rem 0;           /* Tap‑friendly spacing */
-        font-size: 0.95rem;          /* Maintains readability */
-        color: rgba(242, 236, 221, 0.9); /* Slightly muted to reduce glare */
+        padding: 0.5rem 0;
+        /* Tap‑friendly spacing */
+        font-size: 0.95rem;
+        /* Maintains readability */
+        color: rgba(242, 236, 221, 0.9);
+        /* Slightly muted to reduce glare */
     }
 }
 
 /* Interaction feedback for nav links */
 nav.site-navbar .nav-link:hover,
 nav.site-navbar .nav-link:focus {
-    color: var(--color-accent);      /* Muted gold hover/focus state */
+    color: var(--color-accent);
+    /* Muted gold hover/focus state */
 }
 
 /* Active page indicator — shows which page user is on */
 .site-navbar .nav-link.active {
-    color: var(--color-accent);      /* Matches hover colour for consistency */
-    font-weight: var(--font-weight-semibold); /* Stronger weight for emphasis */
+    color: var(--color-accent);
+    /* Matches hover colour for consistency */
+    font-weight: var(--font-weight-semibold);
+    /* Stronger weight for emphasis */
 }
 
 /* =========================
@@ -363,7 +423,8 @@ nav.site-navbar .nav-link:focus {
 /* Removes default Bootstrap border and adjusts padding */
 .site-navbar .navbar-toggler {
     border: none;
-    padding: 0.25rem 0.5rem;         /* Larger click target on mobile */
+    padding: 0.25rem 0.5rem;
+    /* Larger click target on mobile */
 }
 
 /* Removes default focus ring to avoid visual clutter */
@@ -382,7 +443,8 @@ nav.site-navbar .nav-link:focus {
     width: 1.5rem;
     height: 1.5rem;
     filter: invert(1) sepia(20%) saturate(80%);
-    transform: scale(1.1);           /* Slight enlargement for visibility */
+    transform: scale(1.1);
+    /* Slight enlargement for visibility */
 }
 
 /* =========================
@@ -391,12 +453,14 @@ nav.site-navbar .nav-link:focus {
 
 /* Removes padding above hero so it meets the navbar */
 .home-hero {
-    position: relative;              /* Needed for absolute-positioned overlay */
+    position: relative;
+    /* Needed for absolute-positioned overlay */
     padding-top: 0;
 }
 
 .home-hero img {
-    height: 100%                    /* Allows hero image to fill container */
+    height: 100%
+        /* Allows hero image to fill container */
 }
 
 /* =========================
@@ -405,22 +469,30 @@ nav.site-navbar .nav-link:focus {
 
 .hero-overlay {
     position: absolute;
-    inset: 0;                        /* Full cover over hero image,takes overlay out of document flow */
+    inset: 0;
+    /* Full cover over hero image,takes overlay out of document flow */
 
     display: flex;
-    flex-direction: column;          /* Stack heading & text vertically */
-    justify-content: center;         /* Centre vertically */
-    align-items: center;             /* Centre horizontally */
+    flex-direction: column;
+    /* Stack heading & text vertically */
+    justify-content: center;
+    /* Centre vertically */
+    align-items: center;
+    /* Centre horizontally */
 
     text-align: center;
-    padding: 2rem;                   /* Prevent text touching edges */
+    padding: 2rem;
+    /* Prevent text touching edges */
 
-    color: var(--text-inverse);      /* Light text for contrast */
-    z-index: 2;                      /* Above hero image */
+    color: var(--text-inverse);
+    /* Light text for contrast */
+    z-index: 2;
+    /* Above hero image */
 }
 
 .hero-overlay h1 {
-    color: var(--text-inverse);      /* Explicit override for heading colour */
+    color: var(--text-inverse);
+    /* Explicit override for heading colour */
 }
 
 /* Mobile safeguard to ensure hero remains flush */
@@ -437,120 +509,177 @@ nav.site-navbar .nav-link:focus {
 /* Wrapper for the menu hero section.
    Resets vertical spacing so the hero image can sit flush with the navbar. */
 .menu-hero {
-    background-color: var(--bg-section);     /* Matches surrounding page sections */
-    padding-top: 0;                          /* Removes default section padding */
-    padding-bottom: 0;                       /* Ensures hero controls spacing itself */
+    background-color: var(--bg-section);
+    /* Matches surrounding page sections */
+    padding-top: 0;
+    /* Removes default section padding */
+    padding-bottom: 0;
+    /* Ensures hero controls spacing itself */
 }
 
 /* Container for the menu hero image.
    Breaks out of the standard content width to span full viewport width. */
 .menu-hero-image {
-    position: relative;                      /* Establishes positioning context for overlay */
-    width: 100vw;                            /* Full viewport width */
-    max-width: none;                         /* Overrides container constraints */
-    margin: 0 calc(50% - 50vw) 0;             /* True full-width breakout trick */
-    overflow: hidden;                        /* Prevents image bleed */
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12); /* Depth to separate hero from content */
+    position: relative;
+    /* Establishes positioning context for overlay */
+    width: 100vw;
+    /* Full viewport width */
+    max-width: none;
+    /* Overrides container constraints */
+    margin: 0 calc(50% - 50vw) 0;
+    /* True full-width breakout trick */
+    overflow: hidden;
+    /* Prevents image bleed */
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    /* Depth to separate hero from content */
 }
 
 /* Image inside the hero container */
 .menu-hero-image img {
-    width: 100%;                             /* Fully responsive */
-    height: auto;                            /* Preserve aspect ratio */
-    display: block;                          /* Removes inline whitespace */
+    width: 100%;
+    /* Fully responsive */
+    height: auto;
+    /* Preserve aspect ratio */
+    display: block;
+    /* Removes inline whitespace */
 }
 
 /* Text overlay for the menu hero.
    Positioned on top of the image, centred using Flexbox. */
 .menu-hero .hero-content {
-    position: absolute;                      /* Allows overlay on top of image */
-    inset: 0;                                /* Fills the entire hero image */
-    display: flex;                           /* Flexbox for internal alignment */
-    flex-direction: column;                 /* Stack heading and paragraph */
-    justify-content: center;                /* Vertical centring */
-    align-items: center;                    /* Horizontal centring */
-    padding: 2rem 1.5rem;                   /* Prevents text touching edges */
-    z-index: 1;                             /* Above hero image */
-    color: var(--text-inverse);             /* Light text for contrast */
-    font-family: var(--font-body);          /* Inter for legibility */
+    position: absolute;
+    /* Allows overlay on top of image */
+    inset: 0;
+    /* Fills the entire hero image */
+    display: flex;
+    /* Flexbox for internal alignment */
+    flex-direction: column;
+    /* Stack heading and paragraph */
+    justify-content: center;
+    /* Vertical centring */
+    align-items: center;
+    /* Horizontal centring */
+    padding: 2rem 1.5rem;
+    /* Prevents text touching edges */
+    z-index: 1;
+    /* Above hero image */
+    color: var(--text-inverse);
+    /* Light text for contrast */
+    font-family: var(--font-body);
+    /* Inter for legibility */
 }
 
 /* Menu hero heading style */
 .menu-hero .hero-content h1 {
-    font-family: var(--font-heading);        /* Decorative serif for hierarchy */
-    font-weight: var(--font-weight-bold);    /* Strong brand emphasis */
-    font-size: clamp(2rem, 3vw, 3rem);       /* Responsive scaling */
-    margin-bottom: 1rem;                    /* Separation from description */
-    max-width: 12ch;                        /* Prevents overly long lines */
-    color: inherit;                         /* Inherits light overlay colour */
+    font-family: var(--font-heading);
+    /* Decorative serif for hierarchy */
+    font-weight: var(--font-weight-bold);
+    /* Strong brand emphasis */
+    font-size: clamp(2rem, 3vw, 3rem);
+    /* Responsive scaling */
+    margin-bottom: 1rem;
+    /* Separation from description */
+    max-width: 12ch;
+    /* Prevents overly long lines */
+    color: inherit;
+    /* Inherits light overlay colour */
 }
 
 /* Menu hero descriptive paragraph */
 .menu-hero .hero-content p {
-    margin-bottom: 0;                       /* Tightens layout */
-    max-width: 45rem;                       /* Readable line length */
-    font-size: 1rem;                        /* Slightly larger for hero copy */
-    line-height: 1.65;                      /* Comfortable reading */
-    color: inherit;                         /* Ensures consistent colouring */
+    margin-bottom: 0;
+    /* Tightens layout */
+    max-width: 45rem;
+    /* Readable line length */
+    font-size: 1rem;
+    /* Slightly larger for hero copy */
+    line-height: 1.65;
+    /* Comfortable reading */
+    color: inherit;
+    /* Ensures consistent colouring */
 }
 
 /* Sticky anchor bar containing menu section links */
 .menu-anchors-bar {
-    position: sticky;                       /* Sticks to top on scroll */
-    top: 0;                                 /* Anchored to top of viewport */
-    z-index: 20;                            /* Above menu content */
-    background-color: rgba(246, 243, 234, 0.97); /* Semi‑opaque parchment */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* Subtle separation line */
-    display: flex;                          /* Centres inner anchor container */
+    position: sticky;
+    /* Sticks to top on scroll */
+    top: 0;
+    /* Anchored to top of viewport */
+    z-index: 20;
+    /* Above menu content */
+    background-color: rgba(246, 243, 234, 0.97);
+    /* Semi‑opaque parchment */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    /* Subtle separation line */
+    display: flex;
+    /* Centres inner anchor container */
     justify-content: center;
-    padding: 1rem 0;                       /* Vertical spacing */
+    padding: 1rem 0;
+    /* Vertical spacing */
 }
 
 /* Container holding the individual anchor links */
 .menu-anchors {
-    display: flex;                          /* Horizontal layout */
-    flex-wrap: wrap;                       /* Allows wrapping on small screens */
-    justify-content: center;               /* Centre alignment */
+    display: flex;
+    /* Horizontal layout */
+    flex-wrap: wrap;
+    /* Allows wrapping on small screens */
+    justify-content: center;
+    /* Centre alignment */
     align-items: center;
     align-content: center;
-    gap: 0.75rem;                          /* Space between anchor buttons */
-    padding: 0 1rem;                       /* Prevents edge collision */
+    gap: 0.75rem;
+    /* Space between anchor buttons */
+    padding: 0 1rem;
+    /* Prevents edge collision */
     width: 100%;
-    max-width: 1150px;                     /* Prevents anchors stretching too wide */
+    max-width: 1150px;
+    /* Prevents anchors stretching too wide */
 }
 
 /* Individual menu anchor links */
 .menu-anchor {
-    display: inline-flex;                  /* Enables flex centring */
+    display: inline-flex;
+    /* Enables flex centring */
     align-items: center;
     justify-content: center;
-    padding: 0.35rem 0.8rem;               /* Clickable area */
-    color: var(--color-primary);           /* Brand green text */
-    text-decoration: none;                 /* Remove underline */
+    padding: 0.35rem 0.8rem;
+    /* Clickable area */
+    color: var(--color-primary);
+    /* Brand green text */
+    text-decoration: none;
+    /* Remove underline */
     font-weight: var(--font-weight-medium);
-    letter-spacing: 0.01em;                /* Slight clarity improvement */
+    letter-spacing: 0.01em;
+    /* Slight clarity improvement */
     transition: color 0.2s ease,
-                opacity 0.2s ease;         /* Smooth interaction feedback */
+        opacity 0.2s ease;
+    /* Smooth interaction feedback */
 }
 
 /* Hover and focus interaction for anchors */
 .menu-anchor:hover,
 .menu-anchor:focus {
-    color: var(--color-accent);             /* Gold highlight */
-    opacity: 0.85;                          /* Softens feedback */
+    color: var(--color-accent);
+    /* Gold highlight */
+    opacity: 0.85;
+    /* Softens feedback */
 }
 
 /* Active menu section indicator (updated via JS) */
 .menu-anchor.active {
-    color: var(--color-accent);             /* Persistent highlight */
+    color: var(--color-accent);
+    /* Persistent highlight */
 }
 
 /* Wrapper for each menu category section */
 .menu-category {
-    background-color: var(--bg-section);    /* Section separation */
+    background-color: var(--bg-section);
+    /* Section separation */
     padding-top: 2rem;
     padding-bottom: 2rem;
-    scroll-margin-top: 5rem;                /* Prevents sticky bar overlap when anchored */
+    scroll-margin-top: 5rem;
+    /* Prevents sticky bar overlap when anchored */
 }
 
 /* First section offset to compensate for hero overlap */
@@ -573,18 +702,25 @@ nav.site-navbar .nav-link:focus {
 /* Shared framed image styling for menu heroes and about pillars */
 .menu-category__hero,
 .about-pillars img.pillar-image {
-    max-width: 840px;                       /* Aligns with menu content width */
-    padding: 0.1rem;                        /* Creates frame thickness */
-    margin: 0 auto 1.75rem;                 /* Centres and spaces image */
-    background-color: var(--bg-page);       /* Parchment backdrop */
-    border: 3px solid rgba(168, 134, 62, 0.6); /* Antique gold frame */
+    max-width: 840px;
+    /* Aligns with menu content width */
+    padding: 0.1rem;
+    /* Creates frame thickness */
+    margin: 0 auto 1.75rem;
+    /* Centres and spaces image */
+    background-color: var(--bg-page);
+    /* Parchment backdrop */
+    border: 3px solid rgba(168, 134, 62, 0.6);
+    /* Antique gold frame */
     box-shadow:
-        inset 0 0 0 1px rgba(255, 236, 180, 0.4); /* Inner highlight for depth */
+        inset 0 0 0 1px rgba(255, 236, 180, 0.4);
+    /* Inner highlight for depth */
 }
 
 /* Image inside the framed hero */
 .menu-category__hero img {
-    aspect-ratio: 3 / 2;                    /* Consistent landscape framing */
+    aspect-ratio: 3 / 2;
+    /* Consistent landscape framing */
     width: 100%;
     height: auto;
     display: block;
@@ -592,20 +728,30 @@ nav.site-navbar .nav-link:focus {
 
 /* Grid wrapper for menu items */
 .menu-items {
-    display: grid;                          /* Grid allows simple vertical stacking */
-    gap: 0;                                 /* Borders provide separation instead */
-    max-width: 840px;                       /* Aligns with hero images */
-    margin: 0 auto;                         /* Centre container */
+    display: grid;
+    /* Grid allows simple vertical stacking */
+    gap: 0;
+    /* Borders provide separation instead */
+    max-width: 840px;
+    /* Aligns with hero images */
+    margin: 0 auto;
+    /* Centre container */
 }
 
 /* Individual menu item rows */
 .menu-item {
-    display: grid;                          /* Two-column layout */
-    grid-template-columns: 1fr auto;       /* Item name left, price right */
-    gap: 1rem;                              /* Space between text and price */
-    align-items: flex-start;               /* Prevents price centring vertically */
-    padding: 1rem 0;                        /* Vertical rhythm */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* Divider line */
+    display: grid;
+    /* Two-column layout */
+    grid-template-columns: 1fr auto;
+    /* Item name left, price right */
+    gap: 1rem;
+    /* Space between text and price */
+    align-items: flex-start;
+    /* Prevents price centring vertically */
+    padding: 1rem 0;
+    /* Vertical rhythm */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    /* Divider line */
 }
 
 /* Remove divider from final item */
@@ -623,29 +769,36 @@ nav.site-navbar .nav-link:focus {
 /* Menu item description */
 .menu-item p {
     margin: 0;
-    color: var(--text-secondary);           /* Reduced emphasis */
+    color: var(--text-secondary);
+    /* Reduced emphasis */
     font-size: 0.95rem;
-    max-width: 55ch;                        /* Readability control */
+    max-width: 55ch;
+    /* Readability control */
 }
 
 /* Price styling */
 .menu-item__price {
     font-weight: var(--font-weight-semibold);
-    color: var(--color-primary);            /* Reinforces brand colour */
+    color: var(--color-primary);
+    /* Reinforces brand colour */
     text-align: right;
-    white-space: nowrap;                    /* Prevents wrapping prices */
+    white-space: nowrap;
+    /* Prevents wrapping prices */
 }
 
 /* Wrapper for allergen and seasonality notices */
 .menu-notice {
-    background-color: var(--bg-page);       /* Returns to page background */
+    background-color: var(--bg-page);
+    /* Returns to page background */
     padding-top: 3rem;
-    padding-bottom: 3rem;                   /* Ensures full visibility of content */
+    padding-bottom: 3rem;
+    /* Ensures full visibility of content */
 }
 
 /* Individual notice blocks */
 .menu-notice__item {
-    background: transparent;                /* Allows background to show through */
+    background: transparent;
+    /* Allows background to show through */
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: var(--radius-md);
     padding: 1.5rem;
@@ -661,13 +814,15 @@ nav.site-navbar .nav-link:focus {
 
 /* Call-to-action container */
 .menu-cta {
-    padding-bottom: 3rem;                   /* Spacing before footer */
+    padding-bottom: 3rem;
+    /* Spacing before footer */
 }
 
 /* CTA button wrapper */
 .menu-cta-buttons {
     display: flex;
-    flex-wrap: wrap;                        /* Buttons stack on small screens */
+    flex-wrap: wrap;
+    /* Buttons stack on small screens */
     justify-content: center;
     gap: 1rem;
     margin-top: 1.5rem;
@@ -712,12 +867,14 @@ nav.site-navbar .nav-link:focus {
 
 @media (max-width: 768px) {
     .menu-item {
-        grid-template-columns: 1fr;         /* Stack price below description */
+        grid-template-columns: 1fr;
+        /* Stack price below description */
         text-align: left;
     }
 
     .menu-item__price {
-        text-align: left;                   /* Align price with text */
+        text-align: left;
+        /* Align price with text */
     }
 
     .menu-anchors {
@@ -729,7 +886,8 @@ nav.site-navbar .nav-link:focus {
     }
 
     .menu-hero .hero-content {
-        padding: 1.3rem 1rem;              /* Tighter hero spacing on mobile */
+        padding: 1.3rem 1rem;
+        /* Tighter hero spacing on mobile */
     }
 
     .menu-category {
@@ -738,7 +896,8 @@ nav.site-navbar .nav-link:focus {
     }
 
     .menu-category .section-title {
-        font-size: 1.3rem;                  /* Prevents oversized headings */
+        font-size: 1.3rem;
+        /* Prevents oversized headings */
     }
 
     .menu-item {
@@ -823,11 +982,14 @@ nav.site-navbar .nav-link:focus {
 }
 
 @media (max-width: 991px) {
-    .contact h2, .contact h1, .contact p {
+
+    .contact h2,
+    .contact h1,
+    .contact p {
         text-align: center;
     }
 
-   
+
 }
 
 /* =========================
@@ -1063,78 +1225,110 @@ nav.site-navbar .nav-link:focus {
 ========================= */
 
 .about-hero {
-    padding-top: 0;                    /* Removes default section padding so the
+    padding-top: 0;
+    /* Removes default section padding so the
                                           hero image meets the navbar cleanly */
 }
 
 .about-hero-image {
-    position: relative;               /* Establishes positioning context for overlays */
-    width: 100vw;                     /* Full viewport width */
-    margin: 0 calc(50% - 50vw);       /* Breaks content out of max-width container
+    position: relative;
+    /* Establishes positioning context for overlays */
+    width: 100vw;
+    /* Full viewport width */
+    margin: 0 calc(50% - 50vw);
+    /* Breaks content out of max-width container
                                           to achieve true edge-to-edge layout */
-    overflow: hidden;                 /* Prevents image or overlay bleed */
+    overflow: hidden;
+    /* Prevents image or overlay bleed */
 }
 
 /* Image itself */
 /* Shared with .home-hero to ensure consistent behaviour */
 .home-hero img,
 .about-hero-image img {
-    width: 100%;                      /* Scales image to container width */
-    max-height: 85vh;                 /* Prevents the hero from becoming too tall */
-    display: block;                   /* Removes inline image spacing */
+    width: 100%;
+    /* Scales image to container width */
+    max-height: 85vh;
+    /* Prevents the hero from becoming too tall */
+    display: block;
+    /* Removes inline image spacing */
 }
 
 /* Optional dark overlay for text contrast */
 .about-hero-image::after {
-    content: "";                      /* Required to generate pseudo-element */
-    position: absolute;               /* Allows overlaying on the image */
-    inset: 0;                         /* Covers the entire hero image */
-    background: linear-gradient(
-        180deg,                       /* Vertical gradient */
-        rgba(15, 25, 18, 0.2) 0%,     /* Light darkening at top */
-        rgba(15, 25, 18, 0.6) 100%    /* Stronger darkening at bottom */
-    );                                /* Improves text readability on bright images */
+    content: "";
+    /* Required to generate pseudo-element */
+    position: absolute;
+    /* Allows overlaying on the image */
+    inset: 0;
+    /* Covers the entire hero image */
+    background: linear-gradient(180deg,
+            /* Vertical gradient */
+            rgba(15, 25, 18, 0.2) 0%,
+            /* Light darkening at top */
+            rgba(15, 25, 18, 0.6) 100%
+            /* Stronger darkening at bottom */
+        );
+    /* Improves text readability on bright images */
 }
 
 /* Text overlay */
 .about-hero-content {
-    position: absolute;               /* Allows content to sit on top of the image */
-    inset: 0;                         /* Fills entire hero area */
-    z-index: 1;                       /* Above the overlay pseudo-element */
+    position: absolute;
+    /* Allows content to sit on top of the image */
+    inset: 0;
+    /* Fills entire hero area */
+    z-index: 1;
+    /* Above the overlay pseudo-element */
 
-    display: flex;                    /* Flexbox for internal alignment */
-    flex-direction: column;           /* Stack heading and paragraph */
-    justify-content: center;          /* Vertical centring */
-    align-items: center;              /* Horizontal centring */
+    display: flex;
+    /* Flexbox for internal alignment */
+    flex-direction: column;
+    /* Stack heading and paragraph */
+    justify-content: center;
+    /* Vertical centring */
+    align-items: center;
+    /* Horizontal centring */
 
-    text-align: center;               /* Centres text content */
-    padding: 2rem 1.5rem;             /* Prevents text touching viewport edges */
+    text-align: center;
+    /* Centres text content */
+    padding: 2rem 1.5rem;
+    /* Prevents text touching viewport edges */
 
-    color: var(--text-inverse);       /* Light text for contrast */
+    color: var(--text-inverse);
+    /* Light text for contrast */
 }
 
 /* Typography inside hero */
 .about-hero-content h1 {
-    font-family: var(--font-heading); /* Serif font for significance */
+    font-family: var(--font-heading);
+    /* Serif font for significance */
     font-weight: var(--font-weight-bold);
-    font-size: clamp(2.2rem, 3vw, 3rem); /* Responsive scaling */
-    margin-bottom: 1rem;              /* Space between heading and text */
-    color: inherit;                   /* Inherits overlay text colour */
+    font-size: clamp(2.2rem, 3vw, 3rem);
+    /* Responsive scaling */
+    margin-bottom: 1rem;
+    /* Space between heading and text */
+    color: inherit;
+    /* Inherits overlay text colour */
 }
 
 .about-hero-content p {
-    max-width: 50ch;                  /* Keeps text readable */
+    max-width: 50ch;
+    /* Keeps text readable */
     font-size: 1rem;
     line-height: 1.6;
-    margin: 0;                        /* Removes default paragraph margin */
+    margin: 0;
+    /* Removes default paragraph margin */
     color: inherit;
 }
 
 /* Shared CTA section styling for About and Home */
 .about-cta,
 .home-cta {
-    padding-bottom: 3rem;             /* Visual separation from next section */
-    border-bottom: 1px solid rgba(0,0,0,0.08); /* Subtle divider */
+    padding-bottom: 3rem;
+    /* Visual separation from next section */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    /* Subtle divider */
 }
 
 
@@ -1143,67 +1337,88 @@ nav.site-navbar .nav-link:focus {
 ========================= */
 
 .about-timeline {
-    background-color: var(--bg-section); /* Matches wireframe section background */
-    padding: 3rem 0;                     /* Vertical spacing for timeline area */
+    background-color: var(--bg-section);
+    /* Matches wireframe section background */
+    padding: 3rem 0;
+    /* Vertical spacing for timeline area */
 }
 
 .timeline {
-    position: relative;                /* Required for absolutely positioned centre line */
-    max-width: none;                   /* Allows full-width layout */
-    margin: 3rem auto 0;               /* Space above timeline itself */
+    position: relative;
+    /* Required for absolutely positioned centre line */
+    max-width: none;
+    /* Allows full-width layout */
+    margin: 3rem auto 0;
+    /* Space above timeline itself */
 }
 
 /* Center vertical line */
 .timeline::before {
-    content: "";                       /* Generates the central timeline line */
+    content: "";
+    /* Generates the central timeline line */
     position: absolute;
-    left: 50%;                         /* Centres line horizontally */
+    left: 50%;
+    /* Centres line horizontally */
     top: 0;
-    bottom: 0;                         /* Runs full height of timeline */
+    bottom: 0;
+    /* Runs full height of timeline */
     width: 2px;
     background-color: var(--border-color);
-    transform: translateX(-50%);       /* Corrects centring offset */
+    transform: translateX(-50%);
+    /* Corrects centring offset */
 }
 
 /* Individual timeline item wrapper */
 .timeline-item {
-    position: relative;                /* Required for marker positioning */
-    display: flex;                     /* Allows left/right alignment */
+    position: relative;
+    /* Required for marker positioning */
+    display: flex;
+    /* Allows left/right alignment */
     margin-bottom: 3rem;
     width: 100%;
 }
 
 /* Left-aligned items */
 .timeline-item--left {
-    justify-content: flex-end;         /* Pushes content to the right */
-    padding-right: calc(50% + 24px);   /* Clears space for centre line + marker */
+    justify-content: flex-end;
+    /* Pushes content to the right */
+    padding-right: calc(50% + 24px);
+    /* Clears space for centre line + marker */
 }
 
 /* Right-aligned items */
 .timeline-item--right {
-    justify-content: flex-start;       /* Pushes content to the left */
-    padding-left: calc(50% + 24px);    /* Clears space for centre line + marker */
+    justify-content: flex-start;
+    /* Pushes content to the left */
+    padding-left: calc(50% + 24px);
+    /* Clears space for centre line + marker */
 }
 
 /* Timeline marker (the dot) */
 .timeline-marker {
     position: absolute;
-    left: 50%;                         /* Centres marker on vertical line */
-    top: 50.5%;                        /* Aligns dot with card midpoint */
+    left: 50%;
+    /* Centres marker on vertical line */
+    top: 50.5%;
+    /* Aligns dot with card midpoint */
     width: 14px;
     height: 14px;
     background-color: var(--color-primary);
-    border-radius: 50%;                /* Makes it a circular marker */
+    border-radius: 50%;
+    /* Makes it a circular marker */
     transform: translateX(-50%);
-    z-index: 2;                        /* Above cards and line */
+    z-index: 2;
+    /* Above cards and line */
 }
 
 /* Timeline content card */
 .timeline-content {
-    position: relative;               /* Needed for arrow pseudo-elements */
+    position: relative;
+    /* Needed for arrow pseudo-elements */
     background-color: var(--bg-section);
     border-radius: var(--radius-md);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Elevation above background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* Elevation above background */
     max-width: 800px;
 }
 
@@ -1211,12 +1426,14 @@ nav.site-navbar .nav-link:focus {
 .timeline-content img {
     width: 100%;
     height: auto;
-    object-fit: cover;                /* Maintains image integrity */
+    object-fit: cover;
+    /* Maintains image integrity */
 }
 
 /* Timeline text container */
 .timeline-text {
-    padding: 1.25rem;                 /* Space around text */
+    padding: 1.25rem;
+    /* Space around text */
 }
 
 .timeline-text h3 {
@@ -1232,7 +1449,8 @@ nav.site-navbar .nav-link:focus {
     content: "";
     position: absolute;
     top: 50%;
-    right: -12px;                     /* Positions arrow toward centre line */
+    right: -12px;
+    /* Positions arrow toward centre line */
 
     width: 0;
     height: 0;
@@ -1247,7 +1465,8 @@ nav.site-navbar .nav-link:focus {
     content: "";
     position: absolute;
     top: 50%;
-    left: -12px;                      /* Positions arrow toward centre line */
+    left: -12px;
+    /* Positions arrow toward centre line */
 
     width: 0;
     height: 0;
@@ -1273,27 +1492,34 @@ nav.site-navbar .nav-link:focus {
 @media (max-width: 768px) {
 
     .timeline::before {
-        left: 16px;                   /* Moves vertical line to left edge */
-        transform: none;              /* No centring needed */
+        left: 16px;
+        /* Moves vertical line to left edge */
+        transform: none;
+        /* No centring needed */
     }
 
     .timeline-item {
-        padding-left: 2.5rem;         /* Space for line and marker */
+        padding-left: 2.5rem;
+        /* Space for line and marker */
     }
 
     .timeline-item--left,
     .timeline-item--right {
-        padding: 0 0 0 2.5rem;        /* Uniform layout direction */
-        justify-content: flex-start;  /* All items flow in one column */
+        padding: 0 0 0 2.5rem;
+        /* Uniform layout direction */
+        justify-content: flex-start;
+        /* All items flow in one column */
     }
 
     .timeline-marker {
-        left: 16px;                   /* Aligns markers with vertical line */
+        left: 16px;
+        /* Aligns markers with vertical line */
         transform: none;
     }
 
     .timeline-content {
-        max-width: 100%;              /* Cards fill available width */
+        max-width: 100%;
+        /* Cards fill available width */
     }
 }
 
@@ -1301,12 +1527,14 @@ nav.site-navbar .nav-link:focus {
 .tavern-rule img,
 .pillar-icon img {
     width: 48px;
-    margin-inline: auto;              /* Centres icon horizontally */
+    margin-inline: auto;
+    /* Centres icon horizontally */
     margin-bottom: 0.75rem;
 }
 
 .timeline-meta .pillar-icon {
-    margin-top: 2px;                  /* Fine alignment tweak */
+    margin-top: 2px;
+    /* Fine alignment tweak */
 }
 
 /* ======================================================
@@ -1316,7 +1544,8 @@ nav.site-navbar .nav-link:focus {
 /* Applied to the <body> or top-level wrapper on the locations page.
    Keeps the page background consistent with the rest of the site. */
 .locations-page {
-    background-color: var(--bg-page);     /* Parchment background */
+    background-color: var(--bg-page);
+    /* Parchment background */
 }
 
 /* =========================
@@ -1325,19 +1554,26 @@ nav.site-navbar .nav-link:focus {
 
 /* Intro/header section at the top of the Locations page */
 .locations-header {
-    background-color: var(--bg-section);  /* Slight contrast from page background */
-    padding: 3.5rem 0 3rem;               /* Extra emphasis at page entry */
-    text-align: center;                   /* Centres heading and text */
+    background-color: var(--bg-section);
+    /* Slight contrast from page background */
+    padding: 3.5rem 0 3rem;
+    /* Extra emphasis at page entry */
+    text-align: center;
+    /* Centres heading and text */
 }
 
 .locations-header h1 {
-    margin-bottom: 0.75rem;               /* Separates title from description */
+    margin-bottom: 0.75rem;
+    /* Separates title from description */
 }
 
 .locations-header p {
-    max-width: 60ch;                      /* Controls line length */
-    margin-inline: auto;                 /* Centres paragraph block */
-    opacity: 0.9;                         /* Softens text slightly */
+    max-width: 60ch;
+    /* Controls line length */
+    margin-inline: auto;
+    /* Centres paragraph block */
+    opacity: 0.9;
+    /* Softens text slightly */
 }
 
 /* =========================
@@ -1346,7 +1582,8 @@ nav.site-navbar .nav-link:focus {
 
 /* Section explaining different tavern categories */
 .tavern-types {
-    background-color: #d9d9d9;            /* Neutral backdrop for cards */
+    background-color: #d9d9d9;
+    /* Neutral backdrop for cards */
     padding: 3rem 0;
 }
 
@@ -1366,19 +1603,22 @@ nav.site-navbar .nav-link:focus {
 }
 
 /* Paragraph immediately under the section title */
-.tavern-types > .container > p {
+.tavern-types>.container>p {
     max-width: 65ch;
-    margin: 0 auto 2.5rem;                /* Centres and separates from cards */
+    margin: 0 auto 2.5rem;
+    /* Centres and separates from cards */
     text-align: center;
 }
 
 /* Individual tavern type cards */
 .type-card {
-    background-color: #fff;               /* Card contrast */
+    background-color: #fff;
+    /* Card contrast */
     padding: 1.75rem 1.5rem;
     border-radius: var(--radius-md);
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Elevation for hierarchy */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* Elevation for hierarchy */
 }
 
 .type-card h3 {
@@ -1386,8 +1626,10 @@ nav.site-navbar .nav-link:focus {
 }
 
 .type-card p {
-    font-size: 0.9rem;                    /* Supporting text */
-    opacity: 0.85;                        /* Reduced emphasis */
+    font-size: 0.9rem;
+    /* Supporting text */
+    opacity: 0.85;
+    /* Reduced emphasis */
 }
 
 /* =========================
@@ -1395,7 +1637,8 @@ nav.site-navbar .nav-link:focus {
    ========================= */
 
 .locations-map-section {
-    padding: 4rem 0;                      /* Visual spacing from other sections */
+    padding: 4rem 0;
+    /* Visual spacing from other sections */
     background-color: var(--bg-page);
 }
 
@@ -1432,13 +1675,18 @@ nav.site-navbar .nav-link:focus {
 
 /* Map frame containing the image, dots, and popups */
 .map-wrapper {
-    position: relative;                   /* Required for absolute-positioned dots */
-    overflow: hidden;                     /* Prevents bleed from overlays initially */
-    max-width: 950px;                     /* Keeps map readable on large screens */
-    margin: 0 auto;                       /* Centres map */
+    position: relative;
+    /* Required for absolute-positioned dots */
+    overflow: hidden;
+    /* Prevents bleed from overlays initially */
+    max-width: 950px;
+    /* Keeps map readable on large screens */
+    margin: 0 auto;
+    /* Centres map */
     background-color: var(--bg-section);
     border-radius: var(--radius-md);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* Strong visual focus */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    /* Strong visual focus */
     z-index: 2;
 }
 
@@ -1447,7 +1695,8 @@ nav.site-navbar .nav-link:focus {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: var(--radius-md);      /* Matches container rounding */
+    border-radius: var(--radius-md);
+    /* Matches container rounding */
 }
 
 /* =========================
@@ -1455,16 +1704,22 @@ nav.site-navbar .nav-link:focus {
    ========================= */
 
 .map-dot {
-    position: absolute;                   /* Positioned relative to map-wrapper */
+    position: absolute;
+    /* Positioned relative to map-wrapper */
     width: 14px;
     height: 14px;
-    border-radius: 50%;                   /* Circular markers */
-    transform: translate(-50%, -50%);     /* True centring on coordinate point */
-    z-index: 3;                           /* Above map image */
-    cursor: pointer;                      /* Indicates interactivity */
-    box-shadow: 0 0 0 2px var(--bg-section); /* Halo to separate from map */
+    border-radius: 50%;
+    /* Circular markers */
+    transform: translate(-50%, -50%);
+    /* True centring on coordinate point */
+    z-index: 3;
+    /* Above map image */
+    cursor: pointer;
+    /* Indicates interactivity */
+    box-shadow: 0 0 0 2px var(--bg-section);
+    /* Halo to separate from map */
     transition: transform 0.15s ease,
-                box-shadow 0.15s ease;
+        box-shadow 0.15s ease;
 }
 
 /* Smaller dots on tablets */
@@ -1486,8 +1741,10 @@ nav.site-navbar .nav-link:focus {
 /* Hover and active state (JS toggles .active) */
 .map-dot:hover,
 .map-dot.active {
-    transform: translate(-50%, -50%) scale(1.3); /* Emphasises selected dot */
-    box-shadow: 0 0 0 3px var(--bg-section);     /* Stronger halo */
+    transform: translate(-50%, -50%) scale(1.3);
+    /* Emphasises selected dot */
+    box-shadow: 0 0 0 3px var(--bg-section);
+    /* Stronger halo */
 }
 
 /* =========================
@@ -1525,33 +1782,91 @@ nav.site-navbar .nav-link:focus {
    JS does NOT position dots — it only reacts to clicks. */
 
 /* Market Taverns */
-.t1 { top: 45%; left: 60%; }
-.t2 { top: 41%; left: 47%; }
-.t3 { top: 50%; left: 53%; }
+.t1 {
+    top: 45%;
+    left: 60%;
+}
+
+.t2 {
+    top: 41%;
+    left: 47%;
+}
+
+.t3 {
+    top: 50%;
+    left: 53%;
+}
 
 /* Coastal Taverns */
-.t4 { top: 41%; left: 78%; }
-.t5 { top: 15%; left: 34%; }
-.t6 { top: 78%; left: 30%; }
+.t4 {
+    top: 41%;
+    left: 78%;
+}
+
+.t5 {
+    top: 15%;
+    left: 34%;
+}
+
+.t6 {
+    top: 78%;
+    left: 30%;
+}
 
 /* Wilderness Taverns */
-.t7 { top: 43%; left: 33%; }
-.t8 { top: 46%; left: 70%; }
-.t9 { top: 27%; left: 41%; }
+.t7 {
+    top: 43%;
+    left: 33%;
+}
+
+.t8 {
+    top: 46%;
+    left: 70%;
+}
+
+.t9 {
+    top: 27%;
+    left: 41%;
+}
 
 /* Wayhouses */
-.t10 { top: 33%; left: 57%; }
-.t11 { top: 54%; left: 40%; }
-.t12 { top: 60%; left: 48%; }
+.t10 {
+    top: 33%;
+    left: 57%;
+}
+
+.t11 {
+    top: 54%;
+    left: 40%;
+}
+
+.t12 {
+    top: 60%;
+    left: 48%;
+}
 
 /* Edge of the World */
-.t13 { top: 45%; left: 18%; }
+.t13 {
+    top: 45%;
+    left: 18%;
+}
 
 /* Fine-tuning coordinates for tablet layouts */
 @media (max-width: 992px) {
-    .t6 { top: 78%; left: 30.5%; }
-    .t5 { top: 16%; left: 34%; }
-    .t4 { top: 41%; left: 77%; }
+    .t6 {
+        top: 78%;
+        left: 30.5%;
+    }
+
+    .t5 {
+        top: 16%;
+        left: 34%;
+    }
+
+    .t4 {
+        top: 41%;
+        left: 77%;
+    }
 }
 
 /* =========================
@@ -1559,7 +1874,8 @@ nav.site-navbar .nav-link:focus {
    ========================= */
 
 .tavern-popup {
-    position: absolute;                  /* Positioned by JS relative to map */
+    position: absolute;
+    /* Positioned by JS relative to map */
     max-width: 400px;
     padding: 1rem 1.1rem;
     background-color: #f3efe6;
@@ -1569,14 +1885,18 @@ nav.site-navbar .nav-link:focus {
         0 10px 30px rgba(0, 0, 0, 0.25),
         inset 0 0 0 1px rgba(0, 0, 0, 0.08);
 
-    opacity: 0;                          /* Hidden by default */
-    pointer-events: none;               /* Prevent interaction when hidden */
+    opacity: 0;
+    /* Hidden by default */
+    pointer-events: none;
+    /* Prevent interaction when hidden */
 
-    transform: scale(0.96);              /* Subtle shrink when hidden */
+    transform: scale(0.96);
+    /* Subtle shrink when hidden */
     transition: opacity 0.2s ease,
-                transform 0.2s ease;
+        transform 0.2s ease;
 
-    z-index: 4;                          /* Above dots and map */
+    z-index: 4;
+    /* Above dots and map */
 }
 
 /* JS toggles this class to show the popup */
@@ -1610,12 +1930,14 @@ nav.site-navbar .nav-link:focus {
 /* Mobile adjustments for popup positioning */
 @media (max-width: 576px) {
     .tavern-popup {
-        left: 20% !important;            /* JS-safe override to keep popup visible */
+        left: 20% !important;
+        /* JS-safe override to keep popup visible */
         transform: translateX(-50%);
     }
 
     .tavern-popup p {
-        font-size: 0.5rem;               /* Temporary size reduction to prevent overflow */
+        font-size: 0.5rem;
+        /* Temporary size reduction to prevent overflow */
     }
 }
 
@@ -1650,8 +1972,10 @@ nav.site-navbar .nav-link:focus {
 .map-key-list {
     list-style: none;
     padding: 0;
-    width: max-content;                 /* Shrinks list to fit contents */
-    margin: 0 auto;                     /* Centres key */
+    width: max-content;
+    /* Shrinks list to fit contents */
+    margin: 0 auto;
+    /* Centres key */
 }
 
 .map-key-list li {
@@ -1858,6 +2182,15 @@ nav.site-navbar .nav-link:focus {
     will-change: transform, opacity;
 }
 
+@media (max-width: 992px) {
+    .tablet-mobile-reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 1.5s ease, transform 1.5s ease;
+        will-change: transform, opacity;
+    }
+}
+
 
 
 /* Revealed state */
@@ -1869,7 +2202,9 @@ nav.site-navbar .nav-link:focus {
 }
 
 .reveal.visible,
-.reveal-sub.visible {
+.reveal-sub.visible,
+.tablet-mobile-reveal.visible 
+{
     opacity: 1;
     transform: translateY(0);
 }
@@ -1917,6 +2252,7 @@ nav.site-navbar .nav-link:focus {
     .hero-height img {
         height: 90vh;
     }
+
     .about-hero h1 {
         padding-bottom: 0;
         padding-top: 0;
@@ -1929,10 +2265,10 @@ nav.site-navbar .nav-link:focus {
 
 
 @media (max-width: 576px) {
-  .tavern-popup {
-    width: 70vw;
-    max-width: 360px;
-  }
+    .tavern-popup {
+        width: 70vw;
+        max-width: 360px;
+    }
 }
 
 body {
@@ -1949,28 +2285,28 @@ body {
 }
 
 .type-card img {
-  max-width: 100%;
-  height: auto;
-  align-self: stretch;
+    max-width: 100%;
+    height: auto;
+    align-self: stretch;
 }
 
 textarea.form-control {
-  resize: none;
+    resize: none;
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .map-instruction {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
 }

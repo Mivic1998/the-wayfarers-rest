@@ -502,7 +502,7 @@ JavaScript is now used to:
 - Adjust behaviour for different screen sizes
 - Close popups when the user clicks outside the map or scrolls
 
-Popup positioning logic measures both the map container and popup dimensions at runtime, choosing appropriate placement to avoid popups overflowing map horizontally. On smaller screens, behaviour is simplified to prioritise readability and predictability rather than precise spatial positioning.
+Popup positioning logic measures both the map container and popup dimensions at runtime, choosing appropriate placement to avoid popups overflowing map horizontally. On smaller screens, CSS overrides JavaScript to position the pop-ups absolutely relative to the map so that behaviour is simplified to prioritise readability and predictability rather than precise spatial positioning.
 
 To improve usability, the script also distinguishes between **user‑initiated scrolling** and **programmatic scrolling** (used to reveal clipped popups), preventing popups from immediately closing themselves.
 
