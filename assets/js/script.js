@@ -72,11 +72,11 @@ function closeAllPopups() {
   // Hide every popup panel
   popups.forEach(popup => popup.classList.remove("active"));
 
-  // If a dot was marked active, reset it
-  if (activeDot) {
-    activeDot.classList.remove("active");
-    activeDot = null;
-  }
+  // Remove active state from ALL dots (not just one)
+  dots.forEach(dot => dot.classList.remove("active"));
+
+  // Reset active reference
+  activeDot = null;
 }
 
 /* ---------- Position popup relative to map ---------- */
