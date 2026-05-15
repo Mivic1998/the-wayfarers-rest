@@ -75,15 +75,15 @@ As each page produced a clean validation result after these fixes, screenshots a
 **HTML Validation Results:**
 - *No errors found*
 
-![Home Page Validation](assets/images/testing/html-validation-index.png)  
-![About Page Validation](assets/images/testing/html-validation-about.png)  
-![Menu Page Validation](assets/images/testing/html-validation-menu.png)  
-![Locations Page Validation](assets/images/testing/html-validation-locations.png)  
-![Gallery Page Validation](assets/images/testing/html-validation-gallery.png)  
-![FAQ Page Validation](assets/images/testing/html-validation-faq.png)  
-![Contact Page Validation](assets/images/testing/html-validation-contact.png)  
-![Feedback Page Validation](assets/images/testing/html-validation-feedback.png)  
-![Under Construction Validation](assets/images/testing/html-validation-under-construction.png)
+![Home Page Validation](assets/images/testing/html-validation-index.PNG)  
+![About Page Validation](assets/images/testing/html-validation-about.PNG)  
+![Menu Page Validation](assets/images/testing/html-validation-menu.PNG)  
+![Locations Page Validation](assets/images/testing/html-validation-locations.PNG)  
+![Gallery Page Validation](assets/images/testing/html-validation-gallery.PNG)  
+![FAQ Page Validation](assets/images/testing/html-validation-faq.PNG)  
+![Contact Page Validation](assets/images/testing/html-validation-contact.PNG)  
+![Feedback Page Validation](assets/images/testing/html-validation-feedback.PNG)  
+![Under Construction Validation](assets/images/testing/html-validation-under-construction.PNG)
 
 
 ---
@@ -101,7 +101,7 @@ No unused variables, errors or issues affecting functionality were identified, a
 **JavaScript Validation Results:**
 - *No errors found*
 
-![JavaScript Validation](assets/images/testing/js-validation.png)  
+![JavaScript Validation](assets/images/testing/js-validation.PNG)  
 
 ---
 
