@@ -253,9 +253,13 @@ While most pages achieved strong performance scores, some pages recorded lower r
 
 Despite variation in performance scores, Accessibility, Best Practices, and SEO scores remained consistently high across all pages, demonstrating strong adherence to modern web standards, accessible design, and well-structured content.
 
+It should be noted that perceived image loading performance can also be influenced by the testing device. WebP images require more processing to decode than JPG, which can result in slower rendering on lower-powered hardware, particularly when multiple images are loaded simultaneously.
+
+This was considered during testing, and optimisation decisions were based on observed behaviour within the development environment, prioritising consistent and responsive visual rendering.
+
 #### Observed Performance Improvements
 
-Following the optimisation changes described above, updated Lighthouse testing showed measurable improvements in performance scores across key pages, particularly those affected by image-heavy content and interactivity.
+Following the optimisation changes described above, updated Lighthouse testing showed measurable improvements in desktop performance scores across key pages, particularly those affected by image-heavy content and interactivity.
 
 - Home Page:  
 ![Lighthouse performance improvement for Home Page showing increased performance score](assets/images/testing/lighthouse-home-d-improvement.PNG)
