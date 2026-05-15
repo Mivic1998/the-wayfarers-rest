@@ -191,6 +191,7 @@ dots.forEach(dot => {
 // If clicking the same dot, just close everything and stop
     if (activeDot === dot) {
       closeAllPopups();
+      activeDot = null
       return;
     }
 
