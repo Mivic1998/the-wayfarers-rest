@@ -231,9 +231,7 @@ While most pages achieved strong performance scores, some pages recorded lower r
 - **Lazy loading strategy:**  
   Lazy loading was initially applied to non-visible images to reduce initial load cost. However, this introduced visible delays when scrolling, particularly on image-heavy pages such as the Gallery. Lazy loading was therefore removed from most content images to ensure immediate rendering and smoother interaction.
 
-  Lazy loading was retained in specific cases where it does not negatively impact user experience:
-  - small, non-critical images such as icons, where any delay is negligible  
-  - tavern popup images, which are not part of the initial page render and only load when triggered by user interaction  
+  Lazy loading was retained in specific cases where it does not negatively impact user experience such as for small, non-critical images such as icons, where any delay is negligible.  
 
   This approach maintains performance benefits without compromising usability.
 
