@@ -67,8 +67,6 @@ execute pop up close when the flag is set to true. */
 
 let ignoreNextScroll = false;
 
-let clickLock = false;
-
 /* ---------- Close all popups ---------- */
 function closeAllPopups() {
   // Hide every popup panel
@@ -178,35 +176,41 @@ function scrollViewportIfNeeded(popup, padding = 24) {
 }
 
 /* ---------- Handle dot click ---------- */
-dot.addEventListener("click", e => {
-  e.stopPropagation();
+dots.forEach(dot => {
+  dot.addEventListener("click", e => {
+    // Prevent click from triggering click-away handler
+    e.stopPropagation();
 
-  //Prevent double-trigger (mobile fix)
-  if (clickLock) return;
-  clickLock = true;
+    // Find the popup linked to this dot
+    const popup = document.getElementById(dot.dataset.popup);
+    if (!popup) return;
 
-  setTimeout(() => {
-    clickLock = false;
-  }, 100);
+   
 
-  const popup = document.getElementById(dot.dataset.popup);
-  if (!popup) return;
+    
+// If clicking the same dot, just close everything and stop
+    if (activeDot === dot) {
+      closeAllPopups();
+      return;
+    }
 
-  //If already active → CLOSE ONLY
-  if (activeDot === dot) {
+     // Close any existing popup
     closeAllPopups();
-    return;
-  }
 
-  closeAllPopups();
 
-  dot.classList.add("active");
-  activeDot = dot;
-  popup.classList.add("active");
+    // Mark this dot and popup as active
+    dot.classList.add("active");
+    activeDot = dot;
+    popup.classList.add("active");
 
-  requestAnimationFrame(() => {
-    positionPopup(dot, popup);
-    scrollViewportIfNeeded(popup);
+    // Wait one frame so the popup has dimensions
+    requestAnimationFrame(() => {
+      // Position the popup correctly
+      positionPopup(dot, popup);
+
+      // Scroll viewport if popup is partially off-screen
+      scrollViewportIfNeeded(popup);
+    });
   });
 });
 
