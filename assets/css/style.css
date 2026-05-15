@@ -1949,6 +1949,12 @@ nav.site-navbar .nav-link:focus {
     }
 }
 
+@media (max-width: 992px) {
+    .tavern-popup {
+        width: 30%;
+    }
+}
+
 /* =========================
    Map Key / Legend
    ========================= */

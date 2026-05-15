@@ -41,7 +41,7 @@ CSS validation was conducted using the **W3C CSS Validation Service** to ensure 
   
 HTML validation was carried out using the **W3C Nu HTML Checker**. Every HTML page in the project was individually tested and returned no errors or warnings.  
 
-The following pages were validated:
+The following pages were validated (the subsequent screenshots are shown in this order):
 
 - Home Page  
 - About Page  
