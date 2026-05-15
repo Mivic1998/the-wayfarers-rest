@@ -2266,7 +2266,7 @@ nav.site-navbar .nav-link:focus {
 
 @media (max-height: 576px) {
     .tavern-popup {
-        width: 70vw;
+        width: 80vw;
         max-width: 360px;
     }
 }
