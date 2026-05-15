@@ -468,7 +468,7 @@ JavaScript is used in this project only where interactivity and state management
 
 ### Scroll Reveal Animations
 
-Scroll‑based reveal animations are implemented using the **Intersection Observer API**. Elements with the `.reveal` and `.reveal-sub` classes are observed, and when approximately 15% of an element enters the viewport, a `.visible` class is added to trigger CSS transitions.
+Scroll‑based reveal animations are implemented using the **Intersection Observer API**. Elements with the `.reveal` and `.reveal-sub` classes are observed, and when approximately 15% of an element enters the viewport, a `.visible` class is added to trigger CSS transitions. A `.mobile-tablet-reveal` class was later added to the about page's introductory paragraph, as the first about section collapses into one column for these screen-sizes resulting in the paragraph sharing the same format as the content below it, which necessitated that it follows the same behaviour as these elements for visual consistency.
 
 Each element is unobserved after activation so animations only run once, improving performance and avoiding unnecessary processing.
 
