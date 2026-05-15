@@ -1929,7 +1929,7 @@ nav.site-navbar .nav-link:focus {
 /* Mobile adjustments for popup positioning */
 @media (max-width: 576px) {
     .tavern-popup {
-        left: 20% !important;
+        left: 10% !important;
         /* JS-safe override to keep popup visible */
         transform: translateX(-50%);
     }
@@ -1950,7 +1950,7 @@ nav.site-navbar .nav-link:focus {
 
 @media (max-width: 992px) {
     .tavern-popup {
-        width: 10vw;
+        width: 50vw;
     }
 }
 
