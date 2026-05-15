@@ -1787,7 +1787,7 @@ nav.site-navbar .nav-link:focus {
 }
 
 .t2 {
-    top: 41%;
+    top: 40%;
     left: 47%;
 }
 
@@ -1929,7 +1929,7 @@ nav.site-navbar .nav-link:focus {
 /* Mobile adjustments for popup positioning */
 @media (max-width: 576px) {
     .tavern-popup {
-        left: 10% !important;
+        left: 5% !important;
         /* JS-safe override to keep popup visible */
         transform: translateX(-50%);
     }
