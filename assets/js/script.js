@@ -101,10 +101,10 @@ function positionPopup(dot, popup) {
   // If placing it on the right would overflow the map…
   if (left + popupRect.width > mapWidth - gap) {
     // …flip it to the left side instead
-    left = dot.offsetLeft - popupRect.width - 2*gap;
+    left = dot.offsetLeft - popupRect.width - 2 * gap;
   }
 
-//vertically centre popup against the dot
+  //vertically centre popup against the dot
   let top =
     dot.offsetTop +
     dot.offsetHeight / 2 -
@@ -185,16 +185,13 @@ dots.forEach(dot => {
     const popup = document.getElementById(dot.dataset.popup);
     if (!popup) return;
 
-   
-
-    
-// If clicking the same dot, just close everything and stop
+    // If clicking the same dot, just close everything and stop
     if (activeDot === dot) {
       closeAllPopups();
       return;
     }
 
-     // Close any existing popup
+    // Close any existing popup
     closeAllPopups();
 
 
